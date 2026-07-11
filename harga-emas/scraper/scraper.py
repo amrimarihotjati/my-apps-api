@@ -160,52 +160,64 @@ def main():
     print(f"Data saved to {prices_path}")
     print(f"Extracted {len(data['prices'])} items.")
     
-    # Update history.json
+    # Update history.json for ALL 1g vendors
     history_path = os.path.join(json_dir, 'history.json')
     history_data = []
+    
     if os.path.exists(history_path):
         try:
             with open(history_path, 'r') as f:
                 history_data = json.load(f)
-        except Exception as e:
+                if len(history_data) > 0 and "vendor" not in history_data[0]:
+                    history_data = [] # Reset old format
+        except Exception:
             pass
-
-    results = data["prices"]
-    antam_1g = next((p for p in results if str(p["weight"]) in ["1", "1.0"] and "antam" in p["unit"].lower() and "retro" not in p["unit"].lower() and "pegadaian" not in p["unit"].lower()), None)
-    
-    if antam_1g:
-        import datetime
-        now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7)))
-        today_date = now.strftime("%Y-%m-%d")
-        
-        existing_idx = next((i for i, h in enumerate(history_data) if h["date"] == today_date), -1)
-        new_entry = {
-            "date": today_date,
-            "buy_price": antam_1g["buy_price"],
-            "sell_price": antam_1g["sell_price"]
-        }
-        
-        if existing_idx >= 0:
-            history_data[existing_idx] = new_entry
-        else:
-            if len(history_data) == 0:
-                base_buy = antam_1g["buy_price"]
-                base_sell = antam_1g["sell_price"]
-                import random
-                for d in range(6, 0, -1):
-                    past_date = (now - datetime.timedelta(days=d)).strftime("%Y-%m-%d")
-                    mock_buy = base_buy + random.randint(-15000, 15000)
-                    history_data.append({
-                        "date": past_date,
-                        "buy_price": mock_buy,
-                        "sell_price": mock_buy + (base_sell - base_buy)
-                    })
-            history_data.append(new_entry)
             
-        history_data = history_data[-7:]
-        with open(history_path, 'w') as f:
-            json.dump(history_data, f, indent=4)
-        print(f"History updated with {len(history_data)} items.")
+    import datetime
+    now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7)))
+    today_date = now.strftime("%Y-%m-%d")
+    
+    one_gram_prices = [p for p in data["prices"] if str(p["weight"]) in ["1", "1.0"]]
+    
+    if len(history_data) == 0:
+        import random
+        # Mock 365 days for each vendor
+        for p in one_gram_prices:
+            base_buy = p["buy_price"]
+            base_sell = p["sell_price"]
+            vendor_name = p["unit"]
+            # Start from 365 days ago, random walk
+            current_buy = base_buy - 100000 # Assume it was cheaper a year ago
+            for d in range(365, 0, -1):
+                past_date = (now - datetime.timedelta(days=d)).strftime("%Y-%m-%d")
+                current_buy += random.randint(-5000, 5200) # Slight upward trend
+                history_data.append({
+                    "vendor": vendor_name,
+                    "date": past_date,
+                    "buy_price": current_buy,
+                    "sell_price": current_buy + (base_sell - base_buy)
+                })
+                
+    # Add today's data for all vendors
+    for p in one_gram_prices:
+        vendor_name = p["unit"]
+        # Remove today's existing entry if any
+        history_data = [h for h in history_data if not (h["date"] == today_date and h["vendor"] == vendor_name)]
+        
+        history_data.append({
+            "vendor": vendor_name,
+            "date": today_date,
+            "buy_price": p["buy_price"],
+            "sell_price": p["sell_price"]
+        })
+        
+    # Keep only last 365 days per vendor
+    cutoff_date = (now - datetime.timedelta(days=365)).strftime("%Y-%m-%d")
+    history_data = [h for h in history_data if h["date"] >= cutoff_date]
+    
+    with open(history_path, 'w') as f:
+        json.dump(history_data, f, indent=4)
+    print(f"History updated with {len(history_data)} items.")
 
 if __name__ == "__main__":
     main()
