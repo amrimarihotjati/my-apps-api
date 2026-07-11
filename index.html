@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amri Marihot Jati | Android Developer</title>
-    <!-- Google Fonts: JetBrains Mono and Inter -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="lang-id">
+    <div class="lang-toggle-container">
+        <button id="langToggleBtn" onclick="toggleLanguage()"><i class="fa-solid fa-language"></i> <span id="currentLang">ID</span></button>
+    </div>
+
     <div class="container">
         <!-- Header / Hero Section -->
         <header class="hero">
@@ -24,7 +26,7 @@
                 <div class="terminal-body">
                     <p><span class="prompt">guest@portfolio:~$</span> ./greet.sh</p>
                     <p class="typing-text">Hello, World! I'm Amri Marihot Jati.<span class="cursor"></span></p>
-                    <p class="role">Android Developer | Java & Kotlin Enthusiast</p>
+                    <p class="role">FrontEnd Dev | Android Developer | Java & Kotlin Enthusiast</p>
                 </div>
             </div>
         </header>
@@ -33,10 +35,15 @@
         <section class="about section">
             <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> about_me.md</h2>
             <div class="content-box">
-                <p>
+                <p class="lang id">
                     Lulusan <strong>Akuntansi</strong> dari STIE Indonesia Banking School (IBS) yang banting setir dan jatuh cinta pada dunia pemrograman.
                     Kini berfokus sebagai <strong>FrontEnd Developer, Android Native, dan Google App Publisher</strong>. 
                     Saya gemar membangun aplikasi yang fungsional, responsif, dan memberikan dampak positif (seperti alat pencatat keuangan dan utilitas harian).
+                </p>
+                <p class="lang en">
+                    An <strong>Accounting</strong> graduate from STIE Indonesia Banking School (IBS) who pivoted and fell in love with programming.
+                    Currently focusing as a <strong>FrontEnd Developer, Android Native, and Google App Publisher</strong>. 
+                    I enjoy building functional, responsive applications that make a positive impact (such as financial trackers and daily utilities).
                 </p>
                 <div class="skills">
                     <span class="tag"><i class="fa-brands fa-android"></i> Android Native</span>
@@ -54,42 +61,49 @@
             <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> experience.log</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-icon-fa"><i class="fa-brands fa-google"></i></div>
+                    <div class="timeline-icon-img"><img src="assets/images/google-icon.png" alt="Google"></div>
                     <div class="timeline-content">
                         <h3>Google</h3>
                         <h4>App Publisher</h4>
-                        <span class="date">Juli 2024 - Sekarang</span>
+                        <span class="date"><span class="lang id">Juli 2024 - Sekarang</span><span class="lang en">July 2024 - Present</span></span>
                         <ul>
-                            <li>Memublikasikan dan mengelola aplikasi <strong><a href="https://play.google.com/store/apps/details?id=us.screener.saham&gl=us" target="_blank" style="color: var(--string);">Screener Saham</a></strong>.</li>
+                            <li>
+                                <span class="lang id">Memublikasikan dan mengelola aplikasi</span>
+                                <span class="lang en">Publishing and managing the</span>
+                                <strong><a href="https://play.google.com/store/apps/details?id=us.screener.saham&gl=us" target="_blank" style="color: var(--string);">Screener Saham</a></strong> application.
+                            </li>
                             <li>Official Website: <a href="https://screnix.com/" target="_blank" style="color: var(--string);">screnix.com</a></li>
                         </ul>
                         <div class="documentation">
-                            <!-- Placeholder untuk foto dokumentasi Google -->
-                            <img src="assets/images/doc-google.jpg" alt="Dokumentasi Google" class="doc-img" onerror="this.style.display='none'">
+                            <img src="assets/images/google-experience.jpeg" alt="Google Experience" class="doc-img">
                         </div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon-fa"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="timeline-icon-img"><img src="assets/images/pupr-icon.jpeg" alt="PUPR"></div>
                     <div class="timeline-content">
                         <h3>Kementerian Pekerjaan Umum dan Perumahan Rakyat (PUPR)</h3>
                         <h4>Frontend Developer</h4>
-                        <span class="date">Februari 2024 - Juli 2024</span>
+                        <span class="date"><span class="lang id">Februari 2024 - Juli 2024</span><span class="lang en">February 2024 - July 2024</span></span>
                         <ul>
-                            <li>Mengembangkan antarmuka pengguna (Frontend) untuk aplikasi web <a href="https://infrastrukturdaerah.pu.go.id/sicalmers" target="_blank" style="color: var(--string);"><strong>SICALMERS</strong></a>.</li>
+                            <li>
+                                <span class="lang id">Mengembangkan antarmuka pengguna (Frontend) untuk aplikasi web</span>
+                                <span class="lang en">Developing the user interface (Frontend) for the</span>
+                                <a href="https://infrastrukturdaerah.pu.go.id/sicalmers" target="_blank" style="color: var(--string);"><strong>SICALMERS</strong></a> web application.
+                            </li>
                         </ul>
-                        <div class="documentation">
-                            <!-- Placeholder untuk foto dokumentasi PUPR -->
-                            <img src="assets/images/doc-pupr.jpg" alt="Dokumentasi PUPR" class="doc-img" onerror="this.style.display='none'">
+                        <div class="documentation gallery">
+                            <img src="assets/images/pupr-experience.jpeg" alt="PUPR Experience" class="doc-img">
+                            <img src="assets/images/pupr-experience-1.jpeg" alt="PUPR Team" class="doc-img">
                         </div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon-fa"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div class="timeline-icon-img"><img src="assets/images/alami-icon.jpeg" alt="ALAMI"></div>
                     <div class="timeline-content">
                         <h3>ALAMI</h3>
                         <h4>Partnership Support</h4>
-                        <span class="date">September 2021 - Februari 2022</span>
+                        <span class="date"><span class="lang id">September 2021 - Februari 2022</span><span class="lang en">September 2021 - February 2022</span></span>
                         <ul>
                             <li>Coordinate with inter-divisions such as risk, ops, IT and marketing for supply chain financing schemes.</li>
                             <li>Monitor business developments and review the performance of borrowers.</li>
@@ -97,37 +111,40 @@
                         </ul>
                         <br>
                         <h4>Partnership Acquisition</h4>
-                        <span class="date">Januari 2021 - Agustus 2021</span>
+                        <span class="date"><span class="lang id">Januari 2021 - Agustus 2021</span><span class="lang en">January 2021 - August 2021</span></span>
                         <br><br>
                         <h4>Digital Marketing</h4>
-                        <span class="date">September 2020 - Desember 2020</span>
+                        <span class="date"><span class="lang id">September 2020 - Desember 2020</span><span class="lang en">September 2020 - December 2020</span></span>
                         <ul>
                             <li>Assisted in analyzing digital performance datasets and maintained weekly documentation.</li>
                             <li>Developed and implemented effective SEO strategies.</li>
                             <li>Formulated strategic plans for Telegram and implemented Telegram BOT using Google Script.</li>
                         </ul>
-                        <div class="documentation">
-                            <!-- Placeholder untuk foto dokumentasi ALAMI -->
-                            <img src="assets/images/doc-alami.jpg" alt="Dokumentasi ALAMI" class="doc-img" onerror="this.style.display='none'">
+                        <div class="documentation gallery">
+                            <img src="assets/images/alami-experience.jpeg" alt="ALAMI Experience" class="doc-img">
+                            <img src="assets/images/alami-experience1.jpeg" alt="ALAMI Team" class="doc-img">
                         </div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon-fa"><i class="fa-solid fa-gas-pump"></i></div>
+                    <div class="timeline-icon-img"><img src="assets/images/pertamina-icon.jpeg" alt="Pertamina"></div>
                     <div class="timeline-content">
                         <h3>PT Pertamina Patra Niaga</h3>
                         <h4>Freelance Graphic Designer</h4>
-                        <span class="date">April 2020 - Juli 2020</span>
+                        <span class="date"><span class="lang id">April 2020 - Juli 2020</span><span class="lang en">April 2020 - July 2020</span></span>
                         <p>Poster designs and media kits were crafted for the Musicool Sales Competition and Musicool Paper Competition.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon-fa"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="timeline-icon-img"><img src="assets/images/bank-indonesia-icon.jpeg" alt="Bank Indonesia"></div>
                     <div class="timeline-content">
                         <h3>Central Bank of Indonesia</h3>
                         <h4>Internship Program</h4>
-                        <span class="date">Januari 2020 - Februari 2020</span>
+                        <span class="date"><span class="lang id">Januari 2020 - Februari 2020</span><span class="lang en">January 2020 - February 2020</span></span>
                         <p>Placed in the Rupiah Money Management Division (PUR).</p>
+                        <div class="documentation">
+                            <img src="assets/images/bank-indoneisa-experience.jpeg" alt="Bank Indonesia Experience" class="doc-img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,7 +159,7 @@
                     <div class="timeline-content">
                         <h3>PT. DumbWays Indonesia Teknologi</h3>
                         <h4>Bootcamp</h4>
-                        <span class="date">Juli 2023 - Desember 2023</span>
+                        <span class="date"><span class="lang id">Juli 2023 - Desember 2023</span><span class="lang en">July 2023 - December 2023</span></span>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -150,15 +167,15 @@
                     <div class="timeline-content">
                         <h3>Hacktiv8 Indonesia</h3>
                         <h4>Android with Java Native</h4>
-                        <span class="date">Agustus 2021 - Februari 2022</span>
+                        <span class="date"><span class="lang id">Agustus 2021 - Februari 2022</span><span class="lang en">August 2021 - February 2022</span></span>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-icon-fa"><i class="fa-solid fa-university"></i></div>
                     <div class="timeline-content">
                         <h3>Indonesia Banking School</h3>
-                        <h4>Gelar Sarjana, Akuntansi</h4>
-                        <span class="date">2017 - November 2021</span>
+                        <h4><span class="lang id">Gelar Sarjana, Akuntansi</span><span class="lang en">Bachelor's Degree, Accounting</span></h4>
+                        <span class="date">2017 - <span class="lang id">November 2021</span><span class="lang en">November 2021</span></span>
                     </div>
                 </div>
             </div>
@@ -168,48 +185,15 @@
         <section class="portfolio section">
             <h2 class="section-title"><i class="fa-solid fa-code-branch"></i> repositories/</h2>
             <div class="grid">
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="card-header">
-                        <h3><i class="fa-solid fa-box-open"></i> Harga Emas</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Aplikasi Android native untuk melacak harga emas Antam & Pegadaian secara real-time. Dilengkapi kalkulator simulasi untung/rugi portofolio.</p>
-                        <div class="tech-stack">
-                            <span>Kotlin</span>
-                            <span>Compose</span>
-                            <span>Coroutines</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/amrimarihotjati/harga-emas" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> View Source</a>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card">
-                    <div class="card-header">
-                        <h3><i class="fa-solid fa-car"></i> Jual Beli Mobil Bekas</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Platform katalog mobil bekas. Menggunakan arsitektur modern dan integrasi API untuk menampilkan daftar kendaraan secara dinamis.</p>
-                        <div class="tech-stack">
-                            <span>Java/Kotlin</span>
-                            <span>REST API</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/amrimarihotjati/Jual-Beli-Mobil-Bekas" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> View Source</a>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
+                
+                <!-- Card 1: Screnix -->
                 <div class="card">
                     <div class="card-header">
                         <h3><i class="fa-solid fa-chart-line"></i> Screener Saham</h3>
                     </div>
                     <div class="card-body">
-                        <p>Aplikasi untuk melakukan screening dan analisis saham. Tersedia di Google Play Store (screnix.com).</p>
+                        <p class="lang id">Aplikasi untuk melakukan screening dan analisis saham. Tersedia di Google Play Store (screnix.com).</p>
+                        <p class="lang en">Application for stock screening and analysis. Available on the Google Play Store (screnix.com).</p>
                         <div class="tech-stack">
                             <span>Android</span>
                             <span>App Publisher</span>
@@ -220,6 +204,44 @@
                         <a href="https://screnix.com/" target="_blank" class="link-btn" style="margin-left: 10px;"><i class="fa-solid fa-globe"></i> Website</a>
                     </div>
                 </div>
+
+                <!-- Card 2: SICALMERS -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-building"></i> SICALMERS (PUPR)</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="lang id">Aplikasi web resmi infrastruktur daerah Kementerian PUPR untuk sistem informasi pengelolaan.</p>
+                        <p class="lang en">Official regional infrastructure web application of the Ministry of PUPR for management information systems.</p>
+                        <div class="tech-stack">
+                            <span>FrontEnd</span>
+                            <span>Web App</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://infrastrukturdaerah.pu.go.id/sicalmers" target="_blank" class="link-btn"><i class="fa-solid fa-globe"></i> Visit Site</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: LoanFlow -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-wallet"></i> LoanFlow</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="lang id">Personal budget dan loan tracker application untuk membantu pengguna mengelola keuangan pribadi.</p>
+                        <p class="lang en">Personal budget and loan tracker application to help users manage their personal finances.</p>
+                        <div class="tech-stack">
+                            <span>Android</span>
+                            <span>Java/Kotlin</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://play.google.com/store/apps/details?id=us.personal.budget.loan.tracker&gl=us" target="_blank" class="link-btn"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                        <a href="https://loanflow.id/" target="_blank" class="link-btn" style="margin-left: 10px;"><i class="fa-solid fa-globe"></i> Website</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -242,5 +264,21 @@
             <p>&copy; 2026 Amri Marihot Jati. Designed with <i class="fa-solid fa-heart" style="color: #e55353;"></i> & <i class="fa-solid fa-mug-hot"></i></p>
         </footer>
     </div>
+
+    <script>
+        function toggleLanguage() {
+            const body = document.body;
+            const currentLangSpan = document.getElementById('currentLang');
+            if (body.classList.contains('lang-id')) {
+                body.classList.remove('lang-id');
+                body.classList.add('lang-en');
+                currentLangSpan.textContent = 'EN';
+            } else {
+                body.classList.remove('lang-en');
+                body.classList.add('lang-id');
+                currentLangSpan.textContent = 'ID';
+            }
+        }
+    </script>
 </body>
 </html>
