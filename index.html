@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="lang-id">
+<body class="lang-en">
     <div class="lang-toggle-container">
-        <button id="langToggleBtn" onclick="toggleLanguage()"><i class="fa-solid fa-language"></i> <span id="currentLang">ID</span></button>
+        <button id="langToggleBtn" onclick="toggleLanguage()"><i class="fa-solid fa-language"></i> <span id="currentLang">EN</span></button>
     </div>
 
     <div class="container">
@@ -271,14 +271,14 @@
         function toggleLanguage() {
             const body = document.body;
             const currentLangSpan = document.getElementById('currentLang');
-            if (body.classList.contains('lang-id')) {
-                body.classList.remove('lang-id');
-                body.classList.add('lang-en');
-                currentLangSpan.textContent = 'EN';
-            } else {
+            if (body.classList.contains('lang-en')) {
                 body.classList.remove('lang-en');
                 body.classList.add('lang-id');
                 currentLangSpan.textContent = 'ID';
+            } else {
+                body.classList.remove('lang-id');
+                body.classList.add('lang-en');
+                currentLangSpan.textContent = 'EN';
             }
         }
     </script>
