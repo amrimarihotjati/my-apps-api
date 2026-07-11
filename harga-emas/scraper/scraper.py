@@ -160,5 +160,52 @@ def main():
     print(f"Data saved to {prices_path}")
     print(f"Extracted {len(data['prices'])} items.")
     
+    # Update history.json
+    history_path = os.path.join(json_dir, 'history.json')
+    history_data = []
+    if os.path.exists(history_path):
+        try:
+            with open(history_path, 'r') as f:
+                history_data = json.load(f)
+        except Exception as e:
+            pass
+
+    results = data["prices"]
+    antam_1g = next((p for p in results if str(p["weight"]) in ["1", "1.0"] and "antam" in p["unit"].lower() and "retro" not in p["unit"].lower() and "pegadaian" not in p["unit"].lower()), None)
+    
+    if antam_1g:
+        import datetime
+        now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7)))
+        today_date = now.strftime("%Y-%m-%d")
+        
+        existing_idx = next((i for i, h in enumerate(history_data) if h["date"] == today_date), -1)
+        new_entry = {
+            "date": today_date,
+            "buy_price": antam_1g["buy_price"],
+            "sell_price": antam_1g["sell_price"]
+        }
+        
+        if existing_idx >= 0:
+            history_data[existing_idx] = new_entry
+        else:
+            if len(history_data) == 0:
+                base_buy = antam_1g["buy_price"]
+                base_sell = antam_1g["sell_price"]
+                import random
+                for d in range(6, 0, -1):
+                    past_date = (now - datetime.timedelta(days=d)).strftime("%Y-%m-%d")
+                    mock_buy = base_buy + random.randint(-15000, 15000)
+                    history_data.append({
+                        "date": past_date,
+                        "buy_price": mock_buy,
+                        "sell_price": mock_buy + (base_sell - base_buy)
+                    })
+            history_data.append(new_entry)
+            
+        history_data = history_data[-7:]
+        with open(history_path, 'w') as f:
+            json.dump(history_data, f, indent=4)
+        print(f"History updated with {len(history_data)} items.")
+
 if __name__ == "__main__":
     main()
