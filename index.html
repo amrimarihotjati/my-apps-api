@@ -1,1 +1,112 @@
-<!DOCTYPE html><html><head><title>My Apps API</title></head><body><h1>API is running</h1></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amri Marihot Jati | Android Developer</title>
+    <!-- Google Fonts: JetBrains Mono and Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Hero Section -->
+        <header class="hero">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="btn red"></span>
+                    <span class="btn yellow"></span>
+                    <span class="btn green"></span>
+                    <span class="title">amri_marihot_jati.sh</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">guest@portfolio:~$</span> ./greet.sh</p>
+                    <p class="typing-text">Hello, World! I'm Amri Marihot Jati.<span class="cursor"></span></p>
+                    <p class="role">Android Developer | Java & Kotlin Enthusiast</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="about section">
+            <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> about_me.md</h2>
+            <div class="content-box">
+                <p>
+                    Lulusan <strong>Akuntansi</strong> dari STIE Indonesia Banking School (IBS) yang banting setir dan jatuh cinta pada dunia pemrograman.
+                    Kini berfokus sebagai <strong>Software Engineer (Android Native)</strong>. Saya gemar membangun aplikasi yang fungsional, responsif, dan memberikan 
+                    dampak positif (seperti alat pencatat keuangan dan utilitas harian).
+                </p>
+                <div class="skills">
+                    <span class="tag"><i class="fa-brands fa-android"></i> Android Native</span>
+                    <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section">
+            <h2 class="section-title"><i class="fa-solid fa-code-branch"></i> repositories/</h2>
+            <div class="grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-box-open"></i> Harga Emas</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Aplikasi Android native untuk melacak harga emas Antam & Pegadaian secara real-time. Dilengkapi kalkulator simulasi untung/rugi portofolio.</p>
+                        <div class="tech-stack">
+                            <span>Kotlin</span>
+                            <span>Compose</span>
+                            <span>Coroutines</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/amrimarihotjati/harga-emas" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> View Source</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-car"></i> Jual Beli Mobil Bekas</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Platform katalog mobil bekas. Menggunakan arsitektur modern dan integrasi API untuk menampilkan daftar kendaraan secara dinamis.</p>
+                        <div class="tech-stack">
+                            <span>Java/Kotlin</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/amrimarihotjati/Jual-Beli-Mobil-Bekas" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> View Source</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section">
+            <h2 class="section-title"><i class="fa-solid fa-address-card"></i> contact.json</h2>
+            <div class="content-box json-style">
+                <pre><code>{
+  "name": "Amri Marihot Jati",
+  "email": "Available on LinkedIn",
+  "social": {
+    "<a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin</a>": "linkedin.com/in/amrimarihotjati",
+    "<a href="https://github.com/amrimarihotjati" target="_blank"><i class="fa-brands fa-github"></i> github</a>": "github.com/amrimarihotjati"
+  }
+}</code></pre>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Amri Marihot Jati. Designed with <i class="fa-solid fa-heart" style="color: #e55353;"></i> & <i class="fa-solid fa-mug-hot"></i></p>
+        </footer>
+    </div>
+</body>
+</html>
