@@ -1,0 +1,2443 @@
+{
+    "admob_config": {
+        "native_id": "ca-app-pub-3940256099942544/2247696110",
+        "interstitial_id": "ca-app-pub-3940256099942544/1033173712",
+        "interstitial_interval": 3
+    },
+    "slideshow": [
+        {
+            "id": 1,
+            "title": "Beli Mobil Idaman Tanpa Ribet",
+            "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2"
+        },
+        {
+            "id": 2,
+            "title": "Inspeksi Ketat, Jaminan Kualitas",
+            "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+        },
+        {
+            "id": 3,
+            "title": "Promo DP Ringan & Bunga Rendah",
+            "image_url": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+        }
+    ],
+    "marketplaces": [
+        {
+            "id": 1,
+            "name": "OLX Autos",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/olx.png",
+            "description": "Platform terbesar untuk jual beli mobil bekas dengan pilihan terluas di Indonesia.",
+            "direct_link": "https://www.olx.co.id/mobil-bekas_c198",
+            "rating": 4.8,
+            "total_cars": "150.000+ Mobil",
+            "promo_text": "Promo Cashback hingga Rp5 Juta",
+            "features": [
+                "Inspeksi Menyeluruh",
+                "Garansi 30 Hari",
+                "Test Drive Gratis"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2014",
+            "headquarters": "Jakarta Selatan, Indonesia",
+            "tags": [
+                "C2C",
+                "Inspeksi Ahli",
+                "Banyak Pilihan",
+                "Terpercaya"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Carsome",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/carsome.png",
+            "description": "Mobil bekas berkualitas dengan garansi 1 tahun dan layanan terpercaya.",
+            "direct_link": "https://www.carsome.id/",
+            "rating": 4.9,
+            "total_cars": "50.000+ Mobil",
+            "promo_text": "Diskon Bunga Kredit 0%",
+            "features": [
+                "Carsome Certified",
+                "Garansi 1 Tahun",
+                "5 Hari Uang Kembali"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Selangor, Malaysia",
+            "tags": [
+                "175 Titik Inspeksi",
+                "Beli Mobil",
+                "Jual Mobil 1 Jam"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Carro",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/carro.png",
+            "description": "Marketplace otomotif inovatif dengan fasilitas test drive di rumah Anda.",
+            "direct_link": "https://carro.co.id/",
+            "rating": 4.8,
+            "total_cars": "45.000+ Mobil",
+            "promo_text": "Beli Mobil Gratis Asuransi",
+            "features": [
+                "160 Titik Inspeksi",
+                "Garansi Mesin 1 Tahun",
+                "Layanan Test Drive di Rumah"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Singapura",
+            "tags": [
+                "Garansi 1 Tahun",
+                "Lulus 160 Titik Inspeksi",
+                "Transparan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Mobil123",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/mobil123.png",
+            "description": "Portal otomotif nomor 1 di Indonesia dengan jutaan listing mobil baru dan bekas.",
+            "direct_link": "https://www.mobil123.com/",
+            "rating": 4.7,
+            "total_cars": "200.000+ Mobil",
+            "promo_text": "Banyak Pilihan Mobil Keluarga",
+            "features": [
+                "Listing Terbanyak",
+                "Filter Pencarian Detail",
+                "Berita & Review Otomotif"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Carmudi",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/carmudi.png",
+            "description": "Situs jual beli kendaraan online terkemuka dengan pilihan mobil bekas berkualitas.",
+            "direct_link": "https://www.carmudi.co.id/",
+            "rating": 4.6,
+            "total_cars": "120.000+ Mobil",
+            "promo_text": "DP Mulai 10 Jutaan",
+            "features": [
+                "Pilihan Dealer Terpercaya",
+                "Simulasi Kredit Otomatis",
+                "Review Ahli Otomotif"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "OTO",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/oto.png",
+            "description": "Temukan harga mobil bekas, review, dan spesifikasi lengkap untuk pilihan yang tepat.",
+            "direct_link": "https://www.oto.com/mobil-bekas",
+            "rating": 4.7,
+            "total_cars": "80.000+ Mobil",
+            "promo_text": "Dapatkan Penawaran Terbaik",
+            "features": [
+                "Spesifikasi Terlengkap",
+                "Bandingkan Mobil",
+                "Kalkulator Cicilan"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Caroline.id",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/caroline.png",
+            "description": "Platform transparan untuk jual beli mobil bekas dengan jaminan mesin dan harga pasti.",
+            "direct_link": "https://www.caroline.id/",
+            "rating": 4.8,
+            "total_cars": "10.000+ Mobil",
+            "promo_text": "Jaminan Harga Transparan",
+            "features": [
+                "Garansi Mesin & Transmisi 1 Tahun",
+                "Bebas Kecelakaan Besar",
+                "Dokumen Terjamin"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Seva",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/seva.png",
+            "description": "Platform dari Astra untuk pembelian mobil dengan fitur Instant Approval.",
+            "direct_link": "https://www.seva.id/",
+            "rating": 4.9,
+            "total_cars": "30.000+ Mobil",
+            "promo_text": "Bebas Pusing Pilih Cicilan",
+            "features": [
+                "Instant Approval",
+                "Didukung Astra",
+                "Hitung Kemampuan Finansial"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "CintaMobil",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/cintamobil.png",
+            "description": "Marketplace mobil dengan tips otomotif, review lengkap, dan harga terbaik.",
+            "direct_link": "https://cintamobil.com/",
+            "rating": 4.6,
+            "total_cars": "90.000+ Mobil",
+            "promo_text": "Temukan Promo Menarik",
+            "features": [
+                "Review Mendalam",
+                "Video Test Drive",
+                "Berita Otomotif Terbaru"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Momobil",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/momobil.png",
+            "description": "Situs jual beli mobil bekas dari Adira Finance dengan pembiayaan yang mudah.",
+            "direct_link": "https://momobil.id/",
+            "rating": 4.7,
+            "total_cars": "60.000+ Mobil",
+            "promo_text": "Cicilan Ringan dari Adira",
+            "features": [
+                "Pembiayaan Aman",
+                "Proses Cepat",
+                "Jaringan Dealer Luas"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Garasi.id",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/garasi.png",
+            "description": "Platform otomotif modern dengan fitur Inspeksi Mobil menyeluruh dan Garansi Mesin.",
+            "direct_link": "https://garasi.id/",
+            "rating": 4.8,
+            "total_cars": "20.000+ Mobil",
+            "promo_text": "Beli Mobil Aman & Nyaman",
+            "features": [
+                "Layanan Inspeksi Independen",
+                "Pilihan Jasa Servis",
+                "Garansi Komprehensif"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Auto2000",
+            "logo_url": "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/assets/logos/auto2000.png",
+            "description": "Layanan jual beli mobil bekas Toyota resmi dan bersertifikat kualitas terbaik.",
+            "direct_link": "https://auto2000.co.id/",
+            "rating": 4.9,
+            "total_cars": "15.000+ Mobil",
+            "promo_text": "Kualitas Toyota Terjamin",
+            "features": [
+                "Sertifikasi Resmi Toyota",
+                "Layanan Purna Jual Terbaik",
+                "Suku Cadang Asli"
+            ],
+            "services": [
+                "Jual Mobil Bekas",
+                "Beli Mobil Bekas",
+                "Tukar Tambah",
+                "Inspeksi Mobil"
+            ],
+            "operational_hours": "Setiap Hari, 08:00 - 20:00 WIB",
+            "established_year": "2015",
+            "headquarters": "Jakarta, Indonesia",
+            "tags": [
+                "Mobil Bekas",
+                "Garansi Mesin",
+                "Tukar Tambah",
+                "Cicilan Ringan"
+            ],
+            "payment_methods": [
+                "Cash",
+                "Kredit BCA",
+                "Kredit Mandiri",
+                "CIMB Niaga Auto Finance"
+            ]
+        }
+    ],
+    "used_cars": [
+        {
+            "id": "c1",
+            "name": "Toyota Avanza",
+            "brand": "Toyota",
+            "year": "2015-2022",
+            "price_range": "Rp 120 Jt - Rp 230 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c1_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c1_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c1_2.jpg"
+            ],
+            "description": "Mobil sejuta umat. Perawatan super mudah, irit, dan harga jual kembali stabil. Cocok untuk keluarga dan sangat diminati untuk taksi online.",
+            "tags": [
+                "MPV",
+                "Keluarga",
+                "Irit",
+                "Populer"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "44,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe E",
+                    "price": "Rp 120 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe G",
+                    "price": "Rp 175 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Veloz",
+                    "price": "Rp 230 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c2",
+            "name": "Honda Brio Satya",
+            "brand": "Honda",
+            "year": "2016-2023",
+            "price_range": "Rp 115 Jt - Rp 180 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c2_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c2_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c2_2.jpg"
+            ],
+            "description": "Rajanya city car Indonesia. Gesit, sangat irit BBM, dan punya desain sporty yang tak lekang oleh waktu.",
+            "tags": [
+                "City Car",
+                "LCGC",
+                "Anak Muda"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "20,000 km",
+            "location": "Bandung",
+            "seats": "5 Seater",
+            "variants": [
+                {
+                    "name": "Tipe S",
+                    "price": "Rp 115 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe E",
+                    "price": "Rp 147 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe RS",
+                    "price": "Rp 180 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c3",
+            "name": "Toyota Innova Reborn",
+            "brand": "Toyota",
+            "year": "2016-2022",
+            "price_range": "Rp 250 Jt - Rp 450 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c3_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c3_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c3_2.jpg"
+            ],
+            "description": "Medium MPV ternyaman. Varian mesin diesel sangat diburu karena badak (tangguh) dan torsi besar.",
+            "tags": [
+                "MPV Premium",
+                "Nyaman",
+                "Diesel"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "29,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe G",
+                    "price": "Rp 250 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe V",
+                    "price": "Rp 350 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Venturer/Q",
+                    "price": "Rp 450 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c4",
+            "name": "Mitsubishi Xpander",
+            "brand": "Mitsubishi",
+            "year": "2017-2023",
+            "price_range": "Rp 170 Jt - Rp 270 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c4_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c4_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c4_2.jpg"
+            ],
+            "description": "LMPV dengan kabin terlega dan bantingan suspensi paling nyaman di kelasnya, dipadukan desain Dynamic Shield yang garang.",
+            "tags": [
+                "LMPV",
+                "Keluarga",
+                "Nyaman"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin/Diesel",
+            "mileage": "33,000 km",
+            "location": "Tangerang",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "GLS",
+                    "price": "Rp 170 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Exceed",
+                    "price": "Rp 220 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Ultimate",
+                    "price": "Rp 270 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c5",
+            "name": "Daihatsu Sigra",
+            "brand": "Daihatsu",
+            "year": "2016-2023",
+            "price_range": "Rp 90 Jt - Rp 140 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c5_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c5_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c5_2.jpg"
+            ],
+            "description": "Mobil 7-penumpang termurah dan paling ekonomis. Pilihan rasional sebagai mobil keluarga pertama.",
+            "tags": [
+                "LCGC",
+                "7-Seater",
+                "Murah"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "72,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "1.0 D",
+                    "price": "Rp 90 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "1.2 X",
+                    "price": "Rp 115 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "1.2 R",
+                    "price": "Rp 140 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c6",
+            "name": "Toyota Fortuner (VRZ)",
+            "brand": "Toyota",
+            "year": "2016-2023",
+            "price_range": "Rp 380 Jt - Rp 600 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c6_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c6_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c6_2.jpg"
+            ],
+            "description": "SUV ladder frame idaman. Tampil intimidatif, mesin diesel badak, dan kaki-kaki kuat.",
+            "tags": [
+                "SUV Besar",
+                "Gagah",
+                "Diesel"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "17,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe G",
+                    "price": "Rp 380 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "VRZ",
+                    "price": "Rp 490 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "GR Sport",
+                    "price": "Rp 600 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c7",
+            "name": "Honda HR-V",
+            "brand": "Honda",
+            "year": "2015-2021",
+            "price_range": "Rp 180 Jt - Rp 290 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c7_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c7_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c7_2.jpg"
+            ],
+            "description": "Compact SUV paling stylish. Interior mewah, stabil, dan tenaga melimpah khas Honda.",
+            "tags": [
+                "SUV",
+                "Sporty",
+                "Premium"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "15,000 km",
+            "location": "Bandung",
+            "seats": "5 Seater",
+            "variants": [
+                {
+                    "name": "Tipe S",
+                    "price": "Rp 180 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe E",
+                    "price": "Rp 235 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Prestige",
+                    "price": "Rp 290 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c8",
+            "name": "Mitsubishi Pajero Sport",
+            "brand": "Mitsubishi",
+            "year": "2016-2022",
+            "price_range": "Rp 400 Jt - Rp 620 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c8_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c8_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c8_2.jpg"
+            ],
+            "description": "Rival utama Fortuner. Menawarkan torsi yang lebih menjambak dan desain fascia depan yang sangat garang.",
+            "tags": [
+                "SUV Besar",
+                "Diesel",
+                "Garang"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin/Diesel",
+            "mileage": "73,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Exceed",
+                    "price": "Rp 400 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Dakar",
+                    "price": "Rp 510 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Dakar Ultimate",
+                    "price": "Rp 620 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c9",
+            "name": "Toyota Rush",
+            "brand": "Toyota",
+            "year": "2018-2023",
+            "price_range": "Rp 190 Jt - Rp 270 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c9_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c9_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c9_2.jpg"
+            ],
+            "description": "Low SUV andalan keluarga. Penggerak roda belakang (RWD) membuatnya sangat bisa diandalkan untuk tanjakan dan jalan rusak.",
+            "tags": [
+                "LSUV",
+                "RWD",
+                "Tangguh"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "66,000 km",
+            "location": "Surabaya",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe G",
+                    "price": "Rp 190 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "TRD Sportivo",
+                    "price": "Rp 230 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "GR Sport",
+                    "price": "Rp 270 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c10",
+            "name": "Suzuki Ertiga",
+            "brand": "Suzuki",
+            "year": "2018-2022",
+            "price_range": "Rp 150 Jt - Rp 230 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c10_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c10_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c10_2.jpg"
+            ],
+            "description": "LMPV dengan efisiensi BBM terbaik di kelasnya serta kabin yang sangat senyap dan halus.",
+            "tags": [
+                "LMPV",
+                "Irit",
+                "Nyaman"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "59,000 km",
+            "location": "Tangerang",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe GA",
+                    "price": "Rp 150 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe GL",
+                    "price": "Rp 190 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe GX",
+                    "price": "Rp 230 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c11",
+            "name": "Daihatsu Ayla",
+            "brand": "Daihatsu",
+            "year": "2013-2022",
+            "price_range": "Rp 70 Jt - Rp 120 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c11_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c11_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c11_2.jpg"
+            ],
+            "description": "Mobil LCGC paling murah meriah. Mudah parkir, perawatan murah, dan suku cadang melimpah.",
+            "tags": [
+                "City Car",
+                "LCGC",
+                "Sangat Murah"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "74,000 km",
+            "location": "Bekasi",
+            "seats": "5 Seater",
+            "variants": [
+                {
+                    "name": "1.0 D",
+                    "price": "Rp 70 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "1.0 X",
+                    "price": "Rp 95 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "1.2 R",
+                    "price": "Rp 120 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c12",
+            "name": "Toyota Calya",
+            "brand": "Toyota",
+            "year": "2016-2023",
+            "price_range": "Rp 100 Jt - Rp 145 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c12_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c12_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c12_2.jpg"
+            ],
+            "description": "Kembaran Sigra dengan lambang Toyota. Kualitas terjamin dan nilai purna jual sangat baik.",
+            "tags": [
+                "LCGC",
+                "7-Seater",
+                "Keluarga"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "84,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "1.2 E Non ABS",
+                    "price": "Rp 100 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "1.2 E",
+                    "price": "Rp 122 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "1.2 G",
+                    "price": "Rp 145 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c13",
+            "name": "Suzuki XL7",
+            "brand": "Suzuki",
+            "year": "2020-2023",
+            "price_range": "Rp 200 Jt - Rp 270 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c13_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c13_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c13_2.jpg"
+            ],
+            "description": "Versi SUV dari Ertiga. Lebih tinggi, lebih maskulin, dan dilengkapi fitur canggih seperti Smart E-Mirror.",
+            "tags": [
+                "LSUV",
+                "Modern",
+                "Nyaman"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "55,000 km",
+            "location": "Surabaya",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Zeta",
+                    "price": "Rp 200 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Beta",
+                    "price": "Rp 235 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Alpha",
+                    "price": "Rp 270 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c14",
+            "name": "Honda BR-V",
+            "brand": "Honda",
+            "year": "2016-2021",
+            "price_range": "Rp 150 Jt - Rp 230 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c14_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c14_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c14_2.jpg"
+            ],
+            "description": "Crossover 7-penumpang dengan performa mesin i-VTEC terkuat di kelasnya. Desain kokoh khas SUV.",
+            "tags": [
+                "LSUV",
+                "7-Seater",
+                "Bertenaga"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "38,000 km",
+            "location": "Bekasi",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe S",
+                    "price": "Rp 150 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe E",
+                    "price": "Rp 190 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Prestige",
+                    "price": "Rp 230 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c15",
+            "name": "Toyota Agya",
+            "brand": "Toyota",
+            "year": "2013-2022",
+            "price_range": "Rp 80 Jt - Rp 130 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c15_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c15_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c15_2.jpg"
+            ],
+            "description": "Hatchback kompak favorit anak muda. Sangat reliable, pajak murah, dan konsumsi bensin super irit.",
+            "tags": [
+                "City Car",
+                "LCGC",
+                "Populer"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "55,000 km",
+            "location": "Surabaya",
+            "seats": "5 Seater",
+            "variants": [
+                {
+                    "name": "1.0 G",
+                    "price": "Rp 80 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "1.2 G",
+                    "price": "Rp 105 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "1.2 GR Sport",
+                    "price": "Rp 130 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c16",
+            "name": "Hyundai Creta",
+            "brand": "Hyundai",
+            "year": "2022-2023",
+            "price_range": "Rp 240 Jt - Rp 350 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c16_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c16_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c16_2.jpg"
+            ],
+            "description": "Compact SUV modern dengan fitur canggih Hyundai SmartSense dan panoramic sunroof. Desain futuristik.",
+            "tags": [
+                "SUV",
+                "Modern",
+                "Fitur Lengkap"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "39,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "5 Seater",
+            "variants": [
+                {
+                    "name": "Active",
+                    "price": "Rp 240 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Trend",
+                    "price": "Rp 295 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Prime",
+                    "price": "Rp 350 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c17",
+            "name": "Hyundai Stargazer",
+            "brand": "Hyundai",
+            "year": "2022-2023",
+            "price_range": "Rp 200 Jt - Rp 270 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c17_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c17_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c17_2.jpg"
+            ],
+            "description": "LMPV dengan desain 'One Curve' yang unik layaknya pesawat ruang angkasa, kabin super lega dan captain seat.",
+            "tags": [
+                "LMPV",
+                "Keluarga",
+                "Futuristik"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "66,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Active",
+                    "price": "Rp 200 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Style",
+                    "price": "Rp 235 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Prime",
+                    "price": "Rp 270 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c18",
+            "name": "Wuling Almaz",
+            "brand": "Wuling",
+            "year": "2019-2023",
+            "price_range": "Rp 220 Jt - Rp 330 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c18_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c18_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c18_2.jpg"
+            ],
+            "description": "Medium SUV bermesin Turbo dengan fitur Wuling Indonesian Command (WIND). Sangat *value for money*.",
+            "tags": [
+                "SUV",
+                "Turbo",
+                "Teknologi"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "75,000 km",
+            "location": "Bekasi",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Standard",
+                    "price": "Rp 220 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Comfort",
+                    "price": "Rp 275 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Lux",
+                    "price": "Rp 330 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c19",
+            "name": "Wuling Confero S",
+            "brand": "Wuling",
+            "year": "2017-2023",
+            "price_range": "Rp 110 Jt - Rp 160 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c19_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c19_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c19_2.jpg"
+            ],
+            "description": "LMPV penggerak belakang termurah. Kabin sangat luas, plat bodi tebal, sangat nyaman untuk bepergian jauh.",
+            "tags": [
+                "LMPV",
+                "RWD",
+                "Murah"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "46,000 km",
+            "location": "Bandung",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Standard",
+                    "price": "Rp 110 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Comfort",
+                    "price": "Rp 135 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Lux",
+                    "price": "Rp 160 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c20",
+            "name": "Honda CR-V",
+            "brand": "Honda",
+            "year": "2017-2022",
+            "price_range": "Rp 320 Jt - Rp 500 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c20_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c20_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c20_2.jpg"
+            ],
+            "description": "Medium SUV legendaris. Varian 1.5L Turbo sangat bertenaga, kabin mewah, dan suspensi nyaman layaknya sedan.",
+            "tags": [
+                "SUV Premium",
+                "Turbo",
+                "Mewah"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "59,000 km",
+            "location": "Tangerang",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "2.0L",
+                    "price": "Rp 320 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "1.5L Turbo",
+                    "price": "Rp 410 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "1.5L Prestige",
+                    "price": "Rp 500 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c21",
+            "name": "Honda Civic (Turbo)",
+            "brand": "Honda",
+            "year": "2016-2021",
+            "price_range": "Rp 350 Jt - Rp 450 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c21_0.jpg"
+            ],
+            "description": "Sedan sporty paling dicari anak muda dan eksekutif muda. Desain coupe-like dengan mesin turbo yang sangat kencang.",
+            "tags": [
+                "Sedan",
+                "Sporty",
+                "Kencang"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "85,000 km",
+            "location": "Tangerang",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "1.5L Turbo",
+                    "price": "Rp 350 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Turbo Prestige",
+                    "price": "Rp 450 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c22",
+            "name": "Toyota Yaris",
+            "brand": "Toyota",
+            "year": "2014-2022",
+            "price_range": "Rp 150 Jt - Rp 250 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c22_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c22_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c22_2.jpg"
+            ],
+            "description": "Hatchback favorit selain Honda Jazz. Terkenal bandel, perawatannya mudah, dan AC sangat dingin.",
+            "tags": [
+                "Hatchback",
+                "Anak Muda",
+                "Bandel"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "18,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe E",
+                    "price": "Rp 150 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe G",
+                    "price": "Rp 200 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "TRD Sportivo",
+                    "price": "Rp 250 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c23",
+            "name": "Mazda CX-5",
+            "brand": "Mazda",
+            "year": "2017-2022",
+            "price_range": "Rp 350 Jt - Rp 550 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c23_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c23_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c23_2.jpg"
+            ],
+            "description": "SUV Jepang dengan rasa Eropa. Desain KODO yang sangat cantik, handling tajam, dan interior berkualitas tinggi.",
+            "tags": [
+                "SUV Premium",
+                "Cantik",
+                "Handling"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "40,000 km",
+            "location": "Tangerang",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Core",
+                    "price": "Rp 350 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Touring",
+                    "price": "Rp 450 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Grand Touring",
+                    "price": "Rp 550 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c24",
+            "name": "Nissan Grand Livina",
+            "brand": "Nissan",
+            "year": "2013-2018",
+            "price_range": "Rp 90 Jt - Rp 140 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c24_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c24_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c24_2.jpg"
+            ],
+            "description": "LMPV dengan posisi duduk layaknya sedan. Sangat nyaman, bantingan empuk, cocok untuk perjalanan jauh.",
+            "tags": [
+                "LMPV",
+                "Nyaman",
+                "Keluarga"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "66,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 90 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 115 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 140 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c25",
+            "name": "Suzuki Baleno Hatchback",
+            "brand": "Suzuki",
+            "year": "2017-2022",
+            "price_range": "Rp 160 Jt - Rp 210 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c25_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c25_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c25_2.jpg"
+            ],
+            "description": "Hatchback *underrated* yang menawarkan ruang kabin sangat lega, irit bbm, dengan harga bekas sangat terjangkau.",
+            "tags": [
+                "Hatchback",
+                "Irit",
+                "Value For Money"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "51,000 km",
+            "location": "Tangerang",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 160 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 185 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 210 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c26",
+            "name": "Daihatsu Terios",
+            "brand": "Daihatsu",
+            "year": "2018-2023",
+            "price_range": "Rp 180 Jt - Rp 250 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c26_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c26_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c26_2.jpg"
+            ],
+            "description": "Kembaran Toyota Rush. Low SUV 7-penumpang dengan penggerak RWD, sangat tangguh dan ground clearance tinggi.",
+            "tags": [
+                "LSUV",
+                "RWD",
+                "Keluarga"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "48,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe X",
+                    "price": "Rp 180 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe R",
+                    "price": "Rp 215 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "R Custom",
+                    "price": "Rp 250 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c27",
+            "name": "Daihatsu Xenia",
+            "brand": "Daihatsu",
+            "year": "2015-2022",
+            "price_range": "Rp 110 Jt - Rp 200 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c27_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c27_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c27_2.jpg"
+            ],
+            "description": "Kembaran Toyota Avanza. MPV andalan dengan harga yang sedikit lebih terjangkau, irit BBM, dan perawatannya sangat murah.",
+            "tags": [
+                "MPV",
+                "Keluarga",
+                "Irit"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "73,000 km",
+            "location": "Bandung",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "1.3 M",
+                    "price": "Rp 110 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "1.3 X",
+                    "price": "Rp 155 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "1.5 R",
+                    "price": "Rp 200 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c28",
+            "name": "Honda Mobilio",
+            "brand": "Honda",
+            "year": "2014-2021",
+            "price_range": "Rp 120 Jt - Rp 190 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c28_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c28_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c28_2.jpg"
+            ],
+            "description": "LMPV dengan handling terbaik dan mesin i-VTEC terkuat di kelasnya. Desain *sporty* yang disukai keluarga muda.",
+            "tags": [
+                "LMPV",
+                "Handling",
+                "Sporty"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "22,000 km",
+            "location": "Tangerang",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 120 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 155 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 190 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c29",
+            "name": "Honda Jazz",
+            "brand": "Honda",
+            "year": "2014-2021",
+            "price_range": "Rp 160 Jt - Rp 270 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c29_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c29_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c29_2.jpg"
+            ],
+            "description": "Hatchback legendaris yang selalu menjadi idola. Desain sporty abadi, kabin ultra lega berkat fitur Ultra Seat.",
+            "tags": [
+                "Hatchback",
+                "Legendaris",
+                "Ultra Seat"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "25,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe S",
+                    "price": "Rp 160 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe E",
+                    "price": "Rp 215 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe RS",
+                    "price": "Rp 270 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c30",
+            "name": "Toyota Raize",
+            "brand": "Toyota",
+            "year": "2021-2023",
+            "price_range": "Rp 190 Jt - Rp 280 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c30_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c30_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c30_2.jpg"
+            ],
+            "description": "Compact SUV bermesin 1.0L Turbo yang sangat responsif, dilengkapi fitur keselamatan canggih TSS (Toyota Safety Sense).",
+            "tags": [
+                "Compact SUV",
+                "Turbo",
+                "TSS"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "58,000 km",
+            "location": "Bekasi",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 190 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 235 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 280 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c31",
+            "name": "Daihatsu Rocky",
+            "brand": "Daihatsu",
+            "year": "2021-2023",
+            "price_range": "Rp 180 Jt - Rp 260 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c31_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c31_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c31_2.jpg"
+            ],
+            "description": "Kembaran Toyota Raize dengan harga yang lebih terjangkau, menawarkan teknologi platform DNGA terbaru.",
+            "tags": [
+                "Compact SUV",
+                "DNGA",
+                "Modern"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "30,000 km",
+            "location": "Bandung",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 180 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 220 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 260 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c32",
+            "name": "Honda WR-V",
+            "brand": "Honda",
+            "year": "2022-2023",
+            "price_range": "Rp 230 Jt - Rp 290 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c32_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c32_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c32_2.jpg"
+            ],
+            "description": "Small SUV dengan mesin 1.5L terkuat di kelasnya (121 PS). Desain sporty dengan teknologi Honda Sensing.",
+            "tags": [
+                "Small SUV",
+                "Bertenaga",
+                "Sensing"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "36,000 km",
+            "location": "Surabaya",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 230 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 260 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 290 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c33",
+            "name": "Toyota Kijang Innova Zenix",
+            "brand": "Toyota",
+            "year": "2022-2023",
+            "price_range": "Rp 380 Jt - Rp 600 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c33_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c33_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c33_2.jpg"
+            ],
+            "description": "Evolusi Kijang ke platform monokok TNGA. Tersedia dalam varian Hybrid yang sangat efisien dan nyaman layaknya mobil premium.",
+            "tags": [
+                "MPV",
+                "Hybrid",
+                "TNGA"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "85,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe G",
+                    "price": "Rp 380 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe V",
+                    "price": "Rp 490 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Venturer/Q",
+                    "price": "Rp 600 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c34",
+            "name": "Wuling Air EV",
+            "brand": "Wuling",
+            "year": "2022-2023",
+            "price_range": "Rp 180 Jt - Rp 280 Jt",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/53/2022_Wuling_Air_ev_Long_Range_%2808-16-2022%29.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/3/36/2022_Wuling_Air_ev_Long_Range_%2808-16-2022%29_rear.jpg"
+            ],
+            "description": "Mobil listrik (EV) paling fenomenal di Indonesia. Sangat compact, praktis untuk di perkotaan, dan bebas ganjil-genap.",
+            "tags": [
+                "EV",
+                "Listrik",
+                "Compact"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "42,000 km",
+            "location": "Surabaya",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Standard Range",
+                    "price": "Rp 180 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Long Range",
+                    "price": "Rp 280 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c35",
+            "name": "Hyundai Ioniq 5",
+            "brand": "Hyundai",
+            "year": "2022-2023",
+            "price_range": "Rp 600 Jt - Rp 800 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c35_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c35_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c35_2.jpg"
+            ],
+            "description": "Mobil listrik (EV) premium buatan Cikarang dengan desain retro-futuristik, kabin super lega, dan pengisian daya ultra-cepat.",
+            "tags": [
+                "EV",
+                "Premium",
+                "Futuristik"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "25,000 km",
+            "location": "Surabaya",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 600 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 700 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 800 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c36",
+            "name": "Toyota Vios",
+            "brand": "Toyota",
+            "year": "2014-2022",
+            "price_range": "Rp 130 Jt - Rp 250 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c36_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c36_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c36_2.jpg"
+            ],
+            "description": "Sedan andalan yang terkenal karena 'badak' (durabilitas tinggi). Banyak diminati sebagai mobil harian karena irit dan perawatannya gampang.",
+            "tags": [
+                "Sedan",
+                "Bandel",
+                "Irit"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "43,000 km",
+            "location": "Bandung",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 130 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 190 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 250 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c37",
+            "name": "Toyota Camry",
+            "brand": "Toyota",
+            "year": "2015-2021",
+            "price_range": "Rp 250 Jt - Rp 500 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c37_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c37_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c37_2.jpg"
+            ],
+            "description": "Sedan mid-size langganan para bos dan pejabat. Bantingan sangat empuk, kabin super kedap dan mewah.",
+            "tags": [
+                "Sedan Besar",
+                "Mewah",
+                "Pejabat"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "64,000 km",
+            "location": "Surabaya",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 250 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 375 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 500 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c38",
+            "name": "Toyota Corolla Altis",
+            "brand": "Toyota",
+            "year": "2014-2021",
+            "price_range": "Rp 180 Jt - Rp 400 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c38_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c38_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c38_2.jpg"
+            ],
+            "description": "Sedan C-segment yang legendaris, menawarkan kenyamanan lebih baik dari Vios dengan desain yang elegan.",
+            "tags": [
+                "Sedan",
+                "Legendaris",
+                "Elegan"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "43,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 180 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 290 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 400 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c39",
+            "name": "Honda City Hatchback",
+            "brand": "Honda",
+            "year": "2021-2023",
+            "price_range": "Rp 260 Jt - Rp 330 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c39_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c39_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c39_2.jpg"
+            ],
+            "description": "Penerus tongkat estafet Honda Jazz. Desain lebih dewasa, ruang kabin lapang, dan dibekali teknologi keselamatan Honda Sensing.",
+            "tags": [
+                "Hatchback",
+                "Sporty",
+                "Penerus Jazz"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "49,000 km",
+            "location": "Bandung",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 260 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 295 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 330 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c40",
+            "name": "Suzuki Ignis",
+            "brand": "Suzuki",
+            "year": "2017-2022",
+            "price_range": "Rp 110 Jt - Rp 160 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c40_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c40_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c40_2.jpg"
+            ],
+            "description": "Urban SUV mungil dengan desain nyentrik ala retro Eropa. Ground clearance lumayan tinggi (180mm) dan mesin 1.2L sangat irit.",
+            "tags": [
+                "Urban SUV",
+                "City Car",
+                "Nyentrik"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "72,000 km",
+            "location": "Bekasi",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 110 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 135 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 160 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c41",
+            "name": "KIA Sonet",
+            "brand": "KIA",
+            "year": "2020-2023",
+            "price_range": "Rp 200 Jt - Rp 270 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c41_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c41_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c41_2.jpg"
+            ],
+            "description": "Compact SUV dari Korea dengan fitur berlimpah di kelasnya, seperti Sunroof, Bose Speaker, dan Ventilated Seat.",
+            "tags": [
+                "Compact SUV",
+                "Fitur Melimpah",
+                "Sunroof"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "71,000 km",
+            "location": "Jakarta Barat",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 200 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 235 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 270 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c42",
+            "name": "KIA Seltos",
+            "brand": "KIA",
+            "year": "2020-2023",
+            "price_range": "Rp 250 Jt - Rp 350 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c42_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c42_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c42_2.jpg"
+            ],
+            "description": "SUV bermesin 1.4L Turbo + transmisi kopling ganda (DCT) yang memberikan akselerasi instan. Desain berotot dan sangat maskulin.",
+            "tags": [
+                "SUV",
+                "Turbo",
+                "DCT"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "54,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 250 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 300 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 350 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c43",
+            "name": "Nissan X-Trail",
+            "brand": "Nissan",
+            "year": "2014-2020",
+            "price_range": "Rp 180 Jt - Rp 300 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c43_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c43_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c43_2.jpg"
+            ],
+            "description": "Medium SUV terempuk di kelasnya, mengalahkan CR-V dalam hal kenyamanan bantingan suspensi. Kursi Zero Gravity sangat nyaman.",
+            "tags": [
+                "SUV Premium",
+                "Nyaman",
+                "Empuk"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "68,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 180 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 240 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 300 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c44",
+            "name": "Nissan Serena",
+            "brand": "Nissan",
+            "year": "2013-2021",
+            "price_range": "Rp 150 Jt - Rp 380 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c44_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c44_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c44_2.jpg"
+            ],
+            "description": "High MPV *boxy* dengan ruang kabin masif. Spesialis membawa keluarga liburan berkat captain seat dan pintu geser elektrik (PSD).",
+            "tags": [
+                "High MPV",
+                "Boxy",
+                "Keluarga Besar"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "30,000 km",
+            "location": "Bandung",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 150 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 265 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 380 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c45",
+            "name": "Toyota Hilux (Double Cabin)",
+            "brand": "Toyota",
+            "year": "2016-2022",
+            "price_range": "Rp 250 Jt - Rp 450 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c45_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c45_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c45_2.jpg"
+            ],
+            "description": "Raja *Double Cabin* yang tak tertandingi soal durabilitas di tambang dan medan off-road ekstrem. Suku cadang bisa ditemukan di mana saja.",
+            "tags": [
+                "Double Cabin",
+                "Offroad",
+                "Pekerja Keras"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "72,000 km",
+            "location": "Bekasi",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 250 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 350 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 450 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c46",
+            "name": "Mitsubishi Triton (Double Cabin)",
+            "brand": "Mitsubishi",
+            "year": "2016-2022",
+            "price_range": "Rp 230 Jt - Rp 430 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c46_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c46_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c46_2.jpg"
+            ],
+            "description": "Pesaing Hilux dengan kenyamanan suspensi yang sedikit lebih baik. Desainnya garang berkat bahasa desain Dynamic Shield.",
+            "tags": [
+                "Double Cabin",
+                "Offroad",
+                "Garang"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin/Diesel",
+            "mileage": "47,000 km",
+            "location": "Jakarta Selatan",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 230 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 330 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 430 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c47",
+            "name": "Isuzu Panther",
+            "brand": "Isuzu",
+            "year": "2005-2020",
+            "price_range": "Rp 80 Jt - Rp 180 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c47_0.jpg"
+            ],
+            "description": "Rajanya Rajanya Diesel! Mesin legendaris yang tidak pernah rusak asal diisi Solar dan oli. Sangat digemari di luar kota.",
+            "tags": [
+                "MPV",
+                "Diesel",
+                "Legendaris",
+                "Badak"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "65,000 km",
+            "location": "Bekasi",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 80 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 130 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 180 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c48",
+            "name": "Chevrolet Spin",
+            "brand": "Chevrolet",
+            "year": "2013-2015",
+            "price_range": "Rp 70 Jt - Rp 110 Jt",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/ff/2014_Chevrolet_Spin_1.5_LTZ_wagon_%2811-19-2019%29.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/b/b5/2014_Chevrolet_Spin_1.5_LTZ_wagon_%2811-19-2019%29_rear.jpg"
+            ],
+            "description": "LMPV dengan pelat bodi setebal mobil Eropa. Uniknya, memiliki varian mesin Diesel (1.3L) yang torsinya memuaskan.",
+            "tags": [
+                "LMPV",
+                "Eropa",
+                "Solid"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "54,000 km",
+            "location": "Bandung",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 70 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 90 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 110 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c49",
+            "name": "Daihatsu Gran Max (Minibus)",
+            "brand": "Daihatsu",
+            "year": "2010-2023",
+            "price_range": "Rp 75 Jt - Rp 140 Jt",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/23/2013_Daihatsu_Gran_Max_1.5_D_wagon_%28S402RV%3B_02-23-2020%29.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/9/91/2013_Daihatsu_Gran_Max_1.5_D_wagon_%28S402RV%3B_02-23-2020%29_rear.jpg"
+            ],
+            "description": "Minibus pekerja keras! Sangat lega, sanggup membawa banyak penumpang atau barang kargo logistik tanpa kendala berarti.",
+            "tags": [
+                "Minibus",
+                "Kargo",
+                "Pekerja Keras"
+            ],
+            "transmission": "Manual (MT)",
+            "fuel_type": "Bensin",
+            "mileage": "43,000 km",
+            "location": "Bekasi",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 75 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 107 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 140 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        },
+        {
+            "id": "c50",
+            "name": "Suzuki Carry (Minibus)",
+            "brand": "Suzuki",
+            "year": "2010-2019",
+            "price_range": "Rp 50 Jt - Rp 90 Jt",
+            "image_urls": [
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c50_0.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c50_1.jpg",
+                "https://raw.githubusercontent.com/amrimarihotjati/Jual-Beli-Mobil-Bekas/main/images/c50_2.jpg"
+            ],
+            "description": "Mobil legendaris angkutan umum/keluarga desa di Indonesia (Futura). Bandel, perbaikan murah, dan muat hingga 9 orang.",
+            "tags": [
+                "Minibus",
+                "Angkot",
+                "Murah Meriah"
+            ],
+            "transmission": "Automatic (AT)",
+            "fuel_type": "Bensin",
+            "mileage": "26,000 km",
+            "location": "Surabaya",
+            "seats": "7 Seater",
+            "variants": [
+                {
+                    "name": "Tipe Standar",
+                    "price": "Rp 50 Juta",
+                    "level": "Terendah"
+                },
+                {
+                    "name": "Tipe Menengah",
+                    "price": "Rp 70 Juta",
+                    "level": "Menengah"
+                },
+                {
+                    "name": "Tipe Tertinggi",
+                    "price": "Rp 90 Juta",
+                    "level": "Tertinggi"
+                }
+            ]
+        }
+    ]
+}
