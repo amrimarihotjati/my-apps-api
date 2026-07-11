@@ -402,36 +402,39 @@ footer {
     margin-bottom: 0.4rem;
 }
 .documentation {
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
-    padding-top: 1.5rem;
+    margin-top: 1.2rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 1.2rem;
 }
 .doc-img {
-    max-width: 100%;
+    max-width: 240px;
+    max-height: 180px;
+    width: auto;
     height: auto;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    opacity: 0.9;
+    opacity: 0.85;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     margin-bottom: 0.5rem;
     cursor: zoom-in;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 .doc-img:hover {
     opacity: 1;
-    transform: scale(1.03);
-    z-index: 10;
+    transform: scale(1.6) translateY(-5px);
+    z-index: 20;
     position: relative;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
 }
 .gallery {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 .gallery .doc-img {
-    max-width: calc(50% - 8px);
+    max-width: 180px;
+    max-height: 140px;
 }
 
 /* Timeline Icon Image */
