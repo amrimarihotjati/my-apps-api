@@ -288,18 +288,31 @@ footer {
     background-color: inherit;
     width: 100%;
 }
-.timeline-icon {
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--border-color);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    z-index: 0;
+}
+.timeline-icon-fa {
     position: absolute;
     width: 36px;
     height: 36px;
     left: 3px;
     top: 10px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--card-bg);
     border: 2px solid var(--accent-color);
     z-index: 2;
-    object-fit: cover;
-    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 14px;
 }
 .timeline-content {
     padding: 1rem 1.5rem;
@@ -307,6 +320,7 @@ footer {
     position: relative;
     border-radius: 8px;
     border: 1px solid var(--border-color);
+    z-index: 1;
 }
 .timeline-content h3 {
     color: var(--text-color);
@@ -337,4 +351,19 @@ footer {
 }
 .timeline-content ul li {
     margin-bottom: 0.3rem;
+}
+.documentation {
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+.doc-img {
+    max-width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+.doc-img:hover {
+    opacity: 1;
 }
