@@ -45,20 +45,30 @@
 }
 
 /* Reset & Base */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: var(--font-sans);
     background-color: var(--bg-color);
     color: var(--text-primary);
-    font-family: var(--font-sans);
     line-height: 1.6;
-    transition: background-color var(--transition), color var(--transition);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    overflow-x: hidden;
+    cursor: crosshair;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+a, button, .social-btn, .nav-btn, .terminal-header {
+    cursor: pointer;
 }
 
 /* Custom Scrollbar */
@@ -394,6 +404,36 @@ a.text-link:hover {
 .role {
     font-family: var(--font-mono);
     font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.narrative {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.git-commits {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    margin-top: 14px;
+    background: var(--bg-color);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px dashed var(--border-color);
+}
+.commit {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 12px;
+}
+.commit:last-child { margin-bottom: 0; }
+.hash {
+    color: var(--term-user);
+    font-weight: 600;
+    white-space: nowrap;
+}
+.msg {
     color: var(--text-secondary);
 }
 

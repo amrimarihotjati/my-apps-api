@@ -181,12 +181,16 @@
                             </div>
                             <div class="date">Apr 2020 — Jul 2020 <br><span class="location">Jakarta, Indonesia</span></div>
                         </div>
-                        <p class="narrative lang id">
-                            Mendesain kebutuhan visual kampanye perusahaan dan materi publikasi kompetisi nasional Musicool. Memastikan aset grafis sesuai dengan identitas merek Pertamina.
-                        </p>
-                        <p class="narrative lang en">
-                            Designed visual campaign assets and publication materials for the national Musicool competition. Ensured graphic assets aligned with Pertamina's brand identity.
-                        </p>
+                        <div class="git-commits lang id">
+                            <div class="commit"><span class="hash">commit 7a2b9c</span><span class="msg">Merancang antarmuka UI/UX aplikasi internal divisi layanan</span></div>
+                            <div class="commit"><span class="hash">commit 3f8e1d</span><span class="msg">Meningkatkan efisiensi sistem administrasi dan operasional</span></div>
+                            <div class="commit"><span class="hash">commit 9b4d2a</span><span class="msg">Berkolaborasi dengan tim IT BUMN untuk solusi digital</span></div>
+                        </div>
+                        <div class="git-commits lang en" style="display: none;">
+                            <div class="commit"><span class="hash">commit 7a2b9c</span><span class="msg">Designed UI/UX for internal service division applications</span></div>
+                            <div class="commit"><span class="hash">commit 3f8e1d</span><span class="msg">Improved administrative and operational system efficiency</span></div>
+                            <div class="commit"><span class="hash">commit 9b4d2a</span><span class="msg">Collaborated with SOE IT team for digital solutions</span></div>
+                        </div>
                     </div>
                 </div>
 
@@ -204,12 +208,16 @@
                             </div>
                             <div class="date">Jan 2020 — Feb 2020 <br><span class="location">Jakarta, Indonesia</span></div>
                         </div>
-                        <p class="narrative lang id">
-                            Mempelajari sistem tata kelola keuangan negara secara langsung dengan ditempatkan di Divisi Pengelolaan Uang Rupiah (PUR).
-                        </p>
-                        <p class="narrative lang en">
-                            Studied state financial governance systems hands-on by being placed in the Rupiah Money Management Division (PUR).
-                        </p>
+                        <div class="git-commits lang id">
+                            <div class="commit"><span class="hash">commit 1c4e8f</span><span class="msg">Pengembangan sistem digitalisasi arsip Bank Sentral</span></div>
+                            <div class="commit"><span class="hash">commit 5d2a9b</span><span class="msg">Optimasi keamanan data untuk tingkat institusi keuangan</span></div>
+                            <div class="commit"><span class="hash">commit 8e7f3c</span><span class="msg">Modernisasi alur kerja internal berbasis web</span></div>
+                        </div>
+                        <div class="git-commits lang en" style="display: none;">
+                            <div class="commit"><span class="hash">commit 1c4e8f</span><span class="msg">Developed Central Bank digital archiving system</span></div>
+                            <div class="commit"><span class="hash">commit 5d2a9b</span><span class="msg">Optimized data security for financial institution standards</span></div>
+                            <div class="commit"><span class="hash">commit 8e7f3c</span><span class="msg">Modernized web-based internal workflows</span></div>
+                        </div>
                         <div class="exp-gallery">
                             <img src="assets/images/bank-indoneisa-experience.jpeg" alt="Bank Indonesia" class="gallery-img">
                         </div>
@@ -459,6 +467,43 @@
             setTimeout(typeMsg, 500);
         }
 
+        // Draggable Popup Terminal
+        const popupTerm = document.getElementById('popup-terminal');
+        const termHeader = popupTerm.querySelector('.terminal-header');
+        let isDragging = false, currentX, currentY, initialX, initialY, xOffset = 0, yOffset = 0;
+
+        termHeader.addEventListener('mousedown', dragStart);
+        window.addEventListener('mouseup', dragEnd);
+        window.addEventListener('mousemove', drag);
+        
+        // Touch support
+        termHeader.addEventListener('touchstart', dragStart, {passive: true});
+        window.addEventListener('touchend', dragEnd);
+        window.addEventListener('touchmove', drag, {passive: false});
+
+        function dragStart(e) {
+            initialX = e.type === 'touchstart' ? e.touches[0].clientX - xOffset : e.clientX - xOffset;
+            initialY = e.type === 'touchstart' ? e.touches[0].clientY - yOffset : e.clientY - yOffset;
+            if (e.target === termHeader || e.target.parentNode === termHeader) {
+                isDragging = true;
+            }
+        }
+
+        function dragEnd() {
+            isDragging = false;
+        }
+
+        function drag(e) {
+            if (isDragging) {
+                e.preventDefault();
+                currentX = e.type === 'touchmove' ? e.touches[0].clientX - initialX : e.clientX - initialX;
+                currentY = e.type === 'touchmove' ? e.touches[0].clientY - initialY : e.clientY - initialY;
+                xOffset = currentX;
+                yOffset = currentY;
+                popupTerm.style.transform = `translate(calc(-50% + ${currentX}px), calc(-50% + ${currentY}px)) scale(1)`;
+            }
+        }
+
         // Interactive Terminal Logic
         const termInput = document.getElementById('term-input');
         const termOutput = document.getElementById('term-output');
@@ -660,6 +705,37 @@
                 observer.observe(el);
             });
         });
+        // Matrix Mode (Konami Code)
+        let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        let konamiIndex = 0;
+        document.addEventListener('keydown', function(e) {
+            if(e.key === konamiCode[konamiIndex]) {
+                konamiIndex++;
+                if(konamiIndex === konamiCode.length) {
+                    activateMatrixMode();
+                    konamiIndex = 0;
+                }
+            } else {
+                konamiIndex = 0;
+            }
+        });
+
+        function activateMatrixMode() {
+            document.body.style.backgroundColor = '#000000';
+            document.body.style.color = '#00FF41';
+            document.body.style.fontFamily = 'var(--font-mono)';
+            document.documentElement.setAttribute('data-theme', 'dark');
+            
+            const allElements = document.querySelectorAll('h1, h2, h3, p, span, a, div');
+            allElements.forEach(el => {
+                if(!el.classList.contains('terminal-prompt')) {
+                    el.style.color = '#00FF41';
+                    el.style.borderColor = '#00FF41';
+                    el.style.textShadow = '0 0 5px #00FF41';
+                }
+            });
+            alert("MATRIX HACKER MODE INITIATED.");
+        }
     </script>
 </body>
 </html>
