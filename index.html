@@ -46,7 +46,7 @@
             </p>
 
             <div class="social-links reveal-up delay-1">
-                <a href="https://screnix.com/" target="_blank" class="social-btn terminal-btn"><i class="fa-solid fa-rocket"></i> &gt;_ ./launch_screnix.sh</a>
+                <a href="#" onclick="summonPet(event)" class="social-btn terminal-btn" id="summonBtn"><i class="fa-solid fa-bug"></i> &gt;_ ./summon_pet.sh</a>
                 <a href="mailto:amrimarihotjati@screnix.com" class="social-btn"><i class="fa-solid fa-envelope"></i> amrimarihotjati@screnix.com</a>
                 <a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/amrimarihotjati" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -306,7 +306,7 @@
             <span class="term-title">amri@screnix:~</span>
         </div>
         <div class="terminal-body" id="term-output">
-            <p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands.</p>
+            <p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands, or try some hidden easter eggs!</p>
         </div>
         <div class="terminal-input-line">
             <span class="terminal-prompt">amri@screnix:~$</span>
@@ -424,10 +424,30 @@
             setTimeout(typeComment, 400); // Start other elements
         });
 
-        // Fake Download CV
-        function launch_screnix(e) {
+        // Pet Companion Logic
+        let petSummoned = false;
+        function summonPet(e) {
             e.preventDefault();
-            alert("Memulai pengunduhan CV (Simulasi)...");
+            if(petSummoned) return;
+            petSummoned = true;
+            
+            const btn = document.getElementById('summonBtn');
+            btn.innerHTML = `<i class="fa-solid fa-check"></i> Pet Summoned!`;
+            btn.style.opacity = '0.5';
+            btn.style.cursor = 'default';
+
+            const pet = document.createElement('div');
+            pet.id = 'virtual-pet';
+            pet.innerHTML = '👾';
+            document.body.appendChild(pet);
+
+            // Add scroll jump logic
+            window.addEventListener('scroll', () => {
+                if(!pet.classList.contains('jump')) {
+                    pet.classList.add('jump');
+                    setTimeout(() => pet.classList.remove('jump'), 400);
+                }
+            });
         }
 
         // Interactive Terminal Logic
@@ -454,6 +474,9 @@
                         - <span class="term-highlight">about</span>       : Show brief bio<br>
                         - <span class="term-highlight">projects</span>    : List featured projects<br>
                         - <span class="term-highlight">clear</span>       : Clear terminal window<br>
+                        <br>
+                        <i>[FUN COMMANDS]</i><br>
+                        - <span class="term-highlight">joke</span>, <span class="term-highlight">quote</span>, <span class="term-highlight">coffee</span>, <span class="term-highlight">hack</span>, <span class="term-highlight">ls</span>, <span class="term-highlight">pwd</span>, <span class="term-highlight">cat</span><br>
                         <i style="opacity:0.5;">(Hint: try 'whoami', 'date', 'sudo', 'ping', 'matrix')</i>`;
                         break;
                     case 'contact':
@@ -466,7 +489,7 @@
                         response = `1. Screener Saham (Android)<br>2. SICALMERS (React/Next.js)<br>3. LoanFlow (Android)`;
                         break;
                     case 'clear':
-                        termOutput.innerHTML = `<p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands.</p>`;
+                        termOutput.innerHTML = `<p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands, or try some hidden easter eggs!</p>`;
                         if(isMatrixMode) {
                             termOutput.style.color = 'var(--text-primary)';
                             termOutput.style.fontFamily = 'var(--font-mono)';
@@ -474,7 +497,37 @@
                         }
                         return; // skip adding response
                         
-                    // EASTER EGGS
+                    // FUN & EASTER EGGS
+                    case 'joke':
+                        const jokes = [
+                            "Why do programmers prefer dark mode? Because light attracts bugs.",
+                            "There are 10 types of people in the world: those who understand binary, and those who don't.",
+                            "I would love to change the world, but they won't give me the source code.",
+                            "A SQL query goes into a bar, walks up to two tables and asks: 'Can I join you?'"
+                        ];
+                        response = jokes[Math.floor(Math.random() * jokes.length)];
+                        break;
+                    case 'quote':
+                        response = `"First, solve the problem. Then, write the code." – John Johnson`;
+                        break;
+                    case 'coffee':
+                        response = `Fetching coffee... ☕ Error 418: I'm a teapot.`;
+                        break;
+                    case 'hack':
+                        response = `[=====>               ] 25% bypassing mainframe...<br>[==========>         ] 50% disabling firewall...<br>[================>   ] 75% extracting passwords...<br>Error: User is too smart. Hack failed. 🕶️`;
+                        break;
+                    case 'ls':
+                        response = `drwxr-xr-x  projects/<br>-rw-r--r--  resume.pdf<br>-rwxr-xr-x  summon_pet.sh<br>-rw-r--r--  README.md`;
+                        break;
+                    case 'pwd':
+                        response = `/home/amri/portfolio`;
+                        break;
+                    case 'cat':
+                        response = `Meow. 🐈`;
+                        break;
+                    case 'cd':
+                        response = `bash: cd: permission denied`;
+                        break;
                     case 'whoami':
                         response = `guest_user_${Math.floor(Math.random() * 9000) + 1000}`;
                         break;
