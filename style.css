@@ -371,10 +371,12 @@ a.text-link:hover {
 }
 
 .exp-logo {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     border-radius: 12px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 6px;
     border: 1px solid var(--border-color);
     transition: transform var(--transition);
 }
@@ -509,10 +511,12 @@ a.text-link:hover {
 }
 
 .project-icon {
-    width: 60px;
-    height: 60px;
+    width: 72px;
+    height: 72px;
     border-radius: 14px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 6px;
     border: 1px solid var(--border-color);
     transition: transform var(--transition);
 }
