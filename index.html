@@ -317,6 +317,19 @@
     <!-- Theme Transition Overlay -->
     <div id="theme-overlay"></div>
 
+    <!-- Popup Terminal Overlay -->
+    <div id="popup-terminal">
+        <div class="terminal-header">
+            <span class="term-btn close"></span>
+            <span class="term-btn min"></span>
+            <span class="term-btn max"></span>
+            <span class="term-title">system@screnix:~</span>
+        </div>
+        <div class="terminal-body">
+            <span class="terminal-prompt">root@ai:~$</span> <span id="popup-typewriter"></span><span class="blinking-cursor">_</span>
+        </div>
+    </div>
+
     <script>
         // Web Audio API for Mechanical Keyboard Sound
         let audioCtx;
@@ -428,6 +441,8 @@
         function openTerminal(e) {
             e.preventDefault();
             const btn = e.currentTarget;
+            if(btn.dataset.active) return;
+            btn.dataset.active = "true";
             
             const compliments = [
                 // Cewek
@@ -444,23 +459,39 @@
                 "Have a great day ahead!"
             ];
             
+            const colors = ['#4ade80', '#60a5fa', '#f472b6', '#fbbf24', '#c084fc', '#2dd4bf'];
             const msg = compliments[Math.floor(Math.random() * compliments.length)];
+            const chosenColor = colors[Math.floor(Math.random() * colors.length)];
             
-            // Ganti text menyapa
-            btn.innerHTML = `<i class="fa-solid fa-heart"></i> ${msg}`;
-            btn.style.pointerEvents = 'none';
+            const popup = document.getElementById('popup-terminal');
+            const typewriter = document.getElementById('popup-typewriter');
+            
+            typewriter.innerHTML = '';
+            typewriter.style.color = chosenColor;
+            popup.classList.add('active');
 
-            // Tunggu beberapa detik, lalu auto-scroll ke terminal bawah
-            setTimeout(() => {
-                document.querySelector('.terminal-footer').scrollIntoView({ behavior: 'smooth' });
-                setTimeout(() => document.getElementById('term-input').focus(), 500);
-                
-                // Kembalikan tombol seperti semula setelah selesai
-                setTimeout(() => {
-                    btn.innerHTML = `<i class="fa-solid fa-terminal"></i> &gt;_ ./open_terminal.sh`;
-                    btn.style.pointerEvents = 'auto';
-                }, 2000);
-            }, 1800);
+            let charIndex = 0;
+            function typeMsg() {
+                if (charIndex < msg.length) {
+                    typewriter.innerHTML += msg.charAt(charIndex);
+                    charIndex++;
+                    playTypeSound();
+                    setTimeout(typeMsg, 60);
+                } else {
+                    // Tunggu 2 detik setelah selesai mengetik
+                    setTimeout(() => {
+                        popup.classList.remove('active');
+                        // Scroll ke bawah
+                        document.querySelector('.terminal-footer').scrollIntoView({ behavior: 'smooth' });
+                        setTimeout(() => document.getElementById('term-input').focus(), 800);
+                        
+                        setTimeout(() => { btn.dataset.active = ""; }, 1000);
+                    }, 2000);
+                }
+            }
+
+            // Mulai ngetik setelah popup muncul
+            setTimeout(typeMsg, 500);
         }
 
         // Interactive Terminal Logic

@@ -711,6 +711,38 @@ a.text-link:hover {
     outline: none;
 }
 
+/* Popup Terminal */
+#popup-terminal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 90%;
+    max-width: 600px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: var(--shadow-hover);
+    overflow: hidden;
+}
+#popup-terminal.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+#popup-terminal .terminal-body {
+    padding: 30px;
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    min-height: 120px;
+}
+#popup-typewriter {
+    font-weight: 600;
+}
+
 /* Theme Overlay (Circular Reveal) */
 #theme-overlay {
     position: fixed;
