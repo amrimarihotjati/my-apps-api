@@ -21,7 +21,7 @@
                 <button class="nav-btn" onclick="toggleLanguage()" aria-label="Toggle language">
                     <i class="fa-solid fa-globe"></i> <span id="currentLang">EN</span>
                 </button>
-                <button class="nav-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+                <button class="nav-btn" onclick="toggleTheme(event)" aria-label="Toggle theme">
                     <i class="fa-solid fa-moon" id="themeIcon"></i>
                 </button>
             </div>
@@ -46,6 +46,7 @@
             </p>
 
             <div class="social-links reveal-up delay-1">
+                <a href="#" onclick="downloadCV(event)" class="social-btn terminal-btn"><i class="fa-solid fa-download"></i> &gt;_ ./download_resume.sh</a>
                 <a href="mailto:amrimarihotjati@screnix.com" class="social-btn"><i class="fa-solid fa-envelope"></i> amrimarihotjati@screnix.com</a>
                 <a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/amrimarihotjati" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -296,11 +297,58 @@
 
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2026 Amri Marihot Jati.</p>
+    <!-- Interactive Terminal Footer -->
+    <footer class="footer terminal-footer" onclick="document.getElementById('term-input').focus()">
+        <div class="terminal-header">
+            <span class="term-btn close"></span>
+            <span class="term-btn min"></span>
+            <span class="term-btn max"></span>
+            <span class="term-title">amri@macbook:~</span>
+        </div>
+        <div class="terminal-body" id="term-output">
+            <p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands.</p>
+        </div>
+        <div class="terminal-input-line">
+            <span class="terminal-prompt">amri@macbook:~$</span>
+            <input type="text" id="term-input" autocomplete="off" spellcheck="false">
+        </div>
     </footer>
 
+    <!-- Theme Transition Overlay -->
+    <div id="theme-overlay"></div>
+
     <script>
+        // Web Audio API for Mechanical Keyboard Sound
+        let audioCtx;
+        function playTypeSound() {
+            try {
+                if (!audioCtx) {
+                    const AudioContext = window.AudioContext || window.webkitAudioContext;
+                    if(!AudioContext) return;
+                    audioCtx = new AudioContext();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume(); // only resumes if user has interacted with the page
+                }
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                
+                // Mechanical switch 'click' profile
+                osc.type = 'square';
+                osc.frequency.setValueAtTime(100 + Math.random() * 50, audioCtx.currentTime); // random pitch for realism
+                
+                gain.gain.setValueAtTime(0, audioCtx.currentTime);
+                gain.gain.linearRampToValueAtTime(0.05, audioCtx.currentTime + 0.005); // sharp attack
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.03); // fast decay
+                
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                
+                osc.start(audioCtx.currentTime);
+                osc.stop(audioCtx.currentTime + 0.03);
+            } catch(e) { } // Ignore audio errors on strict browsers
+        }
+
         // Typing Animation Logic
         document.addEventListener('DOMContentLoaded', () => {
             const commentText = "echo $ROLE";
@@ -338,6 +386,9 @@
                     nameCharIndex++;
                 }
 
+                // Attempt to play sound (will work after first click anywhere on page)
+                playTypeSound();
+
                 setTimeout(typeName, typeSpeed);
             }
             
@@ -373,6 +424,60 @@
             setTimeout(typeComment, 400); // Start other elements
         });
 
+        // Fake Download CV
+        function downloadCV(e) {
+            e.preventDefault();
+            alert("Memulai pengunduhan CV (Simulasi)...");
+        }
+
+        // Interactive Terminal Logic
+        const termInput = document.getElementById('term-input');
+        const termOutput = document.getElementById('term-output');
+
+        termInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const cmd = this.value.trim().toLowerCase();
+                this.value = '';
+                
+                if (cmd === '') return;
+
+                // Echo the command
+                termOutput.innerHTML += `<p><span class="terminal-prompt">amri@macbook:~$</span> ${cmd}</p>`;
+
+                // Process command
+                let response = '';
+                switch(cmd) {
+                    case 'help':
+                        response = `Available commands:<br>
+                        - <span class="term-highlight">contact</span>     : Show contact info<br>
+                        - <span class="term-highlight">about</span>       : Show brief bio<br>
+                        - <span class="term-highlight">download-cv</span> : Download my Resume<br>
+                        - <span class="term-highlight">clear</span>       : Clear terminal window`;
+                        break;
+                    case 'contact':
+                        response = `Email: amrimarihotjati@screnix.com<br>LinkedIn: linkedin.com/in/amrimarihotjati`;
+                        break;
+                    case 'about':
+                        response = `Amri Marihot Jati - Frontend & Android Developer.<br>Passionate about clean code and great UI/UX.`;
+                        break;
+                    case 'download-cv':
+                        response = `Downloading resume.pdf... [Done]`;
+                        downloadCV({preventDefault: () => {}});
+                        break;
+                    case 'clear':
+                        termOutput.innerHTML = `<p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands.</p>`;
+                        return; // skip adding response
+                    default:
+                        response = `bash: ${cmd}: command not found`;
+                }
+
+                termOutput.innerHTML += `<p>${response}</p>`;
+                
+                // Auto scroll to bottom
+                termOutput.scrollTop = termOutput.scrollHeight;
+            }
+        });
+
         // Language & Theme Toggle
         function toggleLanguage() {
             const body = document.body;
@@ -386,18 +491,47 @@
             }
         }
 
-        function toggleTheme() {
+        function toggleTheme(event) {
             const html = document.documentElement;
             const icon = document.getElementById('themeIcon');
-            if (html.getAttribute('data-theme') === 'dark') {
-                html.setAttribute('data-theme', 'light');
-                icon.className = 'fa-solid fa-sun';
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.setAttribute('data-theme', 'dark');
-                icon.className = 'fa-solid fa-moon';
-                localStorage.setItem('theme', 'dark');
-            }
+            
+            // Circular Reveal Animation setup
+            const overlay = document.getElementById('theme-overlay');
+            const x = event.clientX;
+            const y = event.clientY;
+            
+            overlay.style.left = x + 'px';
+            overlay.style.top = y + 'px';
+            overlay.style.width = '0px';
+            overlay.style.height = '0px';
+            
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            const nextTheme = isDark ? 'light' : 'dark';
+            
+            // Set overlay color based on next theme
+            overlay.style.background = nextTheme === 'dark' ? '#0a0a0a' : '#ffffff';
+            overlay.classList.add('active');
+
+            // Wait for animation to cover screen before switching actual DOM
+            setTimeout(() => {
+                if (isDark) {
+                    html.setAttribute('data-theme', 'light');
+                    icon.className = 'fa-solid fa-sun';
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    html.setAttribute('data-theme', 'dark');
+                    icon.className = 'fa-solid fa-moon';
+                    localStorage.setItem('theme', 'dark');
+                }
+                
+                // Fade out overlay
+                overlay.style.opacity = '0';
+                
+                setTimeout(() => {
+                    overlay.classList.remove('active');
+                    overlay.style.opacity = '1';
+                }, 400);
+            }, 500); // Time it takes to expand circle
         }
 
         // Restore saved theme

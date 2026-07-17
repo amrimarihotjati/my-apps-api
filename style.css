@@ -252,6 +252,16 @@ a.text-link:hover {
     box-shadow: var(--shadow-sm);
 }
 
+.terminal-btn {
+    background: var(--text-primary);
+    color: var(--bg-color) !important;
+    font-weight: 600;
+}
+.terminal-btn:hover {
+    background: transparent !important;
+    color: var(--text-primary) !important;
+}
+
 /* Tech Stack */
 .tech-stack {
     display: flex;
@@ -643,6 +653,73 @@ a.text-link:hover {
 .delay-1 { transition-delay: 0.1s; }
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
+
+/* Interactive Terminal Footer */
+.terminal-footer {
+    background: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    margin: 0 auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-align: left;
+    padding: 0;
+    overflow: hidden;
+    cursor: text;
+    margin-top: 40px;
+}
+.terminal-header {
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.term-btn { width: 12px; height: 12px; border-radius: 50%; }
+.term-btn.close { background: #ff5f56; }
+.term-btn.min { background: #ffbd2e; }
+.term-btn.max { background: #27c93f; }
+.term-title { flex-grow: 1; text-align: center; color: var(--text-secondary); opacity: 0.8; font-size: 0.8rem;}
+
+.terminal-body {
+    padding: 24px;
+    padding-bottom: 12px;
+    color: var(--text-primary);
+    max-height: 250px;
+    overflow-y: auto;
+}
+.terminal-body p { margin-bottom: 10px; line-height: 1.5; }
+.term-highlight { color: var(--term-path); }
+
+.terminal-input-line {
+    display: flex;
+    padding: 0 24px 24px;
+    align-items: center;
+    gap: 12px;
+}
+#term-input {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    flex-grow: 1;
+    outline: none;
+}
+
+/* Theme Overlay (Circular Reveal) */
+#theme-overlay {
+    position: fixed;
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease-in, height 0.5s ease-in, opacity 0.4s ease;
+}
+#theme-overlay.active {
+    width: 300vmax;
+    height: 300vmax;
+}
 
 /* Responsive */
 @media (max-width: 640px) {
