@@ -449,6 +449,12 @@
             // Start typing
             setTimeout(typeName, 1000); // Start name typewriter
             setTimeout(typeComment, 400); // Start other elements
+
+            // Image Security (prevent download)
+            document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('contextmenu', e => e.preventDefault());
+                img.setAttribute('draggable', false);
+            });
         });
 
         // Terminal Button Logic
