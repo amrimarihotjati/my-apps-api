@@ -31,7 +31,7 @@
     <main class="main-container">
         <!-- Hero Section -->
         <section class="hero reveal-up">
-            <div class="code-comment"><span class="terminal-prefix">amri@macbook</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-prompt">$</span> <span id="comment-typewriter"></span></div>
+            <div class="code-comment"><span class="terminal-prefix">amri@screnix</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-prompt">$</span> <span id="comment-typewriter"></span></div>
             <h1 class="title">Amri <span id="name-typewriter"></span><span class="blinking-cursor">_</span></h1>
             <h2 class="subtitle">
                 <span class="terminal-prefix">root@server</span><span class="terminal-colon">:</span><span class="terminal-path">/skills</span><span class="terminal-prompt">#</span> 
@@ -46,7 +46,7 @@
             </p>
 
             <div class="social-links reveal-up delay-1">
-                <a href="#" onclick="downloadCV(event)" class="social-btn terminal-btn"><i class="fa-solid fa-download"></i> &gt;_ ./download_resume.sh</a>
+                <a href="https://screnix.com/" target="_blank" class="social-btn terminal-btn"><i class="fa-solid fa-rocket"></i> &gt;_ ./launch_screnix.sh</a>
                 <a href="mailto:amrimarihotjati@screnix.com" class="social-btn"><i class="fa-solid fa-envelope"></i> amrimarihotjati@screnix.com</a>
                 <a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/amrimarihotjati" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -303,13 +303,13 @@
             <span class="term-btn close"></span>
             <span class="term-btn min"></span>
             <span class="term-btn max"></span>
-            <span class="term-title">amri@macbook:~</span>
+            <span class="term-title">amri@screnix:~</span>
         </div>
         <div class="terminal-body" id="term-output">
             <p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands.</p>
         </div>
         <div class="terminal-input-line">
-            <span class="terminal-prompt">amri@macbook:~$</span>
+            <span class="terminal-prompt">amri@screnix:~$</span>
             <input type="text" id="term-input" autocomplete="off" spellcheck="false">
         </div>
     </footer>
@@ -425,7 +425,7 @@
         });
 
         // Fake Download CV
-        function downloadCV(e) {
+        function launch_screnix(e) {
             e.preventDefault();
             alert("Memulai pengunduhan CV (Simulasi)...");
         }
@@ -433,6 +433,7 @@
         // Interactive Terminal Logic
         const termInput = document.getElementById('term-input');
         const termOutput = document.getElementById('term-output');
+        let isMatrixMode = false;
 
         termInput.addEventListener('keydown', function(e) {
             if (e.key === 'Enter') {
@@ -442,7 +443,7 @@
                 if (cmd === '') return;
 
                 // Echo the command
-                termOutput.innerHTML += `<p><span class="terminal-prompt">amri@macbook:~$</span> ${cmd}</p>`;
+                termOutput.innerHTML += `<p><span class="terminal-prompt">amri@screnix:~$</span> ${cmd}</p>`;
 
                 // Process command
                 let response = '';
@@ -451,8 +452,9 @@
                         response = `Available commands:<br>
                         - <span class="term-highlight">contact</span>     : Show contact info<br>
                         - <span class="term-highlight">about</span>       : Show brief bio<br>
-                        - <span class="term-highlight">download-cv</span> : Download my Resume<br>
-                        - <span class="term-highlight">clear</span>       : Clear terminal window`;
+                        - <span class="term-highlight">projects</span>    : List featured projects<br>
+                        - <span class="term-highlight">clear</span>       : Clear terminal window<br>
+                        <i style="opacity:0.5;">(Hint: try 'whoami', 'date', 'sudo', 'ping', 'matrix')</i>`;
                         break;
                     case 'contact':
                         response = `Email: amrimarihotjati@screnix.com<br>LinkedIn: linkedin.com/in/amrimarihotjati`;
@@ -460,13 +462,45 @@
                     case 'about':
                         response = `Amri Marihot Jati - Frontend & Android Developer.<br>Passionate about clean code and great UI/UX.`;
                         break;
-                    case 'download-cv':
-                        response = `Downloading resume.pdf... [Done]`;
-                        downloadCV({preventDefault: () => {}});
+                    case 'projects':
+                        response = `1. Screener Saham (Android)<br>2. SICALMERS (React/Next.js)<br>3. LoanFlow (Android)`;
                         break;
                     case 'clear':
                         termOutput.innerHTML = `<p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands.</p>`;
+                        if(isMatrixMode) {
+                            termOutput.style.color = 'var(--text-primary)';
+                            termOutput.style.fontFamily = 'var(--font-mono)';
+                            isMatrixMode = false;
+                        }
                         return; // skip adding response
+                        
+                    // EASTER EGGS
+                    case 'whoami':
+                        response = `guest_user_${Math.floor(Math.random() * 9000) + 1000}`;
+                        break;
+                    case 'date':
+                        response = new Date().toString();
+                        break;
+                    case 'sudo':
+                    case 'sudo su':
+                        response = `amri is not in the sudoers file. This incident will be reported to Santa. 🎅`;
+                        break;
+                    case 'ping':
+                        response = `pong! 🏓`;
+                        break;
+                    case 'sudo rm -rf /':
+                        response = `Permission denied. Nice try though! 😉`;
+                        break;
+                    case 'matrix':
+                        isMatrixMode = true;
+                        termOutput.style.color = '#00FF41';
+                        termOutput.style.textShadow = '0 0 5px #00FF41';
+                        response = `Wake up, Neo...<br>The Matrix has you.<br>Follow the white rabbit. 🐇`;
+                        break;
+                    case 'download-cv':
+                        response = `bash: download-cv: command deprecated. Use the physical button above.`;
+                        break;
+
                     default:
                         response = `bash: ${cmd}: command not found`;
                 }
