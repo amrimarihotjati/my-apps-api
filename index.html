@@ -378,6 +378,15 @@
         </div>
     </div>
 
+    <!-- Visitor Connection Toast -->
+    <div id="visitor-toast">
+        <div class="toast-header">[SECURE_CONN_ESTABLISHED]</div>
+        <div class="toast-body">
+            IP: <span id="visitor-ip">Fetching...</span><br>
+            Visitor Log: #<span id="visitor-count">...</span>
+        </div>
+    </div>
+
     <script>
         // Typing Animation Logic
         document.addEventListener('DOMContentLoaded', () => {
@@ -456,6 +465,27 @@
                 img.setAttribute('draggable', false);
             });
 
+            // Visitor IP & Fake Counter Logic
+            setTimeout(() => {
+                fetch('https://api.ipify.org?format=json')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('visitor-ip').innerText = data.ip;
+                        // Generate a plausible visitor count that goes up slowly over time based on date
+                        const baseCount = 84201;
+                        const timeOffset = Math.floor((Date.now() - 1718000000000) / 100000); // Increases slowly
+                        document.getElementById('visitor-count').innerText = (baseCount + timeOffset).toLocaleString();
+                        
+                        const toast = document.getElementById('visitor-toast');
+                        toast.classList.add('show');
+                        
+                        // Hide after 6 seconds
+                        setTimeout(() => {
+                            toast.classList.remove('show');
+                        }, 6000);
+                    })
+                    .catch(err => console.log('Visitor log bypass.'));
+            }, 1500); // Delay appearance for dramatic effect
         });
 
         // Terminal Button Logic
