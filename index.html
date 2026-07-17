@@ -32,11 +32,11 @@
         <!-- Hero Section -->
         <section class="hero reveal-up">
             <div class="code-comment"><span id="comment-typewriter"></span></div>
-            <h1 class="title">Amri Marihot Jati</h1>
+            <h1 class="title">Amri <span id="name-typewriter"></span><span class="blinking-cursor">_</span></h1>
             <h2 class="subtitle">
                 <span class="bracket">&lt;</span>
                 <span id="role-typewriter"></span>
-                <span class="bracket">/&gt;</span><span class="blinking-cursor">_</span>
+                <span class="bracket">/&gt;</span>
             </h2>
             
             <p class="description lang id">
@@ -309,6 +309,39 @@
             const commentEl = document.getElementById('comment-typewriter');
             const roleEl = document.getElementById('role-typewriter');
             
+            // Name Typewriter Logic
+            const nameEl = document.getElementById('name-typewriter');
+            const nameWord = "Marihot Jati";
+            let nameCharIndex = 0;
+            let isDeletingName = false;
+
+            function typeName() {
+                const currentText = nameWord.substring(0, nameCharIndex);
+                nameEl.textContent = currentText;
+
+                let typeSpeed = 150; // Typing speed
+
+                if (isDeletingName) {
+                    typeSpeed = 100; // Deleting speed
+                }
+
+                if (!isDeletingName && nameCharIndex === nameWord.length) {
+                    typeSpeed = 2000; // Pause at end before deleting
+                    isDeletingName = true;
+                } else if (isDeletingName && nameCharIndex === 0) {
+                    isDeletingName = false;
+                    typeSpeed = 500; // Pause before typing again
+                }
+
+                if (isDeletingName) {
+                    nameCharIndex--;
+                } else {
+                    nameCharIndex++;
+                }
+
+                setTimeout(typeName, typeSpeed);
+            }
+            
             let i = 0;
             let j = 0;
             
@@ -337,7 +370,8 @@
             }
 
             // Start typing
-            setTimeout(typeComment, 400);
+            setTimeout(typeName, 1000); // Start name typewriter
+            setTimeout(typeComment, 400); // Start other elements
         });
 
         // Language & Theme Toggle
