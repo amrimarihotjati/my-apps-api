@@ -455,6 +455,34 @@
                 img.addEventListener('contextmenu', e => e.preventDefault());
                 img.setAttribute('draggable', false);
             });
+
+            // Periodic Scramble for Bold Text
+            setInterval(() => {
+                const boldTexts = document.querySelectorAll('.description strong');
+                const chars = '!<>-_\/[]{}—=+*^?#_';
+                
+                boldTexts.forEach(el => {
+                    // Only scramble if it's currently visible
+                    if(el.closest('p').style.display !== 'none' && !el.closest('p').classList.contains('hidden')) {
+                        const originalText = el.getAttribute('data-original') || el.innerText;
+                        if (!el.getAttribute('data-original')) el.setAttribute('data-original', originalText);
+                        
+                        let iterations = 0;
+                        const interval = setInterval(() => {
+                            el.innerText = originalText.split('').map((letter, index) => {
+                                if(index < iterations || letter === ' ') return letter;
+                                return chars[Math.floor(Math.random() * chars.length)];
+                            }).join('');
+                            
+                            if(iterations >= originalText.length) {
+                                clearInterval(interval);
+                                el.innerText = originalText;
+                            }
+                            iterations += originalText.length / 15;
+                        }, 40);
+                    }
+                });
+            }, 6000); // Trigger every 6 seconds
         });
 
         // Terminal Button Logic
