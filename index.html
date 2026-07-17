@@ -438,31 +438,64 @@
 
             const pet = document.createElement('div');
             pet.id = 'virtual-pet';
-            pet.innerHTML = `<pre class="ascii-cat"> /\\_/\\ <br>( o.o )<br> &gt; ^ &lt; </pre>`;
+            pet.innerHTML = `^._.^`;
             document.body.appendChild(pet);
 
-            // Make cat follow cursor horizontally
-            let mouseX = window.innerWidth / 2;
+            let currentX = window.innerWidth / 2;
+            let targetX = window.innerWidth / 2;
+            let isFacingRight = true;
+            let isScrolling = false;
+            let scrollTimeout;
+
+            // Follow cursor target
             window.addEventListener('mousemove', (e) => {
-                mouseX = e.clientX;
-                // Move cat slowly towards cursor
-                pet.style.left = Math.max(10, Math.min(window.innerWidth - 60, mouseX - 25)) + 'px';
+                targetX = e.clientX;
             });
 
-            // Add scroll jump logic and random positioning if mobile
-            window.addEventListener('scroll', () => {
-                if(!pet.classList.contains('jump')) {
-                    pet.classList.add('jump');
-                    
-                    // If on mobile (no mousemove), move cat randomly or based on scroll
-                    if(window.innerWidth < 768) {
-                        const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-                        const newX = scrollPercent * (window.innerWidth - 60);
-                        pet.style.left = Math.max(10, newX) + 'px';
-                    }
+            // Smooth animation loop
+            function animatePet() {
+                // Smooth interpolation
+                currentX += (targetX - currentX) * 0.08;
+                
+                // Determine facing direction (if distance is significant)
+                if (targetX - currentX > 2) isFacingRight = true;
+                else if (targetX - currentX < -2) isFacingRight = false;
+                
+                // Apply transform (centering + flip + scroll jump)
+                pet.style.transform = `translateX(-50%) scaleX(${isFacingRight ? 1 : -1}) ${isScrolling ? 'translateY(-12px)' : 'translateY(0)'}`;
+                pet.style.left = currentX + 'px';
+                
+                requestAnimationFrame(animatePet);
+            }
+            animatePet();
 
-                    setTimeout(() => pet.classList.remove('jump'), 400);
+            // Interactivity on scroll
+            window.addEventListener('scroll', () => {
+                isScrolling = true;
+                pet.innerHTML = `&gt;_._&lt;`; // Squinting face when moving fast
+                
+                clearTimeout(scrollTimeout);
+                
+                // If on mobile (no mousemove), move cat based on scroll percentage
+                if(window.innerWidth < 768) {
+                    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+                    targetX = scrollPercent * window.innerWidth;
                 }
+
+                scrollTimeout = setTimeout(() => {
+                    isScrolling = false;
+                    pet.innerHTML = `^._.^`; // Back to normal face
+                }, 150);
+            });
+
+            // Interactivity on click
+            pet.addEventListener('click', () => {
+                pet.innerHTML = `^O_O^`; // Surprised face
+                pet.style.color = '#4ade80'; // Turn green
+                setTimeout(() => {
+                    pet.innerHTML = `^._.^`;
+                    pet.style.color = 'var(--text-primary)';
+                }, 600);
             });
         }
 

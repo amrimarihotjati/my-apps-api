@@ -658,30 +658,19 @@ a.text-link:hover {
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 
-/* Virtual Pet */
+/* Virtual Pet (Minimal) */
 #virtual-pet {
     position: fixed;
     bottom: 24px;
     z-index: 1000;
     cursor: pointer;
-    transition: transform 0.2s, left 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
     user-select: none;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
-}
-.ascii-cat {
     font-family: var(--font-mono);
     color: var(--text-primary);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.1;
-    margin: 0;
-}
-#virtual-pet.jump {
-    animation: petJump 0.4s ease-out;
-}
-@keyframes petJump {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-40px) scale(1.1); }
+    font-weight: 600;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    transition: color 0.3s;
 }
 
 /* Interactive Terminal Footer */
