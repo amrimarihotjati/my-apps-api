@@ -432,19 +432,35 @@
             petSummoned = true;
             
             const btn = document.getElementById('summonBtn');
-            btn.innerHTML = `<i class="fa-solid fa-check"></i> Pet Summoned!`;
+            btn.innerHTML = `<i class="fa-solid fa-check"></i> Cat Summoned!`;
             btn.style.opacity = '0.5';
             btn.style.cursor = 'default';
 
             const pet = document.createElement('div');
             pet.id = 'virtual-pet';
-            pet.innerHTML = '👾';
+            pet.innerHTML = `<pre class="ascii-cat"> /\\_/\\ <br>( o.o )<br> &gt; ^ &lt; </pre>`;
             document.body.appendChild(pet);
 
-            // Add scroll jump logic
+            // Make cat follow cursor horizontally
+            let mouseX = window.innerWidth / 2;
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                // Move cat slowly towards cursor
+                pet.style.left = Math.max(10, Math.min(window.innerWidth - 60, mouseX - 25)) + 'px';
+            });
+
+            // Add scroll jump logic and random positioning if mobile
             window.addEventListener('scroll', () => {
                 if(!pet.classList.contains('jump')) {
                     pet.classList.add('jump');
+                    
+                    // If on mobile (no mousemove), move cat randomly or based on scroll
+                    if(window.innerWidth < 768) {
+                        const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+                        const newX = scrollPercent * (window.innerWidth - 60);
+                        pet.style.left = Math.max(10, newX) + 'px';
+                    }
+
                     setTimeout(() => pet.classList.remove('jump'), 400);
                 }
             });
