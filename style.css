@@ -231,7 +231,18 @@ a.text-link:hover {
     line-height: 1.75;
     max-width: 95%;
 }
-.description strong { color: var(--text-primary); font-weight: 600;}
+.description strong { 
+    color: var(--text-primary); 
+    font-weight: 700;
+    animation: textFlicker 3s infinite;
+}
+
+@keyframes textFlicker {
+    0%, 78%, 82%, 100% { opacity: 1; text-shadow: none; }
+    79% { opacity: 0.3; }
+    80% { opacity: 1; text-shadow: 0 0 10px var(--term-user); }
+    81% { opacity: 0.1; }
+}
 
 /* Social Buttons */
 .social-links {
