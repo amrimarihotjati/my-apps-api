@@ -465,26 +465,24 @@
                 img.setAttribute('draggable', false);
             });
 
-            // Visitor IP & Fake Counter Logic
+            // Visitor IP & Real Counter Logic
             setTimeout(() => {
-                fetch('https://api.ipify.org?format=json')
-                    .then(response => response.json())
-                    .then(data => {
-                        document.getElementById('visitor-ip').innerText = data.ip;
-                        // Generate a plausible visitor count that goes up slowly over time based on date
-                        const baseCount = 84201;
-                        const timeOffset = Math.floor((Date.now() - 1718000000000) / 100000); // Increases slowly
-                        document.getElementById('visitor-count').innerText = (baseCount + timeOffset).toLocaleString();
-                        
-                        const toast = document.getElementById('visitor-toast');
-                        toast.classList.add('show');
-                        
-                        // Hide after 6 seconds
-                        setTimeout(() => {
-                            toast.classList.remove('show');
-                        }, 6000);
-                    })
-                    .catch(err => console.log('Visitor log bypass.'));
+                Promise.all([
+                    fetch('https://api.ipify.org?format=json').then(res => res.json()).catch(() => ({ip: '127.0.0.1'})),
+                    fetch('https://api.counterapi.dev/v1/amrimarihotjati/portfolio/up').then(res => res.json()).catch(() => ({count: 1}))
+                ]).then(([ipData, countData]) => {
+                    document.getElementById('visitor-ip').innerText = ipData.ip;
+                    // Actual real visitor count from CounterAPI
+                    document.getElementById('visitor-count').innerText = countData.count.toLocaleString();
+                    
+                    const toast = document.getElementById('visitor-toast');
+                    toast.classList.add('show');
+                    
+                    // Hide after 6 seconds
+                    setTimeout(() => {
+                        toast.classList.remove('show');
+                    }, 6000);
+                });
             }, 1500); // Delay appearance for dramatic effect
         });
 
