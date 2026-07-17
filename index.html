@@ -31,12 +31,12 @@
     <main class="main-container">
         <!-- Hero Section -->
         <section class="hero reveal-up">
-            <div class="code-comment">// Software Developer</div>
+            <div class="code-comment"><span id="comment-typewriter"></span></div>
             <h1 class="title">Amri Marihot Jati</h1>
             <h2 class="subtitle">
                 <span class="bracket">&lt;</span>
-                Frontend <span class="divider">|</span> Android <span class="divider">|</span> Publisher 
-                <span class="bracket">/&gt;</span>
+                <span id="role-typewriter"></span>
+                <span class="bracket">/&gt;</span><span class="blinking-cursor">_</span>
             </h2>
             
             <p class="description lang id">
@@ -302,6 +302,45 @@
     </footer>
 
     <script>
+        // Typing Animation Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const commentText = "// Software Developer";
+            const roleText = "Frontend | Android | Publisher";
+            const commentEl = document.getElementById('comment-typewriter');
+            const roleEl = document.getElementById('role-typewriter');
+            
+            let i = 0;
+            let j = 0;
+            
+            function typeComment() {
+                if (i < commentText.length) {
+                    commentEl.innerHTML += commentText.charAt(i);
+                    i++;
+                    setTimeout(typeComment, 50);
+                } else {
+                    setTimeout(typeRole, 500); // pause before next line
+                }
+            }
+
+            function typeRole() {
+                if (j < roleText.length) {
+                    let char = roleText.charAt(j);
+                    // Add styling to dividers dynamically
+                    if (char === '|') {
+                        roleEl.innerHTML += '<span class="divider">|</span>';
+                    } else {
+                        roleEl.innerHTML += char;
+                    }
+                    j++;
+                    setTimeout(typeRole, 60);
+                }
+            }
+
+            // Start typing
+            setTimeout(typeComment, 400);
+        });
+
+        // Language & Theme Toggle
         function toggleLanguage() {
             const body = document.body;
             const span = document.getElementById('currentLang');

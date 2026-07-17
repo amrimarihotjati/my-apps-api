@@ -162,6 +162,7 @@ a.text-link:hover {
     font-size: 0.9rem;
     margin-bottom: 16px;
     opacity: 0.8;
+    min-height: 1.5rem; /* prevent layout shift */
 }
 
 .title {
@@ -181,10 +182,22 @@ a.text-link:hover {
     font-weight: 400;
     color: var(--text-secondary);
     margin-bottom: 32px;
+    min-height: 1.5rem; /* prevent layout shift */
 }
 
 .bracket { color: var(--text-primary); opacity: 0.5; }
 .divider { margin: 0 6px; opacity: 0.3; }
+
+/* Blinking Cursor Animation */
+.blinking-cursor {
+    font-weight: 700;
+    color: var(--text-primary);
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
 
 .description {
     font-size: 1.15rem;
@@ -245,6 +258,7 @@ a.text-link:hover {
     border-color: var(--text-primary);
     color: var(--text-primary);
     transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(128,128,128,0.2); /* Glow effect */
 }
 
 /* Sections */
