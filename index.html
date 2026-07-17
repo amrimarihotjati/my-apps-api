@@ -347,11 +347,14 @@
 
     <!-- Interactive Terminal Footer -->
     <footer class="footer terminal-footer" onclick="document.getElementById('term-input').focus()">
-        <div class="terminal-header">
+        <div class="terminal-header" style="display: flex; align-items: center;">
             <span class="term-btn close"></span>
             <span class="term-btn min"></span>
             <span class="term-btn max"></span>
             <span class="term-title">amri@screnix:~</span>
+            <span class="term-stats" style="font-size: 0.75rem; opacity: 0.6; margin-left: auto;" title="Total Visitors">
+                <i class="fa-solid fa-eye"></i> <span id="permanent-visitor-count">...</span>
+            </span>
         </div>
         <div class="terminal-body" id="term-output">
             <p>Welcome to Amri's interactive terminal. Type <span class="term-highlight">'help'</span> to see available commands, or try some hidden easter eggs!</p>
@@ -473,7 +476,12 @@
                 ]).then(([ipData, countData]) => {
                     document.getElementById('visitor-ip').innerText = ipData.ip;
                     // Actual real visitor count from CounterAPI
-                    document.getElementById('visitor-count').innerText = countData.count.toLocaleString();
+                    const currentCount = countData.count.toLocaleString();
+                    document.getElementById('visitor-count').innerText = currentCount;
+                    
+                    // Update permanent counter in terminal footer
+                    const permCount = document.getElementById('permanent-visitor-count');
+                    if(permCount) permCount.innerText = currentCount;
                     
                     const toast = document.getElementById('visitor-toast');
                     toast.classList.add('show');
