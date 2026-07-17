@@ -1,334 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amri Marihot Jati — Software Developer</title>
-    <meta name="description" content="Front-End & Android Developer specializing in mobile applications, web development, and Google Play publishing.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Amri Marihot Jati | Software Developer</title>
+    <meta name="description" content="Front-End & Android Developer specializing in mobile apps, web development, and Google Play publishing.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="lang-en">
 
-    <!-- Language Toggle -->
-    <button id="langToggleBtn" onclick="toggleLanguage()" aria-label="Toggle language">
-        <i class="fa-solid fa-globe"></i> <span id="currentLang">EN</span>
-    </button>
-
-    <!-- Hero / Header -->
-    <header class="hero">
-        <div class="container hero-inner">
-            <div class="hero-text">
-                <p class="hero-greeting">
-                    <span class="lang id">Halo, saya</span>
-                    <span class="lang en">Hi, I'm</span>
-                </p>
-                <h1 class="hero-name">Amri Marihot Jati</h1>
-                <p class="hero-role">Front-End Developer · Android Developer · App Publisher</p>
-                <div class="hero-links">
-                    <a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/amrimarihotjati" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fa-brands fa-github"></i> GitHub</a>
-                </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AMJ<span class="dot">.</span></div>
+            <div class="nav-controls">
+                <button class="nav-btn" onclick="toggleLanguage()" aria-label="Toggle language">
+                    <i class="fa-solid fa-globe"></i> <span id="currentLang">EN</span>
+                </button>
+                <button class="nav-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <!-- About -->
-        <section id="about" class="section">
-            <h2 class="section-title">
-                <span class="lang id">Tentang Saya</span>
-                <span class="lang en">About</span>
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+            <div class="code-comment">// Software Developer</div>
+            <h1 class="title">Amri Marihot Jati</h1>
+            <h2 class="subtitle">
+                <span class="bracket">&lt;</span>
+                Frontend <span class="divider">|</span> Android <span class="divider">|</span> Publisher 
+                <span class="bracket">/&gt;</span>
             </h2>
-            <div class="about-card">
-                <p class="lang id">
-                    Lulusan <strong>Akuntansi</strong> dari STIE Indonesia Banking School (IBS) yang banting setir ke pengembangan perangkat lunak, didorong oleh passion pada teknologi dan pembelajaran berkelanjutan. Saya berspesialisasi dalam <strong>Front-End Development, Native Android Development, dan Google Play App Publishing</strong>, membangun aplikasi yang responsif, berfokus pada pengguna dengan dampak dunia nyata.
-                </p>
-                <p class="lang id">
-                    Saya juga menaruh minat besar pada <strong>Business Technology (BizTech)</strong>, mengeksplorasi bagaimana teknologi, strategi produk, dan inovasi dapat menciptakan nilai yang bermakna bagi pengguna dan bisnis.
-                </p>
-                <p class="lang en">
-                    An <strong>Accounting</strong> graduate from STIE Indonesia Banking School (IBS) who transitioned into software development, driven by a passion for technology and continuous learning. I specialize in <strong>Front-End Development, Native Android Development, and Google Play App Publishing</strong>, building responsive, user-focused applications with real-world impact.
-                </p>
-                <p class="lang en">
-                    I am also passionate about <strong>Business Technology (BizTech)</strong>, exploring how technology, product strategy, and innovation can create meaningful value for both users and businesses.
-                </p>
-                <div class="skills">
-                    <span class="tag"><i class="fa-brands fa-android"></i> Android Native</span>
-                    <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
-                    <span class="tag">Kotlin</span>
-                    <span class="tag">REST API</span>
-                    <span class="tag"><i class="fa-brands fa-google"></i> App Publisher</span>
-                    <span class="tag"><i class="fa-brands fa-git-alt"></i> Git</span>
-                </div>
+            
+            <p class="description lang id">
+                Lulusan Akuntansi yang beralih menjadi <strong>Software Developer</strong>. Fokus pada pengembangan antarmuka web, aplikasi Android native, dan pengelolaan aplikasi di Google Play Store.
+            </p>
+            <p class="description lang en">
+                Accounting graduate turned <strong>Software Developer</strong>. Focused on web frontend development, native Android apps, and Google Play Store publishing.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/amrimarihotjati" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+
+            <div class="tech-stack">
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Java/Kotlin</span>
+                <span class="tech-tag">React/Next.js</span>
+                <span class="tech-tag">Google Play Console</span>
             </div>
         </section>
 
-        <!-- Experience -->
-        <section id="experience" class="section">
-            <h2 class="section-title">
-                <span class="lang id">Pengalaman Kerja</span>
-                <span class="lang en">Experience</span>
-            </h2>
-
-            <div class="exp-list">
+        <!-- Experience Section -->
+        <section class="section fade-in">
+            <h3 class="section-heading"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+            <div class="timeline">
+                
                 <!-- Google -->
-                <div class="exp-item">
-                    <div class="exp-left">
-                        <img src="assets/images/google-icon.png" alt="Google" class="exp-logo">
-                    </div>
-                    <div class="exp-body">
-                        <div class="exp-header">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
                             <div>
-                                <h3 class="exp-company">Google</h3>
-                                <p class="exp-role">App Publisher</p>
+                                <h4 class="company">Google</h4>
+                                <p class="role">App Publisher</p>
                             </div>
-                            <span class="exp-date">
-                                <span class="lang id">Jul 2024 — Sekarang</span>
-                                <span class="lang en">Jul 2024 — Present</span>
-                            </span>
+                            <div class="date">Jul 2024 — Present</div>
                         </div>
-                        <ul class="exp-desc">
+                        <ul class="task-list">
                             <li>
                                 <span class="lang id">Memublikasikan dan mengelola aplikasi</span>
                                 <span class="lang en">Publishing and managing the</span>
-                                <a href="https://play.google.com/store/apps/details?id=us.screener.saham&gl=us" target="_blank">Screener Saham</a> application.
+                                <a href="https://play.google.com/store/apps/details?id=us.screener.saham&gl=us" target="_blank" class="text-link">Screener Saham</a> app.
                             </li>
-                            <li>Official Website: <a href="https://screnix.com/" target="_blank">screnix.com</a></li>
+                            <li>Official Website: <a href="https://screnix.com/" target="_blank" class="text-link">screnix.com</a></li>
                         </ul>
-                        <div class="exp-gallery">
-                            <img src="assets/images/google-experience.jpeg" alt="Google Experience" class="exp-img">
-                        </div>
                     </div>
                 </div>
 
                 <!-- PUPR -->
-                <div class="exp-item">
-                    <div class="exp-left">
-                        <img src="assets/images/pupr-icon.jpeg" alt="PUPR" class="exp-logo">
-                    </div>
-                    <div class="exp-body">
-                        <div class="exp-header">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
                             <div>
-                                <h3 class="exp-company">Kementerian PUPR</h3>
-                                <p class="exp-role">Frontend Developer</p>
+                                <h4 class="company">Kementerian PUPR</h4>
+                                <p class="role">Frontend Developer</p>
                             </div>
-                            <span class="exp-date">
-                                <span class="lang id">Feb 2024 — Jul 2024</span>
-                                <span class="lang en">Feb 2024 — Jul 2024</span>
-                            </span>
+                            <div class="date">Feb — Jul 2024</div>
                         </div>
-                        <ul class="exp-desc">
+                        <ul class="task-list">
                             <li>
-                                <span class="lang id">Mengembangkan antarmuka pengguna (Frontend) untuk aplikasi web</span>
-                                <span class="lang en">Developing the user interface (Frontend) for the</span>
-                                <a href="https://infrastrukturdaerah.pu.go.id/sicalmers" target="_blank">SICALMERS</a> web application.
+                                <span class="lang id">Mengembangkan antarmuka pengguna untuk aplikasi web</span>
+                                <span class="lang en">Developed the user interface for the</span>
+                                <a href="https://infrastrukturdaerah.pu.go.id/sicalmers" target="_blank" class="text-link">SICALMERS</a> web app.
                             </li>
                         </ul>
-                        <div class="exp-gallery">
-                            <img src="assets/images/pupr-experience.jpeg" alt="PUPR Experience" class="exp-img">
-                            <img src="assets/images/pupr-experience-1.jpeg" alt="PUPR Team" class="exp-img">
-                        </div>
                     </div>
                 </div>
 
                 <!-- ALAMI -->
-                <div class="exp-item">
-                    <div class="exp-left">
-                        <img src="assets/images/alami-icon.jpeg" alt="ALAMI" class="exp-logo">
-                    </div>
-                    <div class="exp-body">
-                        <div class="exp-header">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
                             <div>
-                                <h3 class="exp-company">ALAMI</h3>
-                                <p class="exp-role">Partnership Support</p>
+                                <h4 class="company">ALAMI</h4>
+                                <p class="role">Partnership Support & Acquisition</p>
                             </div>
-                            <span class="exp-date">
-                                <span class="lang id">Sep 2020 — Feb 2022</span>
-                                <span class="lang en">Sep 2020 — Feb 2022</span>
-                            </span>
+                            <div class="date">Sep 2020 — Feb 2022</div>
                         </div>
-                        <ul class="exp-desc">
-                            <li><span class="lang id">Berkoordinasi antar divisi (risiko, ops, IT, dan pemasaran) untuk skema pembiayaan rantai pasok.</span><span class="lang en">Coordinated with risk, ops, IT, and marketing divisions for supply chain financing schemes.</span></li>
-                            <li><span class="lang id">Memantau perkembangan bisnis dan meninjau kinerja peminjam.</span><span class="lang en">Monitored business developments and reviewed borrower performance.</span></li>
-                            <li><span class="lang id">Membangun dan memelihara hubungan dengan mitra FMCG, Telekomunikasi, Logistik, dan Kesehatan.</span><span class="lang en">Built and maintained partnerships in FMCG, Telecom, Logistics, and Healthcare industries.</span></li>
-                        </ul>
-                        <p class="exp-sub-role">Partnership Acquisition <span class="exp-sub-date"><span class="lang id">Jan — Agt 2021</span><span class="lang en">Jan — Aug 2021</span></span></p>
-                        <p class="exp-sub-role">Digital Marketing <span class="exp-sub-date"><span class="lang id">Sep — Des 2020</span><span class="lang en">Sep — Dec 2020</span></span></p>
-                        <ul class="exp-desc">
-                            <li><span class="lang id">Menganalisis dataset kinerja digital dan memelihara dokumentasi mingguan.</span><span class="lang en">Analyzed digital performance datasets and maintained weekly documentation.</span></li>
-                            <li><span class="lang id">Mengembangkan dan menerapkan strategi SEO yang efektif.</span><span class="lang en">Developed and implemented effective SEO strategies.</span></li>
+                        <ul class="task-list">
+                            <li><span class="lang id">Berkoordinasi antar divisi untuk skema pembiayaan rantai pasok.</span><span class="lang en">Coordinated inter-division for supply chain financing schemes.</span></li>
+                            <li><span class="lang id">Membangun hubungan mitra FMCG, Telko, Logistik, Kesehatan.</span><span class="lang en">Built partnerships in FMCG, Telecom, Logistics, Healthcare.</span></li>
                             <li><span class="lang id">Mengimplementasikan Telegram BOT menggunakan Google Script.</span><span class="lang en">Implemented Telegram BOT using Google Script.</span></li>
                         </ul>
-                        <div class="exp-gallery">
-                            <img src="assets/images/alami-experience.jpeg" alt="ALAMI Experience" class="exp-img">
-                            <img src="assets/images/alami-experience1.jpeg" alt="ALAMI Team" class="exp-img">
+                    </div>
+                </div>
+
+                <!-- Pertamina & BI -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h4 class="company">Pertamina Patra Niaga / Bank Indonesia</h4>
+                                <p class="role">Freelance Designer / Intern</p>
+                            </div>
+                            <div class="date">Jan — Jul 2020</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pertamina -->
-                <div class="exp-item">
-                    <div class="exp-left">
-                        <img src="assets/images/pertamina-icon.jpeg" alt="Pertamina" class="exp-logo">
-                    </div>
-                    <div class="exp-body">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="exp-company">PT Pertamina Patra Niaga</h3>
-                                <p class="exp-role">Freelance Graphic Designer</p>
-                            </div>
-                            <span class="exp-date">
-                                <span class="lang id">Apr — Jul 2020</span>
-                                <span class="lang en">Apr — Jul 2020</span>
-                            </span>
-                        </div>
-                        <p class="exp-text">
-                            <span class="lang id">Mendesain poster dan media kit untuk Kompetisi Penjualan Musicool dan Kompetisi Karya Tulis Musicool.</span>
-                            <span class="lang en">Designed posters and media kits for the Musicool Sales Competition and Musicool Paper Competition.</span>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Bank Indonesia -->
-                <div class="exp-item">
-                    <div class="exp-left">
-                        <img src="assets/images/bank-indonesia-icon.jpeg" alt="Bank Indonesia" class="exp-logo">
-                    </div>
-                    <div class="exp-body">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="exp-company">Bank Indonesia</h3>
-                                <p class="exp-role">Internship Program</p>
-                            </div>
-                            <span class="exp-date">
-                                <span class="lang id">Jan — Feb 2020</span>
-                                <span class="lang en">Jan — Feb 2020</span>
-                            </span>
-                        </div>
-                        <p class="exp-text">
-                            <span class="lang id">Ditempatkan di Divisi Pengelolaan Uang Rupiah (PUR).</span>
-                            <span class="lang en">Placed in the Rupiah Money Management Division (PUR).</span>
-                        </p>
-                        <div class="exp-gallery">
-                            <img src="assets/images/bank-indoneisa-experience.jpeg" alt="Bank Indonesia" class="exp-img">
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- Education -->
-        <section id="education" class="section">
-            <h2 class="section-title">
-                <span class="lang id">Pendidikan</span>
-                <span class="lang en">Education</span>
-            </h2>
-            <div class="edu-list">
-                <div class="edu-item">
-                    <div class="edu-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                    <div>
-                        <h3>DumbWays Indonesia</h3>
-                        <p class="edu-detail">Bootcamp</p>
-                        <span class="edu-date"><span class="lang id">Jul — Des 2023</span><span class="lang en">Jul — Dec 2023</span></span>
-                    </div>
-                </div>
-                <div class="edu-item">
-                    <div class="edu-icon"><i class="fa-solid fa-code"></i></div>
-                    <div>
-                        <h3>Hacktiv8 Indonesia</h3>
-                        <p class="edu-detail">Android with Java Native</p>
-                        <span class="edu-date"><span class="lang id">Agt 2021 — Feb 2022</span><span class="lang en">Aug 2021 — Feb 2022</span></span>
-                    </div>
-                </div>
-                <div class="edu-item">
-                    <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
-                    <div>
-                        <h3>Indonesia Banking School</h3>
-                        <p class="edu-detail">
-                            <span class="lang id">Sarjana, Akuntansi</span>
-                            <span class="lang en">Bachelor's Degree, Accounting</span>
-                        </p>
-                        <span class="edu-date">2017 — 2021</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects / Portfolio -->
-        <section id="projects" class="section">
-            <h2 class="section-title">
-                <span class="lang id">Proyek</span>
-                <span class="lang en">Projects</span>
-            </h2>
+        <!-- Projects Section -->
+        <section class="section fade-in">
+            <h3 class="section-heading"><i class="fa-solid fa-code"></i> Projects</h3>
             <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <img src="https://play-lh.googleusercontent.com/ZAivKYd-VD54S45O6HJ65xJQF78Jh286dqchaSGqgXutiXbwDgN_6X_BzR4CU5_yLoYqZFrAV6Ac7xEhBGcuLw=w480-h960-rw" alt="Screnix" class="project-icon">
-                        <div>
-                            <h3>Screener Saham</h3>
-                            <div class="project-tags"><span>Android</span><span>App Publisher</span></div>
-                        </div>
+                
+                <a href="https://play.google.com/store/apps/details?id=us.screener.saham&gl=us" target="_blank" class="project-card">
+                    <div class="project-top">
+                        <img src="https://play-lh.googleusercontent.com/ZAivKYd-VD54S45O6HJ65xJQF78Jh286dqchaSGqgXutiXbwDgN_6X_BzR4CU5_yLoYqZFrAV6Ac7xEhBGcuLw=w480-h960-rw" alt="Screener Saham" class="project-icon">
+                        <i class="fa-solid fa-arrow-right project-arrow"></i>
                     </div>
-                    <p class="project-desc">
-                        <span class="lang id">Aplikasi untuk melakukan screening dan analisis saham. Tersedia di Google Play Store.</span>
-                        <span class="lang en">Stock screening and analysis application. Available on the Google Play Store.</span>
-                    </p>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=us.screener.saham&gl=us" target="_blank"><i class="fa-brands fa-google-play"></i> Play Store</a>
-                        <a href="https://screnix.com/" target="_blank"><i class="fa-solid fa-globe"></i> screnix.com</a>
-                    </div>
-                </div>
+                    <h4 class="project-title">Screener Saham</h4>
+                    <p class="project-tech">Android · Google Play</p>
+                    <p class="project-desc lang id">Aplikasi screening dan analisis saham.</p>
+                    <p class="project-desc lang en">Stock screening & analysis app.</p>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <img src="https://infrastrukturdaerah.pu.go.id/sicalmers/assets/logo-sicalmers-mlKHr47H.png" alt="SICALMERS" class="project-icon project-icon-padded">
-                        <div>
-                            <h3>SICALMERS</h3>
-                            <div class="project-tags"><span>Front-End</span><span>Web App</span></div>
-                        </div>
+                <a href="https://infrastrukturdaerah.pu.go.id/sicalmers" target="_blank" class="project-card">
+                    <div class="project-top">
+                        <img src="https://infrastrukturdaerah.pu.go.id/sicalmers/assets/logo-sicalmers-mlKHr47H.png" alt="SICALMERS" class="project-icon" style="background:#fff; padding:4px;">
+                        <i class="fa-solid fa-arrow-right project-arrow"></i>
                     </div>
-                    <p class="project-desc">
-                        <span class="lang id">Aplikasi web resmi infrastruktur daerah Kementerian PUPR.</span>
-                        <span class="lang en">Official regional infrastructure web app of the Ministry of PUPR.</span>
-                    </p>
-                    <div class="project-links">
-                        <a href="https://infrastrukturdaerah.pu.go.id/sicalmers" target="_blank"><i class="fa-solid fa-globe"></i> Visit Site</a>
-                    </div>
-                </div>
+                    <h4 class="project-title">SICALMERS</h4>
+                    <p class="project-tech">React · Web App</p>
+                    <p class="project-desc lang id">Aplikasi infrastruktur Kementerian PUPR.</p>
+                    <p class="project-desc lang en">Infrastructure app for Ministry of PUPR.</p>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
+                <a href="https://play.google.com/store/apps/details?id=us.personal.budget.loan.tracker&gl=us" target="_blank" class="project-card">
+                    <div class="project-top">
                         <img src="https://play-lh.googleusercontent.com/mOSD4EqmY7pCFqh4syMPt2BmJJdaFWeigRmC93HQlD52qbEd-Caa5G4JPllQtEB_o3_SblIow-vIwloSbYsTKA=w480-h960-rw" alt="LoanFlow" class="project-icon">
-                        <div>
-                            <h3>LoanFlow</h3>
-                            <div class="project-tags"><span>Android</span><span>Java/Kotlin</span></div>
-                        </div>
+                        <i class="fa-solid fa-arrow-right project-arrow"></i>
                     </div>
-                    <p class="project-desc">
-                        <span class="lang id">Personal budget dan loan tracker untuk mengelola keuangan pribadi.</span>
-                        <span class="lang en">Personal budget and loan tracker to manage personal finances.</span>
-                    </p>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=us.personal.budget.loan.tracker&gl=us" target="_blank"><i class="fa-brands fa-google-play"></i> Play Store</a>
-                        <a href="https://loanflow.id/" target="_blank"><i class="fa-solid fa-globe"></i> loanflow.id</a>
-                    </div>
+                    <h4 class="project-title">LoanFlow</h4>
+                    <p class="project-tech">Android · Java/Kotlin</p>
+                    <p class="project-desc lang id">Personal budget & loan tracker.</p>
+                    <p class="project-desc lang en">Personal budget & loan tracker app.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section fade-in">
+            <h3 class="section-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <h4>DumbWays Indonesia</h4>
+                    <p>Bootcamp</p>
+                    <div class="date">2023</div>
+                </div>
+                <div class="edu-card">
+                    <h4>Hacktiv8 Indonesia</h4>
+                    <p>Android Native</p>
+                    <div class="date">2021 — 2022</div>
+                </div>
+                <div class="edu-card">
+                    <h4>Indonesia Banking School</h4>
+                    <p>Bachelor, Accounting</p>
+                    <div class="date">2017 — 2021</div>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 Amri Marihot Jati</p>
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/amrimarihotjati" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
+        <p>&copy; 2026 Amri Marihot Jati.</p>
     </footer>
 
     <script>
@@ -343,6 +222,29 @@
                 span.textContent = 'EN';
             }
         }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('themeIcon');
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                icon.className = 'fa-solid fa-sun';
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                icon.className = 'fa-solid fa-moon';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Restore saved theme
+        (function() {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.getElementById('themeIcon').className = 'fa-solid fa-sun';
+            }
+        })();
     </script>
 </body>
 </html>
