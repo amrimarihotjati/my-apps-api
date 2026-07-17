@@ -331,37 +331,6 @@
     </div>
 
     <script>
-        // Web Audio API for Mechanical Keyboard Sound
-        let audioCtx;
-        function playTypeSound() {
-            try {
-                if (!audioCtx) {
-                    const AudioContext = window.AudioContext || window.webkitAudioContext;
-                    if(!AudioContext) return;
-                    audioCtx = new AudioContext();
-                }
-                if (audioCtx.state === 'suspended') {
-                    audioCtx.resume(); // only resumes if user has interacted with the page
-                }
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-                
-                // Mechanical switch 'click' profile
-                osc.type = 'square';
-                osc.frequency.setValueAtTime(100 + Math.random() * 50, audioCtx.currentTime); // random pitch for realism
-                
-                gain.gain.setValueAtTime(0, audioCtx.currentTime);
-                gain.gain.linearRampToValueAtTime(0.05, audioCtx.currentTime + 0.005); // sharp attack
-                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.03); // fast decay
-                
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-                
-                osc.start(audioCtx.currentTime);
-                osc.stop(audioCtx.currentTime + 0.03);
-            } catch(e) { } // Ignore audio errors on strict browsers
-        }
-
         // Typing Animation Logic
         document.addEventListener('DOMContentLoaded', () => {
             const commentText = "echo $ROLE";
@@ -398,9 +367,6 @@
                 } else {
                     nameCharIndex++;
                 }
-
-                // Attempt to play sound (will work after first click anywhere on page)
-                playTypeSound();
 
                 setTimeout(typeName, typeSpeed);
             }
@@ -475,7 +441,6 @@
                 if (charIndex < msg.length) {
                     typewriter.innerHTML += msg.charAt(charIndex);
                     charIndex++;
-                    playTypeSound();
                     setTimeout(typeMsg, 60);
                 } else {
                     // Tunggu 2 detik setelah selesai mengetik
