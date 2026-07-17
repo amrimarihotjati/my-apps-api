@@ -232,8 +232,12 @@ a.text-link:hover {
     max-width: 95%;
 }
 .description strong { 
-    color: var(--text-primary); 
     font-weight: 700;
+    color: var(--text-primary);
+    background: linear-gradient(90deg, var(--text-primary), var(--text-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 /* Social Buttons */
