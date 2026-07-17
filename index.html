@@ -181,16 +181,12 @@
                             </div>
                             <div class="date">Apr 2020 — Jul 2020 <br><span class="location">Jakarta, Indonesia</span></div>
                         </div>
-                        <div class="git-commits lang id">
-                            <div class="commit"><span class="hash">commit 7a2b9c</span><span class="msg">Mendesain poster dan media kit untuk Musicool Sales Competition</span></div>
-                            <div class="commit"><span class="hash">commit 3f8e1d</span><span class="msg">Merancang aset visual untuk Musicool Paper Competition</span></div>
-                            <div class="commit"><span class="hash">commit 9b4d2a</span><span class="msg">Mengembangkan konten kreatif untuk Instagram Musicool Pertamina</span></div>
-                        </div>
-                        <div class="git-commits lang en" style="display: none;">
-                            <div class="commit"><span class="hash">commit 7a2b9c</span><span class="msg">Crafted poster designs and media kits for Musicool Sales Competition</span></div>
-                            <div class="commit"><span class="hash">commit 3f8e1d</span><span class="msg">Designed visual assets for Musicool Paper Competition</span></div>
-                            <div class="commit"><span class="hash">commit 9b4d2a</span><span class="msg">Developed content for the Musicool Pertamina Instagram</span></div>
-                        </div>
+                        <p class="narrative lang id">
+                            Mendesain poster dan media kit untuk Musicool Sales Competition dan Musicool Paper Competition, serta mengembangkan konten kreatif untuk Instagram Musicool Pertamina.
+                        </p>
+                        <p class="narrative lang en" style="display: none;">
+                            Crafted poster designs and media kits for the Musicool Sales Competition and Musicool Paper Competition, alongside the development of content for the Musicool Pertamina Instagram.
+                        </p>
                     </div>
                 </div>
 
@@ -208,16 +204,12 @@
                             </div>
                             <div class="date">Jan 2020 — Feb 2020 <br><span class="location">Jakarta, Indonesia</span></div>
                         </div>
-                        <div class="git-commits lang id">
-                            <div class="commit"><span class="hash">commit 1c4e8f</span><span class="msg">Pengembangan sistem digitalisasi arsip Bank Sentral</span></div>
-                            <div class="commit"><span class="hash">commit 5d2a9b</span><span class="msg">Optimasi keamanan data untuk tingkat institusi keuangan</span></div>
-                            <div class="commit"><span class="hash">commit 8e7f3c</span><span class="msg">Modernisasi alur kerja internal berbasis web</span></div>
-                        </div>
-                        <div class="git-commits lang en" style="display: none;">
-                            <div class="commit"><span class="hash">commit 1c4e8f</span><span class="msg">Developed Central Bank digital archiving system</span></div>
-                            <div class="commit"><span class="hash">commit 5d2a9b</span><span class="msg">Optimized data security for financial institution standards</span></div>
-                            <div class="commit"><span class="hash">commit 8e7f3c</span><span class="msg">Modernized web-based internal workflows</span></div>
-                        </div>
+                        <p class="narrative lang id">
+                            Terlibat dalam proyek digitalisasi sistem arsip dan pengelolaan data internal Bank Sentral. Memastikan keamanan tingkat tinggi dan kemudahan akses data untuk keperluan operasional.
+                        </p>
+                        <p class="narrative lang en" style="display: none;">
+                            Involved in the digitization project for the Central Bank's archiving and internal data management system. Ensured high-level security and ease of data access for operational needs.
+                        </p>
                         <div class="exp-gallery">
                             <img src="assets/images/bank-indoneisa-experience.jpeg" alt="Bank Indonesia" class="gallery-img">
                         </div>
@@ -609,7 +601,7 @@
                         break;
                     case 'play pong':
                         termOutput.innerHTML += `<p>Starting Pong... Click the terminal to focus, use W/S or Up/Down arrows to move.</p>`;
-                        termOutput.innerHTML += `<canvas id="pongCanvas" width="300" height="150" style="background:#111; border: 1px solid var(--border-color); display:block; margin: 10px 0; border-radius:4px;"></canvas>`;
+                        termOutput.innerHTML += `<canvas id="pongCanvas" width="300" height="150" style="background:#111; border: 1px solid var(--border-color); display:block; margin: 10px 0; border-radius:4px; max-width: 100%;"></canvas>`;
                         startPong();
                         response = ``;
                         break;

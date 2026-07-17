@@ -413,29 +413,6 @@ a.text-link:hover {
     line-height: 1.6;
 }
 
-.git-commits {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    margin-top: 14px;
-    background: var(--bg-color);
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px dashed var(--border-color);
-}
-.commit {
-    margin-bottom: 8px;
-    display: flex;
-    gap: 12px;
-}
-.commit:last-child { margin-bottom: 0; }
-.hash {
-    color: var(--term-user);
-    font-weight: 600;
-    white-space: nowrap;
-}
-.msg {
-    color: var(--text-secondary);
-}
 
 .date {
     font-family: var(--font-mono);
