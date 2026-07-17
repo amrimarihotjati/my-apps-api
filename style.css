@@ -321,6 +321,12 @@ a.text-link:hover {
 }
 .timeline-item:last-child { margin-bottom: 0; }
 
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(128, 128, 128, 0.3); }
+    70% { box-shadow: 0 0 0 8px rgba(128, 128, 128, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(128, 128, 128, 0); }
+}
+
 .timeline-marker {
     position: absolute;
     left: -29px;
@@ -332,6 +338,7 @@ a.text-link:hover {
     border: 2px solid var(--border-color);
     transition: var(--transition);
     z-index: 2;
+    animation: pulseGlow 2.5s infinite;
 }
 
 .timeline-item:hover .timeline-marker {
@@ -504,15 +511,22 @@ a.text-link:hover {
     transform: scale(1.05);
 }
 
+@keyframes slideRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+}
+
 .project-arrow {
     color: var(--text-secondary);
     font-size: 1.2rem;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.4s ease;
+    animation: slideRight 2s ease-in-out infinite;
 }
 
 .project-card:hover .project-arrow {
     color: var(--text-primary);
-    transform: translate(4px, -4px);
+    animation: none;
+    transform: translate(4px, -4px) scale(1.1);
 }
 
 .project-title {
@@ -559,6 +573,11 @@ a.text-link:hover {
     border-color: var(--text-secondary);
 }
 
+@keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
 .edu-icon {
     position: absolute;
     left: 28px;
@@ -574,8 +593,10 @@ a.text-link:hover {
     font-size: 1.2rem;
     color: var(--text-primary);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: floatUp 3s ease-in-out infinite;
 }
 .edu-card:hover .edu-icon {
+    animation: none;
     transform: scale(1.1) rotate(5deg);
 }
 
