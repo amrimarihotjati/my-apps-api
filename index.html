@@ -607,29 +607,119 @@
                     case 'download-cv':
                         response = `bash: download-cv: command deprecated. Use the physical button above.`;
                         break;
+                    case 'play pong':
+                        termOutput.innerHTML += `<p>Starting Pong... Click the terminal to focus, use W/S or Up/Down arrows to move.</p>`;
+                        termOutput.innerHTML += `<canvas id="pongCanvas" width="300" height="150" style="background:#111; border: 1px solid var(--border-color); display:block; margin: 10px 0; border-radius:4px;"></canvas>`;
+                        startPong();
+                        response = ``;
+                        break;
 
                     default:
                         response = `bash: ${cmd}: command not found`;
                 }
 
-                termOutput.innerHTML += `<p>${response}</p>`;
+                if(response) termOutput.innerHTML += `<p>${response}</p>`;
                 
                 // Auto scroll to bottom
                 termOutput.scrollTop = termOutput.scrollHeight;
             }
         });
 
+        // Pong Game Logic
+        function startPong() {
+            const canvas = document.getElementById('pongCanvas');
+            if(!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let p1y = 60, p2y = 60, bx = 150, by = 75, dx = 3, dy = 3;
+            
+            // Key listeners
+            const keys = {};
+            const keyHandler = (e) => {
+                if(['w','s','ArrowUp','ArrowDown'].includes(e.key)) e.preventDefault();
+                keys[e.key] = e.type === 'keydown';
+            };
+            termInput.addEventListener('keydown', keyHandler);
+            termInput.addEventListener('keyup', keyHandler);
+
+            function loop() {
+                if(!document.getElementById('pongCanvas')) {
+                    termInput.removeEventListener('keydown', keyHandler);
+                    termInput.removeEventListener('keyup', keyHandler);
+                    return; // Stop game if canvas is removed (terminal cleared)
+                }
+                
+                // Movement
+                if((keys['w'] || keys['ArrowUp']) && p1y > 0) p1y -= 4;
+                if((keys['s'] || keys['ArrowDown']) && p1y < 120) p1y += 4;
+                
+                // Simple AI for P2
+                if(by > p2y + 15 && p2y < 120) p2y += 2.5;
+                if(by < p2y + 15 && p2y > 0) p2y -= 2.5;
+
+                // Ball physics
+                bx += dx; by += dy;
+                if(by <= 0 || by >= 146) dy = -dy; // floor/ceiling collision
+                
+                // Paddle collision
+                if(bx <= 15 && by >= p1y && by <= p1y + 30) { dx = Math.abs(dx); dx += 0.2; }
+                if(bx >= 281 && by >= p2y && by <= p2y + 30) { dx = -Math.abs(dx); dx -= 0.2; }
+                
+                // Score / Reset
+                if(bx < 0 || bx > 300) { bx = 150; by = 75; dx = 3 * (Math.random()>0.5?1:-1); }
+
+                // Draw
+                ctx.fillStyle = '#111';
+                ctx.fillRect(0, 0, 300, 150);
+                
+                ctx.fillStyle = '#4ade80';
+                ctx.fillRect(10, p1y, 5, 30); // P1
+                ctx.fillRect(285, p2y, 5, 30); // P2
+                ctx.fillRect(bx, by, 4, 4); // Ball
+                
+                // Center line
+                for(let i=0; i<150; i+=10) ctx.fillRect(149, i, 2, 5);
+                
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+        }
+
         // Language & Theme Toggle
         function toggleLanguage() {
             const body = document.body;
-            const span = document.getElementById('currentLang');
-            if (body.classList.contains('lang-en')) {
-                body.classList.replace('lang-en', 'lang-id');
-                span.textContent = 'ID';
-            } else {
-                body.classList.replace('lang-id', 'lang-en');
-                span.textContent = 'EN';
-            }
+            const btn = document.getElementById('currentLang');
+            const isId = body.classList.contains('lang-id');
+            
+            body.classList.remove('lang-id', 'lang-en');
+            
+            const newLang = isId ? 'lang-en' : 'lang-id';
+            body.classList.add(newLang);
+            btn.innerText = isId ? 'ID' : 'EN';
+
+            // Scramble Text Effect on newly visible elements
+            const visibleElements = document.querySelectorAll(`.${newLang}`);
+            const chars = '!<>-_\/[]{}—=+*^?#_';
+            
+            visibleElements.forEach(el => {
+                // Only scramble elements containing direct text, not complex nested structures
+                if(el.children.length === 0) {
+                    const originalText = el.innerText;
+                    let iterations = 0;
+                    
+                    const interval = setInterval(() => {
+                        el.innerText = originalText.split('').map((letter, index) => {
+                            if(index < iterations || letter === ' ') return letter;
+                            return chars[Math.floor(Math.random() * chars.length)];
+                        }).join('');
+                        
+                        if(iterations >= originalText.length) {
+                            clearInterval(interval);
+                            el.innerText = originalText;
+                        }
+                        iterations += originalText.length / 15; // 15 frames to resolve
+                    }, 30);
+                }
+            });
         }
 
         function toggleTheme(event) {
