@@ -31,12 +31,11 @@
     <main class="main-container">
         <!-- Hero Section -->
         <section class="hero reveal-up">
-            <div class="code-comment"><span id="comment-typewriter"></span></div>
+            <div class="code-comment"><span class="terminal-prefix">amri@macbook</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-prompt">$</span> <span id="comment-typewriter"></span></div>
             <h1 class="title">Amri <span id="name-typewriter"></span><span class="blinking-cursor">_</span></h1>
             <h2 class="subtitle">
-                <span class="bracket">&lt;</span>
-                <span id="role-typewriter"></span>
-                <span class="bracket">/&gt;</span><span class="blinking-cursor">_</span>
+                <span class="terminal-prefix">root@server</span><span class="terminal-colon">:</span><span class="terminal-path">/skills</span><span class="terminal-prompt">#</span> 
+                <span id="role-typewriter"></span><span class="blinking-cursor">_</span>
             </h2>
             
             <p class="description lang id">
@@ -53,12 +52,12 @@
             </div>
 
             <div class="tech-stack reveal-up delay-2">
-                <span class="tech-tag">Android</span>
-                <span class="tech-tag">Java/Kotlin</span>
-                <span class="tech-tag">React/Next.js</span>
-                <span class="tech-tag">Google Play Console</span>
-                <span class="tech-tag">REST API</span>
-                <span class="tech-tag">Git</span>
+                <span class="tech-tag"><span class="terminal-prompt">&gt;_</span> Android</span>
+                <span class="tech-tag"><span class="terminal-prompt">&gt;_</span> Java/Kotlin</span>
+                <span class="tech-tag"><span class="terminal-prompt">&gt;_</span> React/Next.js</span>
+                <span class="tech-tag"><span class="terminal-prompt">&gt;_</span> Google Play Console</span>
+                <span class="tech-tag"><span class="terminal-prompt">&gt;_</span> REST API</span>
+                <span class="tech-tag"><span class="terminal-prompt">&gt;_</span> Git</span>
             </div>
         </section>
 
@@ -304,7 +303,7 @@
     <script>
         // Typing Animation Logic
         document.addEventListener('DOMContentLoaded', () => {
-            const commentText = "// Software Developer";
+            const commentText = "echo $ROLE";
             const roleText = "Frontend | Android | Publisher";
             const commentEl = document.getElementById('comment-typewriter');
             const roleEl = document.getElementById('role-typewriter');
