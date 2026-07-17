@@ -658,21 +658,6 @@ a.text-link:hover {
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 
-/* Virtual Pet (Minimal) */
-#virtual-pet {
-    position: fixed;
-    bottom: 24px;
-    z-index: 1000;
-    cursor: pointer;
-    user-select: none;
-    font-family: var(--font-mono);
-    color: var(--text-primary);
-    font-weight: 600;
-    font-size: 1.2rem;
-    white-space: nowrap;
-    transition: color 0.3s;
-}
-
 /* Interactive Terminal Footer */
 .terminal-footer {
     background: var(--card-bg);

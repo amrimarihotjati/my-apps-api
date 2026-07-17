@@ -46,7 +46,7 @@
             </p>
 
             <div class="social-links reveal-up delay-1">
-                <a href="#" onclick="summonPet(event)" class="social-btn terminal-btn" id="summonBtn"><i class="fa-solid fa-bug"></i> &gt;_ ./summon_pet.sh</a>
+                <a href="#" onclick="openTerminal(event)" class="social-btn terminal-btn" id="terminalBtn"><i class="fa-solid fa-terminal"></i> &gt;_ ./open_terminal.sh</a>
                 <a href="mailto:amrimarihotjati@screnix.com" class="social-btn"><i class="fa-solid fa-envelope"></i> amrimarihotjati@screnix.com</a>
                 <a href="https://www.linkedin.com/in/amrimarihotjati/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/amrimarihotjati" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -424,79 +424,43 @@
             setTimeout(typeComment, 400); // Start other elements
         });
 
-        // Pet Companion Logic
-        let petSummoned = false;
-        function summonPet(e) {
+        // Terminal Button Logic
+        function openTerminal(e) {
             e.preventDefault();
-            if(petSummoned) return;
-            petSummoned = true;
+            const btn = e.currentTarget;
             
-            const btn = document.getElementById('summonBtn');
-            btn.innerHTML = `<i class="fa-solid fa-check"></i> Cat Summoned!`;
-            btn.style.opacity = '0.5';
-            btn.style.cursor = 'default';
+            const compliments = [
+                // Cewek
+                "Halo cantik, semangat terus!",
+                "Senyummu manis banget hari ini!",
+                "Harimu seindah senyummu, cantik!",
+                // Cowok (Brader)
+                "Tetap semangat ya brader!",
+                "Sukses selalu buat lo brader!",
+                "Keren banget lu hari ini!",
+                // Profesional
+                "Welcome, esteemed professional visitor.",
+                "Glad to see you here.",
+                "Have a great day ahead!"
+            ];
+            
+            const msg = compliments[Math.floor(Math.random() * compliments.length)];
+            
+            // Ganti text menyapa
+            btn.innerHTML = `<i class="fa-solid fa-heart"></i> ${msg}`;
+            btn.style.pointerEvents = 'none';
 
-            const pet = document.createElement('div');
-            pet.id = 'virtual-pet';
-            pet.innerHTML = `^._.^`;
-            document.body.appendChild(pet);
-
-            let currentX = window.innerWidth / 2;
-            let targetX = window.innerWidth / 2;
-            let isFacingRight = true;
-            let isScrolling = false;
-            let scrollTimeout;
-
-            // Follow cursor target
-            window.addEventListener('mousemove', (e) => {
-                targetX = e.clientX;
-            });
-
-            // Smooth animation loop
-            function animatePet() {
-                // Smooth interpolation
-                currentX += (targetX - currentX) * 0.08;
+            // Tunggu beberapa detik, lalu auto-scroll ke terminal bawah
+            setTimeout(() => {
+                document.querySelector('.terminal-footer').scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => document.getElementById('term-input').focus(), 500);
                 
-                // Determine facing direction (if distance is significant)
-                if (targetX - currentX > 2) isFacingRight = true;
-                else if (targetX - currentX < -2) isFacingRight = false;
-                
-                // Apply transform (centering + flip + scroll jump)
-                pet.style.transform = `translateX(-50%) scaleX(${isFacingRight ? 1 : -1}) ${isScrolling ? 'translateY(-12px)' : 'translateY(0)'}`;
-                pet.style.left = currentX + 'px';
-                
-                requestAnimationFrame(animatePet);
-            }
-            animatePet();
-
-            // Interactivity on scroll
-            window.addEventListener('scroll', () => {
-                isScrolling = true;
-                pet.innerHTML = `&gt;_._&lt;`; // Squinting face when moving fast
-                
-                clearTimeout(scrollTimeout);
-                
-                // If on mobile (no mousemove), move cat based on scroll percentage
-                if(window.innerWidth < 768) {
-                    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-                    targetX = scrollPercent * window.innerWidth;
-                }
-
-                scrollTimeout = setTimeout(() => {
-                    isScrolling = false;
-                    pet.innerHTML = `^._.^`; // Back to normal face
-                }, 150);
-            });
-
-            // Interactivity on click
-            pet.addEventListener('click', () => {
-                pet.innerHTML = `^O_O^`; // Surprised face
-                pet.style.color = '#4ade80'; // Turn green
+                // Kembalikan tombol seperti semula setelah selesai
                 setTimeout(() => {
-                    pet.innerHTML = `^._.^`;
-                    pet.style.color = 'var(--text-primary)';
-                }, 600);
-            });
+                    btn.innerHTML = `<i class="fa-solid fa-terminal"></i> &gt;_ ./open_terminal.sh`;
+                    btn.style.pointerEvents = 'auto';
+                }, 2000);
+            }, 1800);
         }
 
         // Interactive Terminal Logic
@@ -566,7 +530,7 @@
                         response = `[=====>               ] 25% bypassing mainframe...<br>[==========>         ] 50% disabling firewall...<br>[================>   ] 75% extracting passwords...<br>Error: User is too smart. Hack failed. 🕶️`;
                         break;
                     case 'ls':
-                        response = `drwxr-xr-x  projects/<br>-rw-r--r--  resume.pdf<br>-rwxr-xr-x  summon_pet.sh<br>-rw-r--r--  README.md`;
+                        response = `drwxr-xr-x  projects/<br>-rw-r--r--  resume.pdf<br>-rwxr-xr-x  open_terminal.sh<br>-rw-r--r--  README.md`;
                         break;
                     case 'pwd':
                         response = `/home/amri/portfolio`;
