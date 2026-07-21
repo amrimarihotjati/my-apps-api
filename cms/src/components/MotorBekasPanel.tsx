@@ -11,10 +11,12 @@ export function MotorBekasPanel() {
   const [year, setYear] = useState(2022)
   const [priceMin, setPriceMin] = useState(0)
   const [priceMax, setPriceMax] = useState(0)
+  const [imageFile, setImageFile] = useState<File | null>(null)
   const [imageUrl, setImageUrl] = useState('')
   const [engineCapacity, setEngineCapacity] = useState('150cc')
   const [transmission, setTransmission] = useState('Matic')
   const [mileage, setMileage] = useState('10.000 km')
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   useEffect(() => {
     fetchMotorcycles()
@@ -31,8 +33,42 @@ export function MotorBekasPanel() {
     setLoading(false)
   }
 
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      setImageFile(e.target.files[0])
+    }
+  }
+
   const addMotorcycle = async (e: FormEvent) => {
     e.preventDefault()
+    setIsSubmitting(true)
+    
+    let finalImageUrl = imageUrl
+    
+    // Upload image if file is selected
+    if (imageFile) {
+      const fileExt = imageFile.name.split('.').pop()
+      const fileName = `${Math.random()}.${fileExt}`
+      const filePath = `public/${fileName}`
+      
+      const { error: uploadError } = await supabase.storage
+        .from('motor-bekas-images')
+        .upload(filePath, imageFile)
+        
+      if (uploadError) {
+        alert('Gagal mengupload gambar: ' + uploadError.message)
+        setIsSubmitting(false)
+        return
+      }
+      
+      const { data } = supabase.storage.from('motor-bekas-images').getPublicUrl(filePath)
+      finalImageUrl = data.publicUrl
+    } else if (!finalImageUrl) {
+      alert('Pilih gambar atau masukkan URL gambar!')
+      setIsSubmitting(false)
+      return
+    }
+
     const { error } = await supabase.from('motorcycles').insert([
       {
         name,
@@ -40,7 +76,7 @@ export function MotorBekasPanel() {
         year,
         price_min: priceMin,
         price_max: priceMax,
-        image_url: imageUrl,
+        image_url: finalImageUrl,
         engine_capacity: engineCapacity,
         transmission,
         mileage
@@ -54,7 +90,9 @@ export function MotorBekasPanel() {
       fetchMotorcycles()
       setName('')
       setImageUrl('')
+      setImageFile(null)
     }
+    setIsSubmitting(false)
   }
 
   const generateConfig = async () => {
@@ -137,8 +175,10 @@ export function MotorBekasPanel() {
             </div>
 
             <div className="form-group">
-              <label>URL Gambar</label>
-              <input type="url" required value={imageUrl} onChange={e => setImageUrl(e.target.value)} />
+              <label>Gambar Motor</label>
+              <input type="file" accept="image/*" onChange={handleImageChange} />
+              <small style={{color: 'var(--text-muted)'}}>Atau masukkan URL gambar jika tidak ingin upload:</small>
+              <input type="url" value={imageUrl} onChange={e => setImageUrl(e.target.value)} placeholder="https://..." />
             </div>
 
             <div className="form-row">
@@ -160,7 +200,9 @@ export function MotorBekasPanel() {
               </div>
             </div>
 
-            <button type="submit" className="btn-success">Simpan Data</button>
+            <button type="submit" className="btn-success" disabled={isSubmitting}>
+              {isSubmitting ? 'Menyimpan...' : 'Simpan Data'}
+            </button>
           </form>
         </section>
 
