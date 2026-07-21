@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { supabase } from '../supabaseClient'
 
 export function MotorBekasPanel() {
@@ -31,7 +31,7 @@ export function MotorBekasPanel() {
     setLoading(false)
   }
 
-  const addMotorcycle = async (e: React.FormEvent) => {
+  const addMotorcycle = async (e: FormEvent) => {
     e.preventDefault()
     const { error } = await supabase.from('motorcycles').insert([
       {
