@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react'
-import { supabase } from './supabaseClient'
-import './App.css'
+import React, { useEffect, useState } from 'react'
+import { supabase } from '../supabaseClient'
 
-function App() {
+export function MotorBekasPanel() {
   const [motorcycles, setMotorcycles] = useState<any[]>([])
   const [loading, setLoading] = useState(false)
 
@@ -34,7 +33,7 @@ function App() {
 
   const addMotorcycle = async (e: React.FormEvent) => {
     e.preventDefault()
-    const { data, error } = await supabase.from('motorcycles').insert([
+    const { error } = await supabase.from('motorcycles').insert([
       {
         name,
         brand,
@@ -53,15 +52,12 @@ function App() {
     } else {
       alert('Data motor berhasil ditambahkan!')
       fetchMotorcycles()
-      // Reset form
       setName('')
       setImageUrl('')
     }
   }
 
   const generateConfig = async () => {
-    // Here we can aggregate data from multiple tables
-    // For now, we just structure the motorcycles
     const config = {
       admob_config: {
         native_ad_id: "ca-app-pub-3940256099942544/2247696110",
@@ -69,7 +65,7 @@ function App() {
         native_ad_frequency: 6,
         interstitial_ad_frequency: 3
       },
-      slideshow: [], // Can be fetched from supabase slideshows table
+      slideshow: [], 
       used_motorcycles: motorcycles.map(m => ({
         id: m.id,
         name: m.name,
@@ -84,29 +80,29 @@ function App() {
           mileage: m.mileage
         }
       })),
-      marketplaces: [], // Can be fetched from supabase marketplaces table
-      news_articles: [] // Can be fetched from supabase news_articles table
+      marketplaces: [],
+      news_articles: []
     }
 
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(config, null, 2))
     const downloadAnchorNode = document.createElement('a')
     downloadAnchorNode.setAttribute("href", dataStr)
-    downloadAnchorNode.setAttribute("download", "config.json")
-    document.body.appendChild(downloadAnchorNode) // required for firefox
+    downloadAnchorNode.setAttribute("download", "config-motor-bekas.json")
+    document.body.appendChild(downloadAnchorNode)
     downloadAnchorNode.click()
     downloadAnchorNode.remove()
   }
 
   return (
-    <div className="container">
-      <header className="header">
-        <h1>CMS Jual Beli Motor Bekas</h1>
+    <div className="panel-content">
+      <header className="header-actions">
+        <h2>Panel Manajemen Motor Bekas</h2>
         <button className="btn-primary" onClick={generateConfig}>⬇ Generate config.json</button>
       </header>
 
-      <main className="main-content">
+      <div className="grid-layout">
         <section className="form-section">
-          <h2>Tambah Motor Baru</h2>
+          <h3>Tambah Motor Baru</h3>
           <form onSubmit={addMotorcycle} className="motor-form">
             <div className="form-group">
               <label>Nama Motor</label>
@@ -169,7 +165,7 @@ function App() {
         </section>
 
         <section className="table-section">
-          <h2>Daftar Motor</h2>
+          <h3>Daftar Motor</h3>
           {loading ? (
             <p>Memuat data...</p>
           ) : (
@@ -179,7 +175,6 @@ function App() {
                   <th>Gambar</th>
                   <th>Nama</th>
                   <th>Tahun</th>
-                  <th>Harga Min</th>
                   <th>Harga Max</th>
                 </tr>
               </thead>
@@ -191,7 +186,6 @@ function App() {
                     </td>
                     <td>{m.name}</td>
                     <td>{m.year}</td>
-                    <td>Rp {m.price_min.toLocaleString('id-ID')}</td>
                     <td>Rp {m.price_max.toLocaleString('id-ID')}</td>
                   </tr>
                 ))}
@@ -199,9 +193,7 @@ function App() {
             </table>
           )}
         </section>
-      </main>
+      </div>
     </div>
   )
 }
-
-export default App

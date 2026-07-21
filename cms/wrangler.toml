@@ -1,0 +1,7 @@
+name = "unified-cms"
+compatibility_date = "2024-07-21"
+pages_build_output_dir = "dist"
+
+# Anda dapat menjalankan `npm run build` dan menggunakan 
+# Cloudflare Pages untuk men-deploy folder dist/ ini secara otomatis
+# dengan menghubungkan repositori GitHub ini.
