@@ -15332,43 +15332,43 @@
     {
         "vendor": "gram - ANTAM",
         "date": "2026-08-28",
-        "buy_price": 2498000,
-        "sell_price": 2764000
+        "buy_price": 2488000,
+        "sell_price": 2759000
     },
     {
         "vendor": "gram - ANTAM MULIA RETRO",
         "date": "2026-08-28",
-        "buy_price": 2498000,
-        "sell_price": 2698000
+        "buy_price": 2488000,
+        "sell_price": 2701000
     },
     {
         "vendor": "gram - ANTAM NON PEGADAIAN",
         "date": "2026-08-28",
-        "buy_price": 2297000,
-        "sell_price": 2698000
+        "buy_price": 2290000,
+        "sell_price": 2701000
     },
     {
         "vendor": "gram - GALERI 24",
         "date": "2026-08-28",
-        "buy_price": 2516000,
-        "sell_price": 2665000
+        "buy_price": 2506000,
+        "sell_price": 2657000
     },
     {
         "vendor": "gram - LOTUS ARCHI",
         "date": "2026-08-28",
-        "buy_price": 2498000,
-        "sell_price": 2677000
+        "buy_price": 2488000,
+        "sell_price": 2612000
     },
     {
         "vendor": "gram - SENTRA BUYBACK",
         "date": "2026-08-28",
-        "buy_price": 2297000,
+        "buy_price": 2290000,
         "sell_price": 0
     },
     {
         "vendor": "gram - UBS",
         "date": "2026-08-28",
-        "buy_price": 2498000,
-        "sell_price": 2726000
+        "buy_price": 2488000,
+        "sell_price": 2729000
     }
 ]
