@@ -1,57 +1,57 @@
 {
-    "last_updated": "2026-10-07 09:08:13",
+    "last_updated": "2026-10-08 04:47:15",
     "vendor": "Galeri24",
     "prices": [
         {
             "weight": "0.5",
             "unit": "gram - ANTAM",
-            "buy_price": 1170000,
-            "sell_price": 1356000,
-            "change_nominal": 2000,
-            "change_percentage": 0.15,
-            "trend": "up"
+            "buy_price": 1171000,
+            "sell_price": 1361000,
+            "change_nominal": -1000,
+            "change_percentage": -0.07,
+            "trend": "down"
         },
         {
             "weight": "1",
             "unit": "gram - ANTAM",
-            "buy_price": 2340000,
-            "sell_price": 2609000,
-            "change_nominal": 2000,
-            "change_percentage": 0.08,
-            "trend": "up"
+            "buy_price": 2343000,
+            "sell_price": 2619000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "2",
             "unit": "gram - ANTAM",
-            "buy_price": 4681000,
-            "sell_price": 5157000,
-            "change_nominal": -1000,
-            "change_percentage": -0.02,
-            "trend": "down"
+            "buy_price": 4686000,
+            "sell_price": 5177000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "3",
             "unit": "gram - ANTAM",
-            "buy_price": 7022000,
-            "sell_price": 7709000,
-            "change_nominal": 1000,
-            "change_percentage": 0.01,
-            "trend": "up"
+            "buy_price": 7029000,
+            "sell_price": 7740000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "5",
             "unit": "gram - ANTAM",
-            "buy_price": 11703000,
-            "sell_price": 12815000,
-            "change_nominal": -1000,
-            "change_percentage": -0.01,
-            "trend": "down"
+            "buy_price": 11715000,
+            "sell_price": 12866000,
+            "change_nominal": 2000,
+            "change_percentage": 0.02,
+            "trend": "up"
         },
         {
             "weight": "10",
             "unit": "gram - ANTAM",
-            "buy_price": 23407000,
-            "sell_price": 25573000,
+            "buy_price": 23430000,
+            "sell_price": 25675000,
             "change_nominal": 0,
             "change_percentage": 0.0,
             "trend": "flat"
@@ -59,152 +59,152 @@
         {
             "weight": "25",
             "unit": "gram - ANTAM",
-            "buy_price": 58231000,
-            "sell_price": 63805000,
-            "change_nominal": -2000,
+            "buy_price": 58287000,
+            "sell_price": 64059000,
+            "change_nominal": -1000,
             "change_percentage": -0.0,
             "trend": "down"
         },
         {
             "weight": "50",
             "unit": "gram - ANTAM",
-            "buy_price": 116462000,
-            "sell_price": 127530000,
-            "change_nominal": 2000,
+            "buy_price": 116574000,
+            "sell_price": 128038000,
+            "change_nominal": 0,
             "change_percentage": 0.0,
-            "trend": "up"
+            "trend": "flat"
         },
         {
             "weight": "100",
             "unit": "gram - ANTAM",
-            "buy_price": 232925000,
-            "sell_price": 254981000,
+            "buy_price": 233148000,
+            "sell_price": 255996000,
+            "change_nominal": -2000,
+            "change_percentage": -0.0,
+            "trend": "down"
+        },
+        {
+            "weight": "0.5",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 1171000,
+            "sell_price": 1357000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "1",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 2343000,
+            "sell_price": 2520000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "2",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 4686000,
+            "sell_price": 4958000,
+            "change_nominal": 1000,
+            "change_percentage": 0.02,
+            "trend": "up"
+        },
+        {
+            "weight": "3",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 7029000,
+            "sell_price": 7343000,
+            "change_nominal": -1000,
+            "change_percentage": -0.01,
+            "trend": "down"
+        },
+        {
+            "weight": "5",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 11715000,
+            "sell_price": 12310000,
+            "change_nominal": 1000,
+            "change_percentage": 0.01,
+            "trend": "up"
+        },
+        {
+            "weight": "10",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 23430000,
+            "sell_price": 24510000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "25",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 58287000,
+            "sell_price": 61124000,
+            "change_nominal": -2000,
+            "change_percentage": -0.0,
+            "trend": "down"
+        },
+        {
+            "weight": "50",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 116574000,
+            "sell_price": 122187000,
+            "change_nominal": -1000,
+            "change_percentage": -0.0,
+            "trend": "down"
+        },
+        {
+            "weight": "100",
+            "unit": "gram - ANTAM MULIA RETRO",
+            "buy_price": 233148000,
+            "sell_price": 244133000,
             "change_nominal": 1000,
             "change_percentage": 0.0,
             "trend": "up"
         },
         {
             "weight": "0.5",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 1170000,
-            "sell_price": 1354000,
-            "change_nominal": 2000,
-            "change_percentage": 0.15,
-            "trend": "up"
+            "unit": "gram - ANTAM NON PEGADAIAN",
+            "buy_price": 1117000,
+            "sell_price": 1357000,
+            "change_nominal": -2000,
+            "change_percentage": -0.15,
+            "trend": "down"
         },
         {
             "weight": "1",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 2340000,
-            "sell_price": 2515000,
+            "unit": "gram - ANTAM NON PEGADAIAN",
+            "buy_price": 2234000,
+            "sell_price": 2520000,
             "change_nominal": 1000,
             "change_percentage": 0.04,
             "trend": "up"
         },
         {
             "weight": "2",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 4681000,
-            "sell_price": 4947000,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
+            "unit": "gram - ANTAM NON PEGADAIAN",
+            "buy_price": 4468000,
+            "sell_price": 4958000,
+            "change_nominal": 2000,
+            "change_percentage": 0.04,
+            "trend": "up"
         },
         {
             "weight": "3",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 7022000,
-            "sell_price": 7327000,
-            "change_nominal": -1000,
-            "change_percentage": -0.01,
-            "trend": "down"
-        },
-        {
-            "weight": "5",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 11703000,
-            "sell_price": 12283000,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
-        },
-        {
-            "weight": "10",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 23407000,
-            "sell_price": 24458000,
-            "change_nominal": 2000,
+            "unit": "gram - ANTAM NON PEGADAIAN",
+            "buy_price": 6703000,
+            "sell_price": 7343000,
+            "change_nominal": 1000,
             "change_percentage": 0.01,
             "trend": "up"
         },
         {
-            "weight": "25",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 58231000,
-            "sell_price": 60992000,
-            "change_nominal": -1000,
-            "change_percentage": -0.0,
-            "trend": "down"
-        },
-        {
-            "weight": "50",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 116462000,
-            "sell_price": 121925000,
-            "change_nominal": -2000,
-            "change_percentage": -0.0,
-            "trend": "down"
-        },
-        {
-            "weight": "100",
-            "unit": "gram - ANTAM MULIA RETRO",
-            "buy_price": 232925000,
-            "sell_price": 243609000,
-            "change_nominal": -2000,
-            "change_percentage": -0.0,
-            "trend": "down"
-        },
-        {
-            "weight": "0.5",
-            "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 1114000,
-            "sell_price": 1354000,
-            "change_nominal": 1000,
-            "change_percentage": 0.07,
-            "trend": "up"
-        },
-        {
-            "weight": "1",
-            "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 2229000,
-            "sell_price": 2515000,
-            "change_nominal": -1000,
-            "change_percentage": -0.04,
-            "trend": "down"
-        },
-        {
-            "weight": "2",
-            "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 4459000,
-            "sell_price": 4947000,
-            "change_nominal": -2000,
-            "change_percentage": -0.04,
-            "trend": "down"
-        },
-        {
-            "weight": "3",
-            "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 6689000,
-            "sell_price": 7327000,
-            "change_nominal": -2000,
-            "change_percentage": -0.03,
-            "trend": "down"
-        },
-        {
             "weight": "5",
             "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 11149000,
-            "sell_price": 12283000,
+            "buy_price": 11171000,
+            "sell_price": 12310000,
             "change_nominal": -1000,
             "change_percentage": -0.01,
             "trend": "down"
@@ -212,107 +212,107 @@
         {
             "weight": "10",
             "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 22299000,
-            "sell_price": 24458000,
-            "change_nominal": 1000,
+            "buy_price": 22343000,
+            "sell_price": 24510000,
+            "change_nominal": 0,
             "change_percentage": 0.0,
-            "trend": "up"
+            "trend": "flat"
         },
         {
             "weight": "25",
             "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 55747000,
-            "sell_price": 60992000,
-            "change_nominal": 2000,
+            "buy_price": 55859000,
+            "sell_price": 61124000,
+            "change_nominal": 1000,
             "change_percentage": 0.0,
             "trend": "up"
         },
         {
             "weight": "50",
             "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 111495000,
-            "sell_price": 121925000,
-            "change_nominal": 2000,
+            "buy_price": 111718000,
+            "sell_price": 122187000,
+            "change_nominal": 0,
             "change_percentage": 0.0,
-            "trend": "up"
+            "trend": "flat"
         },
         {
             "weight": "100",
             "unit": "gram - ANTAM NON PEGADAIAN",
-            "buy_price": 222990000,
-            "sell_price": 243609000,
-            "change_nominal": 2000,
-            "change_percentage": 0.0,
-            "trend": "up"
+            "buy_price": 223436000,
+            "sell_price": 244133000,
+            "change_nominal": -1000,
+            "change_percentage": -0.0,
+            "trend": "down"
         },
         {
             "weight": "0.001",
             "unit": "gram - BABY GALERI 24",
             "buy_price": 11000,
             "sell_price": 16000,
-            "change_nominal": -2000,
-            "change_percentage": -12.5,
-            "trend": "down"
+            "change_nominal": 1000,
+            "change_percentage": 6.25,
+            "trend": "up"
         },
         {
             "weight": "0.02",
             "unit": "gram - BABY GALERI 24",
             "buy_price": 69000,
             "sell_price": 110000,
-            "change_nominal": 2000,
-            "change_percentage": 1.82,
-            "trend": "up"
+            "change_nominal": -1000,
+            "change_percentage": -0.91,
+            "trend": "down"
         },
         {
             "weight": "0.05",
             "unit": "gram - BABY GALERI 24",
             "buy_price": 150000,
             "sell_price": 208000,
-            "change_nominal": -2000,
-            "change_percentage": -0.96,
-            "trend": "down"
+            "change_nominal": 2000,
+            "change_percentage": 0.96,
+            "trend": "up"
         },
         {
             "weight": "0.1",
             "unit": "gram - BABY GALERI 24",
-            "buy_price": 253000,
-            "sell_price": 333000,
-            "change_nominal": 1000,
-            "change_percentage": 0.3,
-            "trend": "up"
+            "buy_price": 254000,
+            "sell_price": 334000,
+            "change_nominal": -2000,
+            "change_percentage": -0.6,
+            "trend": "down"
         },
         {
             "weight": "0.2",
             "unit": "gram - BABY GALERI 24",
-            "buy_price": 484000,
-            "sell_price": 639000,
-            "change_nominal": -2000,
-            "change_percentage": -0.31,
-            "trend": "down"
+            "buy_price": 485000,
+            "sell_price": 640000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "0.25",
             "unit": "gram - BABY GALERI 24",
             "buy_price": 0,
             "sell_price": 1066000,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
+            "change_nominal": -2000,
+            "change_percentage": -0.19,
+            "trend": "down"
         },
         {
             "weight": "0.3",
             "unit": "gram - BABY GALERI 24",
             "buy_price": 727000,
-            "sell_price": 906000,
-            "change_nominal": -1000,
-            "change_percentage": -0.11,
-            "trend": "down"
+            "sell_price": 907000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "0.4",
             "unit": "gram - BABY GALERI 24",
-            "buy_price": 969000,
-            "sell_price": 1166000,
+            "buy_price": 970000,
+            "sell_price": 1168000,
             "change_nominal": -2000,
             "change_percentage": -0.17,
             "trend": "down"
@@ -320,28 +320,28 @@
         {
             "weight": "0.5",
             "unit": "gram - BABY GALERI 24",
-            "buy_price": 1200000,
-            "sell_price": 1400000,
-            "change_nominal": -2000,
-            "change_percentage": -0.14,
+            "buy_price": 1201000,
+            "sell_price": 1402000,
+            "change_nominal": -1000,
+            "change_percentage": -0.07,
             "trend": "down"
         },
         {
             "weight": "1.5",
             "unit": "gram - BABY SERIES INVESTASI",
             "buy_price": 0,
-            "sell_price": 4481000,
-            "change_nominal": -1000,
-            "change_percentage": -0.02,
-            "trend": "down"
+            "sell_price": 4488000,
+            "change_nominal": 1000,
+            "change_percentage": 0.02,
+            "trend": "up"
         },
         {
             "weight": "1.5",
             "unit": "gram - BABY SERIES TUMBUHAN",
             "buy_price": 0,
-            "sell_price": 4481000,
-            "change_nominal": 2000,
-            "change_percentage": 0.04,
+            "sell_price": 4488000,
+            "change_nominal": 1000,
+            "change_percentage": 0.02,
             "trend": "up"
         },
         {
@@ -349,8 +349,8 @@
             "unit": "gram - BATIK SERIES",
             "buy_price": 0,
             "sell_price": 108000,
-            "change_nominal": -2000,
-            "change_percentage": -1.85,
+            "change_nominal": -1000,
+            "change_percentage": -0.93,
             "trend": "down"
         },
         {
@@ -358,15 +358,15 @@
             "unit": "gram - BATIK SERIES",
             "buy_price": 0,
             "sell_price": 257000,
-            "change_nominal": 2000,
-            "change_percentage": 0.78,
-            "trend": "up"
+            "change_nominal": -2000,
+            "change_percentage": -0.78,
+            "trend": "down"
         },
         {
             "weight": "0.05",
             "unit": "gram - BATIK SERIES",
             "buy_price": 0,
-            "sell_price": 305000,
+            "sell_price": 306000,
             "change_nominal": 0,
             "change_percentage": 0.0,
             "trend": "flat"
@@ -384,88 +384,88 @@
             "weight": "0.5",
             "unit": "gram - BATIK SERIES",
             "buy_price": 0,
-            "sell_price": 1398000,
-            "change_nominal": 2000,
-            "change_percentage": 0.14,
-            "trend": "up"
+            "sell_price": 1399000,
+            "change_nominal": -1000,
+            "change_percentage": -0.07,
+            "trend": "down"
         },
         {
             "weight": "2",
             "unit": "gram - BATIK SERIES",
-            "buy_price": 4681000,
-            "sell_price": 5275000,
-            "change_nominal": -2000,
-            "change_percentage": -0.04,
-            "trend": "down"
+            "buy_price": 4686000,
+            "sell_price": 5279000,
+            "change_nominal": 2000,
+            "change_percentage": 0.04,
+            "trend": "up"
         },
         {
             "weight": "2.2",
             "unit": "gram - BATIK SERIES",
             "buy_price": 0,
-            "sell_price": 6696000,
-            "change_nominal": 2000,
-            "change_percentage": 0.03,
-            "trend": "up"
+            "sell_price": 6702000,
+            "change_nominal": -2000,
+            "change_percentage": -0.03,
+            "trend": "down"
         },
         {
             "weight": "4.2",
             "unit": "gram - BATIK SERIES",
             "buy_price": 0,
-            "sell_price": 11517000,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
-        },
-        {
-            "weight": "5",
-            "unit": "gram - BATIK SERIES",
-            "buy_price": 11703000,
-            "sell_price": 12757000,
+            "sell_price": 11528000,
             "change_nominal": 1000,
             "change_percentage": 0.01,
             "trend": "up"
         },
         {
-            "weight": "10",
+            "weight": "5",
             "unit": "gram - BATIK SERIES",
-            "buy_price": 23407000,
-            "sell_price": 25165000,
-            "change_nominal": 2000,
-            "change_percentage": 0.01,
-            "trend": "up"
-        },
-        {
-            "weight": "1.06",
-            "unit": "gram - DINAR G24",
-            "buy_price": 2481000,
-            "sell_price": 2573000,
-            "change_nominal": -1000,
-            "change_percentage": -0.04,
-            "trend": "down"
-        },
-        {
-            "weight": "2.13",
-            "unit": "gram - DINAR G24",
-            "buy_price": 4985000,
-            "sell_price": 5123000,
+            "buy_price": 11715000,
+            "sell_price": 12768000,
             "change_nominal": 0,
             "change_percentage": 0.0,
             "trend": "flat"
         },
         {
+            "weight": "10",
+            "unit": "gram - BATIK SERIES",
+            "buy_price": 23430000,
+            "sell_price": 25189000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "1.06",
+            "unit": "gram - DINAR G24",
+            "buy_price": 2483000,
+            "sell_price": 2579000,
+            "change_nominal": 1000,
+            "change_percentage": 0.04,
+            "trend": "up"
+        },
+        {
+            "weight": "2.13",
+            "unit": "gram - DINAR G24",
+            "buy_price": 4990000,
+            "sell_price": 5135000,
+            "change_nominal": 1000,
+            "change_percentage": 0.02,
+            "trend": "up"
+        },
+        {
             "weight": "4.25",
             "unit": "gram - DINAR G24",
-            "buy_price": 9948000,
-            "sell_price": 10127000,
-            "change_nominal": -2000,
-            "change_percentage": -0.02,
-            "trend": "down"
+            "buy_price": 9957000,
+            "sell_price": 10149000,
+            "change_nominal": 1000,
+            "change_percentage": 0.01,
+            "trend": "up"
         },
         {
             "weight": "0.5",
             "unit": "gram - GALERI 24",
-            "buy_price": 1180000,
-            "sell_price": 1316000,
+            "buy_price": 1182000,
+            "sell_price": 1319000,
             "change_nominal": 0,
             "change_percentage": 0.0,
             "trend": "flat"
@@ -473,17 +473,17 @@
         {
             "weight": "1",
             "unit": "gram - GALERI 24",
-            "buy_price": 2366000,
-            "sell_price": 2510000,
-            "change_nominal": -2000,
-            "change_percentage": -0.08,
+            "buy_price": 2368000,
+            "sell_price": 2516000,
+            "change_nominal": -1000,
+            "change_percentage": -0.04,
             "trend": "down"
         },
         {
             "weight": "2",
             "unit": "gram - GALERI 24",
-            "buy_price": 4723000,
-            "sell_price": 4960000,
+            "buy_price": 4728000,
+            "sell_price": 4970000,
             "change_nominal": 1000,
             "change_percentage": 0.02,
             "trend": "up"
@@ -491,62 +491,62 @@
         {
             "weight": "5",
             "unit": "gram - GALERI 24",
-            "buy_price": 11809000,
-            "sell_price": 12307000,
+            "buy_price": 11820000,
+            "sell_price": 12333000,
+            "change_nominal": 1000,
+            "change_percentage": 0.01,
+            "trend": "up"
+        },
+        {
+            "weight": "10",
+            "unit": "gram - GALERI 24",
+            "buy_price": 23641000,
+            "sell_price": 24602000,
             "change_nominal": 0,
             "change_percentage": 0.0,
             "trend": "flat"
         },
         {
-            "weight": "10",
-            "unit": "gram - GALERI 24",
-            "buy_price": 23618000,
-            "sell_price": 24549000,
-            "change_nominal": -1000,
-            "change_percentage": -0.0,
-            "trend": "down"
-        },
-        {
             "weight": "25",
             "unit": "gram - GALERI 24",
-            "buy_price": 58755000,
-            "sell_price": 61040000,
-            "change_nominal": -1000,
-            "change_percentage": -0.0,
-            "trend": "down"
+            "buy_price": 58811000,
+            "sell_price": 61172000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "50",
             "unit": "gram - GALERI 24",
-            "buy_price": 117510000,
-            "sell_price": 121984000,
-            "change_nominal": -2000,
-            "change_percentage": -0.0,
-            "trend": "down"
+            "buy_price": 117623000,
+            "sell_price": 122247000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "100",
             "unit": "gram - GALERI 24",
-            "buy_price": 235021000,
-            "sell_price": 243849000,
-            "change_nominal": -1000,
-            "change_percentage": -0.0,
-            "trend": "down"
+            "buy_price": 235247000,
+            "sell_price": 244373000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "250",
             "unit": "gram - GALERI 24",
-            "buy_price": 584645000,
-            "sell_price": 608123000,
-            "change_nominal": -1000,
-            "change_percentage": -0.0,
-            "trend": "down"
+            "buy_price": 585206000,
+            "sell_price": 609432000,
+            "change_nominal": 1000,
+            "change_percentage": 0.0,
+            "trend": "up"
         },
         {
             "weight": "500",
             "unit": "gram - GALERI 24",
-            "buy_price": 1169291000,
-            "sell_price": 1216246000,
+            "buy_price": 1170413000,
+            "sell_price": 1218864000,
             "change_nominal": 1000,
             "change_percentage": 0.0,
             "trend": "up"
@@ -554,8 +554,8 @@
         {
             "weight": "1000",
             "unit": "gram - GALERI 24",
-            "buy_price": 2338583000,
-            "sell_price": 2432492000,
+            "buy_price": 2340827000,
+            "sell_price": 2437726000,
             "change_nominal": -1000,
             "change_percentage": -0.0,
             "trend": "down"
@@ -563,53 +563,62 @@
         {
             "weight": "1",
             "unit": "gram - LOTUS ARCHI",
-            "buy_price": 2340000,
+            "buy_price": 2343000,
             "sell_price": 2561000,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
+            "change_nominal": -1000,
+            "change_percentage": -0.04,
+            "trend": "down"
         },
         {
             "weight": "5",
             "unit": "gram - LOTUS ARCHI",
-            "buy_price": 11703000,
+            "buy_price": 11715000,
             "sell_price": 12440000,
-            "change_nominal": 1000,
-            "change_percentage": 0.01,
+            "change_nominal": 2000,
+            "change_percentage": 0.02,
             "trend": "up"
         },
         {
             "weight": "10",
             "unit": "gram - LOTUS ARCHI",
-            "buy_price": 23407000,
+            "buy_price": 23430000,
             "sell_price": 24832000,
-            "change_nominal": 2000,
-            "change_percentage": 0.01,
-            "trend": "up"
+            "change_nominal": -1000,
+            "change_percentage": -0.0,
+            "trend": "down"
         },
         {
             "weight": "25",
             "unit": "gram - LOTUS ARCHI",
-            "buy_price": 58231000,
+            "buy_price": 58287000,
             "sell_price": 61849000,
-            "change_nominal": 1000,
-            "change_percentage": 0.0,
-            "trend": "up"
+            "change_nominal": -1000,
+            "change_percentage": -0.0,
+            "trend": "down"
         },
         {
             "weight": "50",
             "unit": "gram - LOTUS ARCHI",
-            "buy_price": 116462000,
+            "buy_price": 116574000,
             "sell_price": 123669000,
-            "change_nominal": 1000,
-            "change_percentage": 0.0,
-            "trend": "up"
+            "change_nominal": -2000,
+            "change_percentage": -0.0,
+            "trend": "down"
         },
         {
             "weight": "100",
             "unit": "gram - LOTUS ARCHI",
-            "buy_price": 232925000,
+            "buy_price": 233148000,
             "sell_price": 246753000,
+            "change_nominal": 2000,
+            "change_percentage": 0.0,
+            "trend": "up"
+        },
+        {
+            "weight": "0.1",
+            "unit": "gram - LOTUS ARCHI GIFT",
+            "buy_price": 0,
+            "sell_price": 344000,
             "change_nominal": 0,
             "change_percentage": 0.0,
             "trend": "flat"
@@ -617,251 +626,251 @@
         {
             "weight": "0.5",
             "unit": "gram - LOTUS ARCHI GIFT",
-            "buy_price": 1170000,
+            "buy_price": 1171000,
             "sell_price": 1364000,
-            "change_nominal": 1000,
-            "change_percentage": 0.07,
-            "trend": "up"
+            "change_nominal": -2000,
+            "change_percentage": -0.15,
+            "trend": "down"
         },
         {
             "weight": "0.5",
             "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 1114000,
+            "buy_price": 1117000,
             "sell_price": 0,
-            "change_nominal": 0,
+            "change_nominal": 1000,
             "change_percentage": 0.0,
-            "trend": "flat"
+            "trend": "up"
         },
         {
             "weight": "1",
             "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 2229000,
+            "buy_price": 2234000,
             "sell_price": 0,
-            "change_nominal": -1000,
+            "change_nominal": -2000,
             "change_percentage": 0.0,
             "trend": "down"
         },
         {
             "weight": "2",
             "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 4459000,
-            "sell_price": 0,
-            "change_nominal": 1000,
-            "change_percentage": 0.0,
-            "trend": "up"
-        },
-        {
-            "weight": "3",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 6689000,
-            "sell_price": 0,
-            "change_nominal": -1000,
-            "change_percentage": 0.0,
-            "trend": "down"
-        },
-        {
-            "weight": "5",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 11149000,
-            "sell_price": 0,
-            "change_nominal": -1000,
-            "change_percentage": 0.0,
-            "trend": "down"
-        },
-        {
-            "weight": "10",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 22299000,
-            "sell_price": 0,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
-        },
-        {
-            "weight": "25",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 55747000,
-            "sell_price": 0,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
-        },
-        {
-            "weight": "50",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 111495000,
-            "sell_price": 0,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
-        },
-        {
-            "weight": "100",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 222990000,
-            "sell_price": 0,
-            "change_nominal": 1000,
-            "change_percentage": 0.0,
-            "trend": "up"
-        },
-        {
-            "weight": "250",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 557477000,
-            "sell_price": 0,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
-        },
-        {
-            "weight": "500",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 1114954000,
-            "sell_price": 0,
-            "change_nominal": -1000,
-            "change_percentage": 0.0,
-            "trend": "down"
-        },
-        {
-            "weight": "1000",
-            "unit": "gram - SENTRA BUYBACK",
-            "buy_price": 2229909000,
+            "buy_price": 4468000,
             "sell_price": 0,
             "change_nominal": 2000,
             "change_percentage": 0.0,
             "trend": "up"
         },
         {
-            "weight": "0.5",
-            "unit": "gram - UBS",
-            "buy_price": 1170000,
-            "sell_price": 1370000,
-            "change_nominal": -1000,
-            "change_percentage": -0.07,
-            "trend": "down"
-        },
-        {
-            "weight": "1",
-            "unit": "gram - UBS",
-            "buy_price": 2340000,
-            "sell_price": 2534000,
-            "change_nominal": 1000,
-            "change_percentage": 0.04,
+            "weight": "3",
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 6703000,
+            "sell_price": 0,
+            "change_nominal": 2000,
+            "change_percentage": 0.0,
             "trend": "up"
-        },
-        {
-            "weight": "2",
-            "unit": "gram - UBS",
-            "buy_price": 4681000,
-            "sell_price": 5029000,
-            "change_nominal": -1000,
-            "change_percentage": -0.02,
-            "trend": "down"
         },
         {
             "weight": "5",
-            "unit": "gram - UBS",
-            "buy_price": 11703000,
-            "sell_price": 12428000,
-            "change_nominal": -1000,
-            "change_percentage": -0.01,
-            "trend": "down"
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 11171000,
+            "sell_price": 0,
+            "change_nominal": 2000,
+            "change_percentage": 0.0,
+            "trend": "up"
         },
         {
             "weight": "10",
-            "unit": "gram - UBS",
-            "buy_price": 23407000,
-            "sell_price": 24725000,
-            "change_nominal": 1000,
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 22343000,
+            "sell_price": 0,
+            "change_nominal": 0,
             "change_percentage": 0.0,
-            "trend": "up"
+            "trend": "flat"
         },
         {
             "weight": "25",
-            "unit": "gram - UBS",
-            "buy_price": 58231000,
-            "sell_price": 61689000,
-            "change_nominal": -1000,
-            "change_percentage": -0.0,
-            "trend": "down"
-        },
-        {
-            "weight": "50",
-            "unit": "gram - UBS",
-            "buy_price": 116462000,
-            "sell_price": 123125000,
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 55859000,
+            "sell_price": 0,
             "change_nominal": 1000,
             "change_percentage": 0.0,
             "trend": "up"
         },
         {
-            "weight": "100",
-            "unit": "gram - UBS",
-            "buy_price": 232925000,
-            "sell_price": 246151000,
+            "weight": "50",
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 111718000,
+            "sell_price": 0,
             "change_nominal": -2000,
-            "change_percentage": -0.0,
+            "change_percentage": 0.0,
+            "trend": "down"
+        },
+        {
+            "weight": "100",
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 223436000,
+            "sell_price": 0,
+            "change_nominal": -1000,
+            "change_percentage": 0.0,
             "trend": "down"
         },
         {
             "weight": "250",
-            "unit": "gram - UBS",
-            "buy_price": 580581000,
-            "sell_price": 615195000,
-            "change_nominal": -1000,
-            "change_percentage": -0.0,
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 558590000,
+            "sell_price": 0,
+            "change_nominal": -2000,
+            "change_percentage": 0.0,
             "trend": "down"
         },
         {
             "weight": "500",
-            "unit": "gram - UBS",
-            "buy_price": 1161163000,
-            "sell_price": 1228946000,
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 1117181000,
+            "sell_price": 0,
+            "change_nominal": 1000,
+            "change_percentage": 0.0,
+            "trend": "up"
+        },
+        {
+            "weight": "1000",
+            "unit": "gram - SENTRA BUYBACK",
+            "buy_price": 2234362000,
+            "sell_price": 0,
             "change_nominal": -1000,
+            "change_percentage": 0.0,
+            "trend": "down"
+        },
+        {
+            "weight": "0.5",
+            "unit": "gram - UBS",
+            "buy_price": 1171000,
+            "sell_price": 1373000,
+            "change_nominal": 2000,
+            "change_percentage": 0.15,
+            "trend": "up"
+        },
+        {
+            "weight": "1",
+            "unit": "gram - UBS",
+            "buy_price": 2343000,
+            "sell_price": 2539000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "2",
+            "unit": "gram - UBS",
+            "buy_price": 4686000,
+            "sell_price": 5040000,
+            "change_nominal": 1000,
+            "change_percentage": 0.02,
+            "trend": "up"
+        },
+        {
+            "weight": "5",
+            "unit": "gram - UBS",
+            "buy_price": 11715000,
+            "sell_price": 12454000,
+            "change_nominal": -2000,
+            "change_percentage": -0.02,
+            "trend": "down"
+        },
+        {
+            "weight": "10",
+            "unit": "gram - UBS",
+            "buy_price": 23430000,
+            "sell_price": 24778000,
+            "change_nominal": -2000,
+            "change_percentage": -0.01,
+            "trend": "down"
+        },
+        {
+            "weight": "25",
+            "unit": "gram - UBS",
+            "buy_price": 58287000,
+            "sell_price": 61821000,
+            "change_nominal": 2000,
+            "change_percentage": 0.0,
+            "trend": "up"
+        },
+        {
+            "weight": "50",
+            "unit": "gram - UBS",
+            "buy_price": 116574000,
+            "sell_price": 123389000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "100",
+            "unit": "gram - UBS",
+            "buy_price": 233148000,
+            "sell_price": 246680000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "250",
+            "unit": "gram - UBS",
+            "buy_price": 581138000,
+            "sell_price": 616519000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
+        },
+        {
+            "weight": "500",
+            "unit": "gram - UBS",
+            "buy_price": 1162277000,
+            "sell_price": 1231589000,
+            "change_nominal": -2000,
             "change_percentage": -0.0,
             "trend": "down"
         },
         {
             "weight": "2",
             "unit": "gram - UBS ANNA",
-            "buy_price": 4681000,
-            "sell_price": 5039000,
-            "change_nominal": -2000,
-            "change_percentage": -0.04,
-            "trend": "down"
+            "buy_price": 4686000,
+            "sell_price": 5050000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "5",
             "unit": "gram - UBS ANNA",
-            "buy_price": 11703000,
-            "sell_price": 12392000,
-            "change_nominal": -1000,
-            "change_percentage": -0.01,
-            "trend": "down"
+            "buy_price": 11715000,
+            "sell_price": 12418000,
+            "change_nominal": 0,
+            "change_percentage": 0.0,
+            "trend": "flat"
         },
         {
             "weight": "10",
             "unit": "gram - UBS ANNA",
-            "buy_price": 23407000,
-            "sell_price": 24614000,
-            "change_nominal": -2000,
-            "change_percentage": -0.01,
-            "trend": "down"
+            "buy_price": 23430000,
+            "sell_price": 24666000,
+            "change_nominal": 2000,
+            "change_percentage": 0.01,
+            "trend": "up"
         },
         {
             "weight": "0.1",
             "unit": "gram - UBS DISNEY",
             "buy_price": 0,
-            "sell_price": 338000,
-            "change_nominal": 1000,
-            "change_percentage": 0.3,
+            "sell_price": 339000,
+            "change_nominal": 2000,
+            "change_percentage": 0.59,
             "trend": "up"
         },
         {
             "weight": "0.5",
             "unit": "gram - UBS DISNEY",
-            "buy_price": 1170000,
-            "sell_price": 1372000,
+            "buy_price": 1171000,
+            "sell_price": 1375000,
             "change_nominal": 2000,
             "change_percentage": 0.15,
             "trend": "up"
@@ -869,80 +878,80 @@
         {
             "weight": "2",
             "unit": "gram - UBS DISNEY",
-            "buy_price": 4681000,
-            "sell_price": 5039000,
-            "change_nominal": 1000,
-            "change_percentage": 0.02,
-            "trend": "up"
-        },
-        {
-            "weight": "5",
-            "unit": "gram - UBS DISNEY",
-            "buy_price": 11703000,
-            "sell_price": 12392000,
-            "change_nominal": 1000,
-            "change_percentage": 0.01,
-            "trend": "up"
-        },
-        {
-            "weight": "10",
-            "unit": "gram - UBS DISNEY",
-            "buy_price": 23407000,
-            "sell_price": 24614000,
-            "change_nominal": 1000,
+            "buy_price": 4686000,
+            "sell_price": 5050000,
+            "change_nominal": 0,
             "change_percentage": 0.0,
-            "trend": "up"
-        },
-        {
-            "weight": "2",
-            "unit": "gram - UBS ELSA",
-            "buy_price": 4681000,
-            "sell_price": 5039000,
-            "change_nominal": 1000,
-            "change_percentage": 0.02,
-            "trend": "up"
+            "trend": "flat"
         },
         {
             "weight": "5",
-            "unit": "gram - UBS ELSA",
-            "buy_price": 11703000,
-            "sell_price": 12392000,
-            "change_nominal": -1000,
-            "change_percentage": -0.01,
+            "unit": "gram - UBS DISNEY",
+            "buy_price": 11715000,
+            "sell_price": 12418000,
+            "change_nominal": -2000,
+            "change_percentage": -0.02,
             "trend": "down"
         },
         {
             "weight": "10",
-            "unit": "gram - UBS ELSA",
-            "buy_price": 23407000,
-            "sell_price": 24614000,
-            "change_nominal": 0,
+            "unit": "gram - UBS DISNEY",
+            "buy_price": 23430000,
+            "sell_price": 24666000,
+            "change_nominal": 1000,
             "change_percentage": 0.0,
-            "trend": "flat"
-        },
-        {
-            "weight": "2",
-            "unit": "gram - UBS HELLO KITTY",
-            "buy_price": 4681000,
-            "sell_price": 5039000,
-            "change_nominal": 2000,
-            "change_percentage": 0.04,
             "trend": "up"
         },
         {
             "weight": "2",
+            "unit": "gram - UBS ELSA",
+            "buy_price": 4686000,
+            "sell_price": 5050000,
+            "change_nominal": -1000,
+            "change_percentage": -0.02,
+            "trend": "down"
+        },
+        {
+            "weight": "5",
+            "unit": "gram - UBS ELSA",
+            "buy_price": 11715000,
+            "sell_price": 12418000,
+            "change_nominal": 2000,
+            "change_percentage": 0.02,
+            "trend": "up"
+        },
+        {
+            "weight": "10",
+            "unit": "gram - UBS ELSA",
+            "buy_price": 23430000,
+            "sell_price": 24666000,
+            "change_nominal": 2000,
+            "change_percentage": 0.01,
+            "trend": "up"
+        },
+        {
+            "weight": "2",
+            "unit": "gram - UBS HELLO KITTY",
+            "buy_price": 4686000,
+            "sell_price": 5050000,
+            "change_nominal": -1000,
+            "change_percentage": -0.02,
+            "trend": "down"
+        },
+        {
+            "weight": "2",
             "unit": "gram - UBS MICKEY FULLBODY",
-            "buy_price": 4681000,
-            "sell_price": 5039000,
-            "change_nominal": 0,
-            "change_percentage": 0.0,
-            "trend": "flat"
+            "buy_price": 4686000,
+            "sell_price": 5050000,
+            "change_nominal": -2000,
+            "change_percentage": -0.04,
+            "trend": "down"
         },
         {
             "weight": "5",
             "unit": "gram - UBS MICKEY FULLBODY",
-            "buy_price": 11703000,
-            "sell_price": 12392000,
+            "buy_price": 11715000,
+            "sell_price": 12418000,
             "change_nominal": 1000,
             "change_percentage": 0.01,
             "trend": "up"
@@ -950,10 +959,10 @@
         {
             "weight": "10",
             "unit": "gram - UBS MICKEY FULLBODY",
-            "buy_price": 23407000,
-            "sell_price": 24614000,
-            "change_nominal": -2000,
-            "change_percentage": -0.01,
+            "buy_price": 23430000,
+            "sell_price": 24666000,
+            "change_nominal": -1000,
+            "change_percentage": -0.0,
             "trend": "down"
         }
     ]
